@@ -10,7 +10,7 @@ object ImdbML {
   def main(args: Array[String]): Unit = {
     val input_train = args(0) // /user/hduser/IMDB/Train.csv
     val input_test = args(1) // /user/hduser/IMDB/Valid.csv
-    // val output = args(2) // /user/hduser/IMDB-Mllib-out
+    val output = args(2) // /user/hduser/IMDB-Mllib-out
 
     val spark = SparkSession.builder().getOrCreate()
 
@@ -19,14 +19,16 @@ object ImdbML {
     // Prepare training data
     val training = spark.read
       .option("header", "true")
+      .option("quote", "\"")
+      .option("escape", "\"")
       .option("inferSchema", "true")
       .csv(input_train)
 
     // Configure an ML pipeline, which consists of four stages: tokenizer, StopWordRemover(swr), hashingTF, and lr.
 
     val tokenizer = new Tokenizer()
-      .setInputCol("text").
-      setOutputCol("words")
+      .setInputCol("text")
+      .setOutputCol("words")
 
     val swt = new StopWordsRemover()
       .setInputCol(tokenizer.getOutputCol)
@@ -48,22 +50,21 @@ object ImdbML {
     val model = pipeline.fit(training)
 
     // save this unfit pipeline to disk
-    pipeline.write.overwrite().save("/tmp/unfit-lr-model")
+    pipeline.write.overwrite().save(s"$output/unfit-lr-model")
     // save the fitted pipeline to disk
-    model.write.overwrite().save("/tmp/logistic-regression-model")
+    model.write.overwrite().save(s"$output/logistic-regression-model")
 
     // Prepare test documents, which are unlabeled (text).
     val test = spark.read
       .option("header", "true")
-      .option("inferSchema", "true")
+      .option("quote", "\"")
+      .option("escape", "\"")
+      .option("inferSchema", "false")
       .csv(input_test)
 
 
     // Make predictions on test documents.
     val predictions = model.transform(test)
-
-    // save this predictions to disk
-    predictions.write.mode("overwrite").csv("/tmp/logistic-regression-model")
 
     // show predictions
     predictions.select($"text", $"label", $"features", $"probability", $"prediction")
@@ -71,13 +72,10 @@ object ImdbML {
 
     predictions.show(5)
 
-    // model accuracy
+    /*** model accuracy
     val evaluator = new BinaryClassificationEvaluator()
-      .setLabelCol("label")
-      .setRawPredictionCol("prediction")
-      .setMetricName("Accuracy")
     val accuracy = evaluator.evaluate(predictions)
-    println(s"Accuracy: $accuracy")
+    println(s"Accuracy: $accuracy")***/
     spark.stop()
   }
 }

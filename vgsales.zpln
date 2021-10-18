@@ -1,0 +1,1498 @@
+﻿{
+  "paragraphs": [
+    {
+      "text": "%sh\npython -m pip install kaggle",
+      "user": "anonymous",
+      "dateUpdated": "2021-10-18T10:09:57+0000",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "sh",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": false
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/sh",
+        "fontSize": 9,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "Defaulting to user installation because normal site-packages is not writeable\nCollecting kaggle\n  Downloading kaggle-1.5.12.tar.gz (58 kB)\n  Preparing metadata (setup.py): started\n  Preparing metadata (setup.py): finished with status 'done'\nRequirement already satisfied: certifi in /usr/lib/python3/dist-packages (from kaggle) (2018.1.18)\nCollecting python-dateutil\n  Downloading python_dateutil-2.8.2-py2.py3-none-any.whl (247 kB)\nCollecting python-slugify\n  Downloading python_slugify-5.0.2-py2.py3-none-any.whl (6.7 kB)\nRequirement already satisfied: requests in /usr/lib/python3/dist-packages (from kaggle) (2.18.4)\nRequirement already satisfied: six>=1.10 in /usr/lib/python3/dist-packages (from kaggle) (1.11.0)\nCollecting tqdm\n  Downloading tqdm-4.62.3-py2.py3-none-any.whl (76 kB)\nRequirement already satisfied: urllib3 in /usr/lib/python3/dist-packages (from kaggle) (1.22)\nCollecting text-unidecode>=1.3\n  Downloading text_unidecode-1.3-py2.py3-none-any.whl (78 kB)\nBuilding wheels for collected packages: kaggle\n  Building wheel for kaggle (setup.py): started\n  Building wheel for kaggle (setup.py): finished with status 'done'\n  Created wheel for kaggle: filename=kaggle-1.5.12-py3-none-any.whl size=73997 sha256=abf0983c4957fbc4db287f54f66c0d7edd11d86987f2d156458082447becb01b\n  Stored in directory: /home/hduser/.cache/pip/wheels/77/47/e4/44a4ba1b7dfd53faaa35f59f1175e123b213ff401a8a56876b\nSuccessfully built kaggle\nInstalling collected packages: text-unidecode, tqdm, python-slugify, python-dateutil, kaggle\nSuccessfully installed kaggle-1.5.12 python-dateutil-2.8.2 python-slugify-5.0.2 text-unidecode-1.3 tqdm-4.62.3\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1634549886717_1516508499",
+      "id": "paragraph_1634549886717_1516508499",
+      "dateCreated": "2021-10-18T09:38:06+0000",
+      "dateStarted": "2021-10-18T10:09:57+0000",
+      "dateFinished": "2021-10-18T10:10:03+0000",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:577"
+    },
+    {
+      "text": "%sh\nexport KAGGLE_USERNAME=natalyahaimova\nexport KAGGLE_KEY=34e46cb7757848d3ab4ea01d5becfcc1\nmkdir -p /home/hduser/vgsales\ncd /home/hduser/vgsales\nkaggle datasets files gregorut/videogamesales\nkaggle datasets download gregorut/videogamesales",
+      "user": "anonymous",
+      "dateUpdated": "2021-10-18T10:20:14+0000",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "sh",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": false
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/sh",
+        "fontSize": 9,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "name         size  creationDate         \n-----------  ----  -------------------  \nvgsales.csv   1MB  2016-10-26 09:10:49  \nDownloading videogamesales.zip to /home/hduser/vgsales\n\r  0%|          | 0.00/381k [00:00<?, ?B/s]\r100%|##########| 381k/381k [00:00<00:00, 1.21MB/s]\r100%|##########| 381k/381k [00:00<00:00, 1.21MB/s]\n\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1634549905765_74520272",
+      "id": "paragraph_1634549905765_74520272",
+      "dateCreated": "2021-10-18T09:38:25+0000",
+      "dateStarted": "2021-10-18T10:20:14+0000",
+      "dateFinished": "2021-10-18T10:20:17+0000",
+      "status": "FINISHED",
+      "$$hashKey": "object:578"
+    },
+    {
+      "text": "%sh\ncd /home/hduser/vgsales\nunzip videogamesales.zip\nrm videogamesales.zip\nls -la",
+      "user": "anonymous",
+      "dateUpdated": "2021-10-18T10:22:38+0000",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "sh",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": false
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/sh",
+        "fontSize": 9,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "Archive:  videogamesales.zip\n  inflating: vgsales.csv             \ntotal 1340\ndrwxr-xr-x 2 hduser hduser    4096 Oct 18 10:22 .\ndrwxr-xr-x 1 hduser hduser    4096 Oct 18 10:20 ..\n-rw-r--r-- 1 hduser hduser 1355781 Sep 19  2019 vgsales.csv\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1634552414120_1748207822",
+      "id": "paragraph_1634552414120_1748207822",
+      "dateCreated": "2021-10-18T10:20:14+0000",
+      "dateStarted": "2021-10-18T10:22:38+0000",
+      "dateFinished": "2021-10-18T10:22:40+0000",
+      "status": "FINISHED",
+      "$$hashKey": "object:579"
+    },
+    {
+      "text": "%sh\nhdfs dfs -put /home/hduser/vgsales /user/hduser\nhdfs dfs -ls /user/hduser/vgsales",
+      "user": "anonymous",
+      "dateUpdated": "2021-10-18T10:25:02+0000",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/scala",
+        "fontSize": 9,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "Found 1 items\n-rw-r--r--   1 hduser supergroup    1355781 2021-10-18 10:25 /user/hduser/vgsales/vgsales.csv\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1634552558904_1539697295",
+      "id": "paragraph_1634552558904_1539697295",
+      "dateCreated": "2021-10-18T10:22:38+0000",
+      "dateStarted": "2021-10-18T10:25:02+0000",
+      "dateFinished": "2021-10-18T10:25:10+0000",
+      "status": "FINISHED",
+      "$$hashKey": "object:580"
+    },
+    {
+      "text": "%hive\nCREATE TABLE vgsales(Rank INT, Name STRING, Platform STRING, YEAR INT, Genre STRING, Publisher STRING, NA_Sales FLOAT, EU_Sales FLOAT, JP_Sales FLOAT, Other_Sales FLOAT, Global_Sales FLOAT)\n    COMMENT 'Information on vasales'\n    ROW FORMAT DELIMITED\n    FIELDS TERMINATED BY ','\n    STORED AS TEXTFILE\n    TBLPROPERTIES('skip.header.line.count'='1')\n",
+      "user": "anonymous",
+      "dateUpdated": "2021-10-18T16:43:24+0000",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "sql",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/sql",
+        "fontSize": 9,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "Query executed successfully. Affected rows : -1\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1634552796227_487149196",
+      "id": "paragraph_1634552796227_487149196",
+      "dateCreated": "2021-10-18T10:26:36+0000",
+      "dateStarted": "2021-10-18T16:43:24+0000",
+      "dateFinished": "2021-10-18T16:43:25+0000",
+      "status": "FINISHED",
+      "$$hashKey": "object:581"
+    },
+    {
+      "text": "%hive\nSHOW TABLES;",
+      "user": "anonymous",
+      "dateUpdated": "2021-10-18T16:43:58+0000",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "sql",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/sql",
+        "fontSize": 9,
+        "results": {
+          "0": {
+            "graph": {
+              "mode": "table",
+              "height": 300,
+              "optionOpen": false,
+              "setting": {
+                "table": {
+                  "tableGridState": {},
+                  "tableColumnTypeState": {
+                    "names": {
+                      "tab_name": "string"
+                    },
+                    "updated": false
+                  },
+                  "tableOptionSpecHash": "[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]",
+                  "tableOptionValue": {
+                    "useFilter": false,
+                    "showPagination": false,
+                    "showAggregationFooter": false
+                  },
+                  "updated": false,
+                  "initialized": false
+                }
+              },
+              "commonSetting": {}
+            }
+          }
+        },
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TABLE",
+            "data": "tab_name\nvgsales\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1634575369457_1102434226",
+      "id": "paragraph_1634575369457_1102434226",
+      "dateCreated": "2021-10-18T16:42:49+0000",
+      "dateStarted": "2021-10-18T16:43:57+0000",
+      "dateFinished": "2021-10-18T16:43:58+0000",
+      "status": "FINISHED",
+      "$$hashKey": "object:582"
+    },
+    {
+      "text": "%hive\nLOAD DATA INPATH '/user/hduser/vgsales/vgsales.csv' INTO TABLE vgsales;",
+      "user": "anonymous",
+      "dateUpdated": "2021-10-18T17:02:02+0000",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "sql",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/sql",
+        "fontSize": 9,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "Query executed successfully. Affected rows : -1\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1634575437775_1205857273",
+      "id": "paragraph_1634575437775_1205857273",
+      "dateCreated": "2021-10-18T16:43:57+0000",
+      "dateStarted": "2021-10-18T17:02:02+0000",
+      "dateFinished": "2021-10-18T17:02:05+0000",
+      "status": "FINISHED",
+      "$$hashKey": "object:583"
+    },
+    {
+      "text": "%sh\necho \"%table\"\nhdfs dfs -cat /user/hive/warehouse/vgsales/vgsales.csv | tr ',' '\\t'",
+      "user": "anonymous",
+      "dateUpdated": "2021-10-18T17:44:52+0000",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "sh",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": false
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/sh",
+        "fontSize": 9,
+        "results": {
+          "0": {
+            "graph": {
+              "mode": "table",
+              "height": 300,
+              "optionOpen": false,
+              "setting": {
+                "table": {
+                  "tableGridState": {
+                    "columns": [
+                      {
+                        "name": "Rank0",
+                        "visible": true,
+                        "width": "*",
+                        "sort": {},
+                        "filters": [
+                          {}
+                        ],
+                        "pinned": ""
+                      },
+                      {
+                        "name": "Name1",
+                        "visible": true,
+                        "width": "*",
+                        "sort": {},
+                        "filters": [
+                          {}
+                        ],
+                        "pinned": ""
+                      },
+                      {
+                        "name": "Platform2",
+                        "visible": true,
+                        "width": "*",
+                        "sort": {},
+                        "filters": [
+                          {}
+                        ],
+                        "pinned": ""
+                      },
+                      {
+                        "name": "Year3",
+                        "visible": true,
+                        "width": "*",
+                        "sort": {},
+                        "filters": [
+                          {}
+                        ],
+                        "pinned": ""
+                      },
+                      {
+                        "name": "Genre4",
+                        "visible": true,
+                        "width": "*",
+                        "sort": {},
+                        "filters": [
+                          {}
+                        ],
+                        "pinned": ""
+                      },
+                      {
+                        "name": "Publisher5",
+                        "visible": true,
+                        "width": "*",
+                        "sort": {},
+                        "filters": [
+                          {}
+                        ],
+                        "pinned": ""
+                      },
+                      {
+                        "name": "NA_Sales6",
+                        "visible": true,
+                        "width": "*",
+                        "sort": {},
+                        "filters": [
+                          {}
+                        ],
+                        "pinned": ""
+                      },
+                      {
+                        "name": "EU_Sales7",
+                        "visible": true,
+                        "width": "*",
+                        "sort": {},
+                        "filters": [
+                          {}
+                        ],
+                        "pinned": ""
+                      },
+                      {
+                        "name": "JP_Sales8",
+                        "visible": true,
+                        "width": "*",
+                        "sort": {},
+                        "filters": [
+                          {}
+                        ],
+                        "pinned": ""
+                      },
+                      {
+                        "name": "Other_Sales9",
+                        "visible": true,
+                        "width": "*",
+                        "sort": {},
+                        "filters": [
+                          {}
+                        ],
+                        "pinned": ""
+                      },
+                      {
+                        "name": "Global_Sales10",
+                        "visible": true,
+                        "width": "*",
+                        "sort": {},
+                        "filters": [
+                          {}
+                        ],
+                        "pinned": ""
+                      }
+                    ],
+                    "scrollFocus": {},
+                    "selection": [],
+                    "grouping": {
+                      "grouping": [],
+                      "aggregations": [],
+                      "rowExpandedStates": {}
+                    },
+                    "treeView": {},
+                    "pagination": {
+                      "paginationCurrentPage": 1,
+                      "paginationPageSize": 250
+                    }
+                  },
+                  "tableColumnTypeState": {
+                    "names": {
+                      "Rank": "string",
+                      "Name": "string",
+                      "Platform": "string",
+                      "Year": "string",
+                      "Genre": "string",
+                      "Publisher": "string",
+                      "NA_Sales": "string",
+                      "EU_Sales": "string",
+                      "JP_Sales": "string",
+                      "Other_Sales": "string",
+                      "Global_Sales": "string"
+                    },
+                    "updated": false
+                  },
+                  "tableOptionSpecHash": "[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]",
+                  "tableOptionValue": {
+                    "useFilter": false,
+                    "showPagination": false,
+                    "showAggregationFooter": false
+                  },
+                  "updated": false,
+                  "initialized": false
+                }
+              },
+              "commonSetting": {}
+            }
+          }
+        },
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TABLE",
+            "data": "Rank\tName\tPlatform\tYear\tGenre\tPublisher\tNA_Sales\tEU_Sales\tJP_Sales\tOther_Sales\tGlobal_Sales\n1\tWii Sports\tWii\t2006\tSports\tNintendo\t41.49\t29.02\t3.77\t8.46\t82.74\n2\tSuper Mario Bros.\tNES\t1985\tPlatform\tNintendo\t29.08\t3.58\t6.81\t0.77\t40.24\n3\tMario Kart Wii\tWii\t2008\tRacing\tNintendo\t15.85\t12.88\t3.79\t3.31\t35.82\n4\tWii Sports Resort\tWii\t2009\tSports\tNintendo\t15.75\t11.01\t3.28\t2.96\t33\n5\tPokemon Red/Pokemon Blue\tGB\t1996\tRole-Playing\tNintendo\t11.27\t8.89\t10.22\t1\t31.37\n6\tTetris\tGB\t1989\tPuzzle\tNintendo\t23.2\t2.26\t4.22\t0.58\t30.26\n7\tNew Super Mario Bros.\tDS\t2006\tPlatform\tNintendo\t11.38\t9.23\t6.5\t2.9\t30.01\n8\tWii Play\tWii\t2006\tMisc\tNintendo\t14.03\t9.2\t2.93\t2.85\t29.02\n9\tNew Super Mario Bros. Wii\tWii\t2009\tPlatform\tNintendo\t14.59\t7.06\t4.7\t2.26\t28.62\n10\tDuck Hunt\tNES\t1984\tShooter\tNintendo\t26.93\t0.63\t0.28\t0.47\t28.31\n11\tNintendogs\tDS\t2005\tSimulation\tNintendo\t9.07\t11\t1.93\t2.75\t24.76\n12\tMario Kart DS\tDS\t2005\tRacing\tNintendo\t9.81\t7.57\t4.13\t1.92\t23.42\n13\tPokemon Gold/Pokemon Silver\tGB\t1999\tRole-Playing\tNintendo\t9\t6.18\t7.2\t0.71\t23.1\n14\tWii Fit\tWii\t2007\tSports\tNintendo\t8.94\t8.03\t3.6\t2.15\t22.72\n15\tWii Fit Plus\tWii\t2009\tSports\tNintendo\t9.09\t8.59\t2.53\t1.79\t22\n16\tKinect Adventures!\tX360\t2010\tMisc\tMicrosoft Game Studios\t14.97\t4.94\t0.24\t1.67\t21.82\n17\tGrand Theft Auto V\tPS3\t2013\tAction\tTake-Two Interactive\t7.01\t9.27\t0.97\t4.14\t21.4\n18\tGrand Theft Auto: San Andreas\tPS2\t2004\tAction\tTake-Two Interactive\t9.43\t0.4\t0.41\t10.57\t20.81\n19\tSuper Mario World\tSNES\t1990\tPlatform\tNintendo\t12.78\t3.75\t3.54\t0.55\t20.61\n20\tBrain Age: Train Your Brain in Minutes a Day\tDS\t2005\tMisc\tNintendo\t4.75\t9.26\t4.16\t2.05\t20.22\n21\tPokemon Diamond/Pokemon Pearl\tDS\t2006\tRole-Playing\tNintendo\t6.42\t4.52\t6.04\t1.37\t18.36\n22\tSuper Mario Land\tGB\t1989\tPlatform\tNintendo\t10.83\t2.71\t4.18\t0.42\t18.14\n23\tSuper Mario Bros. 3\tNES\t1988\tPlatform\tNintendo\t9.54\t3.44\t3.84\t0.46\t17.28\n24\tGrand Theft Auto V\tX360\t2013\tAction\tTake-Two Interactive\t9.63\t5.31\t0.06\t1.38\t16.38\n25\tGrand Theft Auto: Vice City\tPS2\t2002\tAction\tTake-Two Interactive\t8.41\t5.49\t0.47\t1.78\t16.15\n26\tPokemon Ruby/Pokemon Sapphire\tGBA\t2002\tRole-Playing\tNintendo\t6.06\t3.9\t5.38\t0.5\t15.85\n27\tPokemon Black/Pokemon White\tDS\t2010\tRole-Playing\tNintendo\t5.57\t3.28\t5.65\t0.82\t15.32\n28\tBrain Age 2: More Training in Minutes a Day\tDS\t2005\tPuzzle\tNintendo\t3.44\t5.36\t5.32\t1.18\t15.3\n29\tGran Turismo 3: A-Spec\tPS2\t2001\tRacing\tSony Computer Entertainment\t6.85\t5.09\t1.87\t1.16\t14.98\n30\tCall of Duty: Modern Warfare 3\tX360\t2011\tShooter\tActivision\t9.03\t4.28\t0.13\t1.32\t14.76\n31\tPokémon Yellow: Special Pikachu Edition\tGB\t1998\tRole-Playing\tNintendo\t5.89\t5.04\t3.12\t0.59\t14.64\n32\tCall of Duty: Black Ops\tX360\t2010\tShooter\tActivision\t9.67\t3.73\t0.11\t1.13\t14.64\n33\tPokemon X/Pokemon Y\t3DS\t2013\tRole-Playing\tNintendo\t5.17\t4.05\t4.34\t0.79\t14.35\n34\tCall of Duty: Black Ops 3\tPS4\t2015\tShooter\tActivision\t5.77\t5.81\t0.35\t2.31\t14.24\n35\tCall of Duty: Black Ops II\tPS3\t2012\tShooter\tActivision\t4.99\t5.88\t0.65\t2.52\t14.03\n36\tCall of Duty: Black Ops II\tX360\t2012\tShooter\tActivision\t8.25\t4.3\t0.07\t1.12\t13.73\n37\tCall of Duty: Modern Warfare 2\tX360\t2009\tShooter\tActivision\t8.52\t3.63\t0.08\t1.29\t13.51\n38\tCall of Duty: Modern Warfare 3\tPS3\t2011\tShooter\tActivision\t5.54\t5.82\t0.49\t1.62\t13.46\n39\tGrand Theft Auto III\tPS2\t2001\tAction\tTake-Two Interactive\t6.99\t4.51\t0.3\t1.3\t13.1\n40\tSuper Smash Bros. Brawl\tWii\t2008\tFighting\tNintendo\t6.75\t2.61\t2.66\t1.02\t13.04\n41\tCall of Duty: Black Ops\tPS3\t2010\tShooter\tActivision\t5.98\t4.44\t0.48\t1.83\t12.73\n42\tAnimal Crossing: Wild World\tDS\t2005\tSimulation\tNintendo\t2.55\t3.52\t5.33\t0.88\t12.27\n43\tMario Kart 7\t3DS\t2011\tRacing\tNintendo\t4.74\t3.91\t2.67\t0.89\t12.21\n44\tHalo 3\tX360\t2007\tShooter\tMicrosoft Game Studios\t7.97\t2.83\t0.13\t1.21\t12.14\n45\tGrand Theft Auto V\tPS4\t2014\tAction\tTake-Two Interactive\t3.8\t5.81\t0.36\t2.02\t11.98\n46\tPokemon HeartGold/Pokemon SoulSilver\tDS\t2009\tAction\tNintendo\t4.4\t2.77\t3.96\t0.77\t11.9\n47\tSuper Mario 64\tN64\t1996\tPlatform\tNintendo\t6.91\t2.85\t1.91\t0.23\t11.89\n48\tGran Turismo 4\tPS2\t2004\tRacing\tSony Computer Entertainment\t3.01\t0.01\t1.1\t7.53\t11.66\n49\tSuper Mario Galaxy\tWii\t2007\tPlatform\tNintendo\t6.16\t3.4\t1.2\t0.76\t11.52\n50\tPokemon Omega Ruby/Pokemon Alpha Sapphire\t3DS\t2014\tRole-Playing\tNintendo\t4.23\t3.37\t3.08\t0.65\t11.33\n51\tSuper Mario Land 2: 6 Golden Coins\tGB\t1992\tAdventure\tNintendo\t6.16\t2.04\t2.69\t0.29\t11.18\n52\tGrand Theft Auto IV\tX360\t2008\tAction\tTake-Two Interactive\t6.76\t3.1\t0.14\t1.03\t11.02\n53\tGran Turismo\tPS\t1997\tRacing\tSony Computer Entertainment\t4.02\t3.87\t2.54\t0.52\t10.95\n54\tSuper Mario 3D Land\t3DS\t2011\tPlatform\tNintendo\t4.89\t2.99\t2.13\t0.78\t10.79\n55\tGran Turismo 5\tPS3\t2010\tRacing\tSony Computer Entertainment\t2.96\t4.88\t0.81\t2.12\t10.77\n56\tCall of Duty: Modern Warfare 2\tPS3\t2009\tShooter\tActivision\t4.99\t3.69\t0.38\t1.63\t10.69\n57\tGrand Theft Auto IV\tPS3\t2008\tAction\tTake-Two Interactive\t4.76\t3.76\t0.44\t1.62\t10.57\n58\tSuper Mario All-Stars\tSNES\t1993\tPlatform\tNintendo\t5.99\t2.15\t2.12\t0.29\t10.55\n59\tPokemon FireRed/Pokemon LeafGreen\tGBA\t2004\tRole-Playing\tNintendo\t4.34\t2.65\t3.15\t0.35\t10.49\n60\tSuper Mario 64\tDS\t2004\tPlatform\tNintendo\t5.08\t3.11\t1.25\t0.98\t10.42\n61\tJust Dance 3\tWii\t2011\tMisc\tUbisoft\t6.05\t3.15\t0\t1.07\t10.26\n62\tCall of Duty: Ghosts\tX360\t2013\tShooter\tActivision\t6.72\t2.63\t0.04\t0.82\t10.21\n63\tHalo: Reach\tX360\t2010\tShooter\tMicrosoft Game Studios\t7.03\t1.98\t0.08\t0.78\t9.88\n64\tMario Kart 64\tN64\t1996\tRacing\tNintendo\t5.55\t1.94\t2.23\t0.15\t9.87\n65\tNew Super Mario Bros. 2\t3DS\t2012\tPlatform\tNintendo\t3.66\t3.07\t2.47\t0.63\t9.82\n66\tHalo 4\tX360\t2012\tShooter\tMicrosoft Game Studios\t6.63\t2.36\t0.04\t0.73\t9.76\n67\tFinal Fantasy VII\tPS\t1997\tRole-Playing\tSony Computer Entertainment\t3.01\t2.47\t3.28\t0.96\t9.72\n68\tCall of Duty: Ghosts\tPS3\t2013\tShooter\tActivision\t4.09\t3.73\t0.38\t1.38\t9.59\n69\tJust Dance 2\tWii\t2010\tMisc\tUbisoft\t5.84\t2.89\t0.01\t0.78\t9.52\n70\tGran Turismo 2\tPS\t1999\tRacing\tSony Computer Entertainment\t3.88\t3.42\t1.69\t0.5\t9.49\n71\tCall of Duty 4: Modern Warfare\tX360\t2007\tShooter\tActivision\t5.91\t2.38\t0.13\t0.9\t9.32\n72\tDonkey Kong Country\tSNES\t1994\tPlatform\tNintendo\t4.36\t1.71\t3\t0.23\t9.3\n73\tMinecraft\tX360\t2013\tMisc\tMicrosoft Game Studios\t5.58\t2.83\t0.02\t0.77\t9.2\n74\tAnimal Crossing: New Leaf\t3DS\t2012\tSimulation\tNintendo\t2.01\t2.32\t4.36\t0.41\t9.09\n75\tMario Party DS\tDS\t2007\tMisc\tNintendo\t4.46\t1.88\t1.98\t0.7\t9.02\n76\tThe Elder Scrolls V: Skyrim\tX360\t2011\tRole-Playing\tBethesda Softworks\t5.03\t2.86\t0.1\t0.85\t8.84\n77\tSuper Mario Kart\tSNES\t1992\tRacing\tNintendo\t3.54\t1.24\t3.81\t0.18\t8.76\n78\tFIFA 16\tPS4\t2015\tSports\tElectronic Arts\t1.11\t6.06\t0.06\t1.26\t8.49\n79\tWii Party\tWii\t2010\tMisc\tNintendo\t1.79\t3.53\t2.49\t0.68\t8.49\n80\tHalo 2\tXB\t2004\tShooter\tMicrosoft Game Studios\t6.82\t1.53\t0.05\t0.08\t8.49\n81\tMario Party 8\tWii\t2007\tMisc\tNintendo\t3.81\t2.3\t1.58\t0.73\t8.42\n82\tPokemon Black 2/Pokemon White 2\tDS\t2012\tRole-Playing\tNintendo\t2.91\t1.86\t3.14\t0.43\t8.33\n83\tFIFA Soccer 13\tPS3\t2012\tAction\tElectronic Arts\t1.06\t5.05\t0.13\t2.01\t8.24\n84\tThe Sims 3\tPC\t2009\tSimulation\tElectronic Arts\t0.98\t6.42\t0\t0.71\t8.11\n85\tGoldenEye 007\tN64\t1997\tShooter\tNintendo\t5.8\t2.01\t0.13\t0.15\t8.09\n86\tMario & Sonic at the Olympic Games\tWii\t2007\tSports\tSega\t2.58\t3.9\t0.66\t0.91\t8.06\n87\tFinal Fantasy X\tPS2\t2001\tRole-Playing\tSony Computer Entertainment\t2.91\t2.07\t2.73\t0.33\t8.05\n88\tFinal Fantasy VIII\tPS\t1999\tRole-Playing\tSquareSoft\t2.28\t1.72\t3.63\t0.23\t7.86\n89\tPokémon Platinum Version\tDS\t2008\tRole-Playing\tNintendo\t2.82\t1.78\t2.69\t0.55\t7.84\n90\tPac-Man\t2600\t1982\tPuzzle\tAtari\t7.28\t0.45\t0\t0.08\t7.81\n91\tGrand Theft Auto: Liberty City Stories\tPSP\t2005\tAction\tTake-Two Interactive\t2.9\t2.83\t0.24\t1.75\t7.72\n92\tSuper Mario Galaxy 2\tWii\t2010\tPlatform\tNintendo\t3.66\t2.42\t0.98\t0.64\t7.69\n93\tStar Wars Battlefront (2015)\tPS4\t2015\tShooter\tElectronic Arts\t2.93\t3.29\t0.22\t1.23\t7.67\n94\tCall of Duty: Advanced Warfare\tPS4\t2014\tShooter\tActivision\t2.8\t3.3\t0.14\t1.37\t7.6\n95\tThe Legend of Zelda: Ocarina of Time\tN64\t1998\tAction\tNintendo\t4.1\t1.89\t1.45\t0.16\t7.6\n96\tCrash Bandicoot 2: Cortex Strikes Back\tPS\t1997\tPlatform\tSony Computer Entertainment\t3.78\t2.17\t1.31\t0.31\t7.58\n97\tSuper Mario Bros. 2\tNES\t1988\tPlatform\tNintendo\t5.39\t1.18\t0.7\t0.19\t7.46\n98\tSuper Smash Bros. for Wii U and 3DS\t3DS\t2014\tFighting\tNintendo\t3.24\t1.35\t2.42\t0.43\t7.45\n99\tCall of Duty: World at War\tX360\t2008\tShooter\tActivision\t4.79\t1.9\t0\t0.69\t7.37\n100\tBattlefield 3\tX360\t2011\tShooter\tElectronic Arts\t4.46\t2.13\t0.06\t0.69\t7.34\n101\tThe Legend of Zelda: Twilight Princess\tWii\t2006\tAction\tNintendo\t3.83\t2.19\t0.6\t0.7\t7.31\n102\tCall of Duty: Black Ops 3\tXOne\t2015\tShooter\tActivision\t4.52\t2.09\t0.01\t0.67\t7.3\n103\tJust Dance\tWii\t2009\tMisc\tUbisoft\t3.51\t3.03\t0\t0.73\t7.27\n104\tBattlefield 3\tPS3\t2011\tShooter\tElectronic Arts\t2.85\t2.93\t0.35\t1.1\t7.23\n105\tNeed for Speed Underground\tPS2\t2003\tRacing\tElectronic Arts\t3.27\t2.83\t0.08\t1.02\t7.2\n106\tTekken 3\tPS\t1998\tFighting\tSony Computer Entertainment\t3.27\t2.22\t1.4\t0.29\t7.16\n107\tCrash Bandicoot 3: Warped\tPS\t1998\tPlatform\tSony Computer Entertainment\t3.68\t1.75\t1.42\t0.28\t7.13\n108\tSuper Smash Bros. Melee\tGC\t2001\tFighting\tNintendo\t4.41\t1.04\t1.39\t0.22\t7.07\n109\tMario Kart 8\tWiiU\t2014\tRacing\tNintendo\t3.13\t2.07\t1.27\t0.49\t6.96\n110\tFallout 4\tPS4\t2015\tRole-Playing\tBethesda Softworks\t2.47\t3.15\t0.24\t1.1\t6.96\n111\tMario Kart: Double Dash!!\tGC\t2003\tRacing\tNintendo\t4.12\t1.77\t0.87\t0.19\t6.95\n112\tJust Dance 4\tWii\t2012\tMisc\tUbisoft\t4.14\t2.21\t0\t0.56\t6.91\n113\tFIFA 14\tPS3\t2013\tSports\tElectronic Arts\t0.78\t4.32\t0.07\t1.73\t6.9\n114\tNeed for Speed Underground 2\tPS2\t2004\tRacing\tElectronic Arts\t2.71\t3.02\t0.08\t1.09\t6.9\n115\tMedal of Honor: Frontline\tPS2\t2002\tShooter\tElectronic Arts\t2.93\t2.75\t0.17\t0.99\t6.83\n116\tUncharted 3: Drake's Deception\tPS3\t2011\tAction\tSony Computer Entertainment\t2.77\t2.8\t0.19\t1.06\t6.83\n117\tCrash Bandicoot\tPS\t1996\tPlatform\tSony Computer Entertainment\t3.23\t2.35\t0.94\t0.3\t6.82\n118\tZumba Fitness\tWii\t2010\tSports\t505 Games\t3.5\t2.64\t0\t0.67\t6.81\n119\tGears of War 2\tX360\t2008\tShooter\tMicrosoft Game Studios\t4.15\t1.92\t0.06\t0.64\t6.76\n120\tUncharted 2: Among Thieves\tPS3\t2009\tAction\tSony Computer Entertainment\t3.27\t2.25\t0.21\t1\t6.73\n121\tCall of Duty 4: Modern Warfare\tPS3\t2007\tShooter\tActivision\t3.1\t2.3\t0.28\t1.04\t6.72\n122\tFIFA 12\tPS3\t2011\tSports\tElectronic Arts\t0.84\t4.32\t0.11\t1.42\t6.69\n123\tBig Brain Academy\tDS\t2005\tMisc\tNintendo\t1.67\t2.78\t1.6\t0.62\t6.67\n124\tRed Dead Redemption\tPS3\t2010\tAction\tTake-Two Interactive\t2.79\t2.61\t0.17\t1.03\t6.6\n125\tFIFA 15\tPS4\t2014\tSports\tElectronic Arts\t0.79\t4.29\t0.05\t1.47\t6.59\n126\tDonkey Kong Country Returns\tWii\t2010\tPlatform\tNintendo\t3.25\t1.84\t1.03\t0.47\t6.59\n127\tThe Elder Scrolls V: Skyrim\tPS3\t2011\tRole-Playing\tBethesda Softworks\t2.55\t2.71\t0.25\t1.05\t6.56\n128\tThe Legend of Zelda\tNES\t1986\tAction\tNintendo\t3.74\t0.93\t1.69\t0.14\t6.51\n129\tAssassin's Creed III\tPS3\t2012\tAction\tUbisoft\t2.64\t2.56\t0.16\t1.14\t6.5\n130\tHalo: Combat Evolved\tXB\t2001\tShooter\tMicrosoft Game Studios\t4.98\t1.3\t0.08\t0.07\t6.43\n131\tPokémon Emerald Version\tGBA\t2004\tRole-Playing\tNintendo\t2.57\t1.58\t2.06\t0.21\t6.41\n132\tKingdom Hearts\tPS2\t2002\tRole-Playing\tSony Computer Entertainment\t3.64\t1.2\t1.49\t0.07\t6.4\n133\tPokémon Crystal Version\tGB\t2000\tRole-Playing\tNintendo\t2.55\t1.56\t1.29\t0.99\t6.39\n134\tHalo 3: ODST\tX360\t2009\tShooter\tMicrosoft Game Studios\t4.34\t1.35\t0.06\t0.61\t6.36\n135\tRed Dead Redemption\tX360\t2010\tAction\tTake-Two Interactive\t3.7\t1.97\t0.09\t0.57\t6.34\n136\tSuper Mario Sunshine\tGC\t2002\tPlatform\tNintendo\t4.01\t1.26\t0.87\t0.17\t6.31\n137\tStreet Fighter II: The World Warrior\tSNES\t1992\tFighting\tCapcom\t2.47\t0.83\t2.87\t0.12\t6.3\n138\tWorld of Warcraft\tPC\t2004\tRole-Playing\tActivision\t0.07\t6.21\t0\t0\t6.28\n139\tDriver\tPS\t1999\tAction\tGT Interactive\t3.11\t2.8\t0.02\t0.33\t6.27\n140\tKinect Sports\tX360\t2010\tSports\tMicrosoft Game Studios\t3.92\t1.78\t0.03\t0.51\t6.24\n141\tGears of War 3\tX360\t2011\tShooter\tMicrosoft Game Studios\t4.05\t1.62\t0.07\t0.49\t6.24\n142\tGears of War\tX360\t2006\tShooter\tMicrosoft Game Studios\t3.54\t1.9\t0.07\t0.6\t6.11\n143\tMetal Gear Solid 2: Sons of Liberty\tPS2\t2001\tAction\tKonami Digital Entertainment\t2.45\t2.01\t0.87\t0.72\t6.05\n144\tSonic the Hedgehog 2\tGEN\t1992\tPlatform\tSega\t4.47\t1.2\t0.16\t0.19\t6.03\n145\tMetal Gear Solid 4: Guns of the Patriots\tPS3\t2008\tAction\tKonami Digital Entertainment\t2.63\t1.74\t0.83\t0.83\t6.03\n146\tMetal Gear Solid\tPS\t1998\tAction\tKonami Digital Entertainment\t3.18\t1.83\t0.78\t0.24\t6.03\n147\tThe Last of Us\tPS3\t2013\tAction\tSony Computer Entertainment Europe\t2.41\t2.28\t0.28\t1.01\t5.99\n148\tFinal Fantasy XII\tPS2\t2006\tRole-Playing\tSquare Enix\t1.88\t0\t2.33\t1.74\t5.95\n149\tLittleBigPlanet\tPS3\t2008\tPlatform\tSony Computer Entertainment\t2.8\t2.05\t0.17\t0.9\t5.92\n150\tDragon Quest IX: Sentinels of the Starry Skies\tDS\t2009\tRole-Playing\tNintendo\t0.66\t0.69\t4.35\t0.15\t5.84\n151\tLEGO Star Wars: The Complete Saga\tWii\t2007\tAction\tLucasArts\t3.66\t1.63\t0\t0.53\t5.83\n152\tResident Evil 2\tPS\t1998\tAction\tVirgin Interactive\t1.88\t1.47\t2.02\t0.45\t5.82\n153\tTekken 2\tPS\t1996\tFighting\tSony Computer Entertainment\t2.26\t1.89\t1.36\t0.23\t5.74\n154\tCooking Mama\tDS\t2006\tSimulation\t505 Games\t3.13\t1.94\t0.07\t0.58\t5.72\n155\tDestiny\tPS4\t2014\tShooter\tActivision\t2.49\t2.05\t0.16\t0.96\t5.65\n156\tTetris\tNES\t1988\tPuzzle\tNintendo\t2.97\t0.69\t1.81\t0.11\t5.58\n157\tAssassin's Creed II\tPS3\t2009\tAction\tUbisoft\t2.54\t1.95\t0.21\t0.87\t5.57\n158\tSuper Smash Bros.\tN64\t1999\tFighting\tNintendo\t2.95\t0.6\t1.97\t0.04\t5.55\n159\tAssassin's Creed\tX360\t2007\tAdventure\tUbisoft\t3.28\t1.65\t0.07\t0.55\t5.55\n160\tBatman: Arkham City\tPS3\t2011\tAction\tWarner Bros. Interactive Entertainment\t2.7\t1.91\t0.11\t0.8\t5.53\n161\tForza Motorsport 3\tX360\t2009\tRacing\tMicrosoft Game Studios\t2.99\t1.92\t0.1\t0.51\t5.51\n162\tMonster Hunter Freedom Unite\tPSP\t2008\tRole-Playing\tCapcom\t0.47\t0.57\t4.13\t0.34\t5.5\n163\tSuper Mario Advance\tGBA\t2001\tPlatform\tNintendo\t3.14\t1.24\t0.91\t0.2\t5.49\n164\tMario Kart: Super Circuit\tGBA\t2001\tRacing\tNintendo\t2.62\t1.64\t0.99\t0.23\t5.47\n165\tSuper Mario World\tGBA\t2001\tPlatform\tNintendo\t3.21\t1.11\t0.95\t0.2\t5.46\n166\tPokemon Stadium\tN64\t1999\tStrategy\tNintendo\t3.18\t1.24\t0.94\t0.09\t5.45\n167\tCall of Duty: World at War\tPS3\t2008\tShooter\tActivision\t2.72\t1.87\t0\t0.84\t5.43\n168\tCrash Bandicoot: The Wrath of Cortex\tPS2\t2001\tPlatform\tUniversal Interactive\t2.07\t2.29\t0.24\t0.82\t5.42\n169\tMinecraft\tPS3\t2014\tMisc\tSony Computer Entertainment\t1.97\t2.51\t0\t0.94\t5.42\n170\tFinal Fantasy XIII\tPS3\t2009\tRole-Playing\tSquare Enix\t1.74\t1.24\t1.87\t0.52\t5.36\n171\tDr. Mario\tGB\t1989\tPuzzle\tNintendo\t2.18\t0.96\t2\t0.2\t5.34\n172\tPokemon Pinball\tGB\t1999\tMisc\tNintendo\t3.02\t1.12\t1.01\t0.16\t5.31\n173\tAssassin's Creed III\tX360\t2012\tAction\tUbisoft\t3.13\t1.71\t0.03\t0.44\t5.3\n174\tFinal Fantasy IX\tPS\t2000\tRole-Playing\tSquareSoft\t1.62\t0.77\t2.78\t0.14\t5.3\n175\tFinal Fantasy X-2\tPS2\t2003\tRole-Playing\tElectronic Arts\t1.92\t1.08\t2.11\t0.17\t5.29\n176\tDonkey Kong 64\tN64\t1999\tPlatform\tNintendo\t3.33\t0.79\t1.09\t0.06\t5.27\n177\tAssassin's Creed II\tX360\t2009\tAction\tUbisoft\t3.1\t1.56\t0.08\t0.51\t5.27\n178\tProfessor Layton and the Curious Village\tDS\t2007\tPuzzle\tNintendo\t1.22\t2.48\t1.03\t0.52\t5.26\n179\tTomb Raider II\tPS\t1997\tAction\tEidos Interactive\t2.3\t2.46\t0.2\t0.28\t5.24\n180\tMadden NFL 2004\tPS2\tN/A\tSports\tElectronic Arts\t4.26\t0.26\t0.01\t0.71\t5.23\n181\tDragon Quest VIII: Journey of the Cursed King\tPS2\t2004\tRole-Playing\tSquare Enix\t0.65\t0.75\t3.61\t0.2\t5.21\n182\tDiablo III\tPC\t2012\tRole-Playing\tActivision\t2.43\t2.15\t0\t0.62\t5.2\n183\tSuper Mario Bros. 3\tGBA\t2003\tPlatform\tNintendo\t2.93\t1.25\t0.83\t0.2\t5.2\n184\tNew Super Mario Bros. U\tWiiU\t2012\tPlatform\tNintendo\t2.32\t1.3\t1.27\t0.31\t5.19\n185\tSuper Mario Land 3: Wario Land\tGB\t1994\tPlatform\tNintendo\t2.49\t0.98\t1.57\t0.15\t5.19\n186\tFIFA Soccer 13\tX360\t2012\tAction\tElectronic Arts\t1.08\t3.48\t0.03\t0.58\t5.18\n187\tThe Legend of Zelda: Phantom Hourglass\tDS\t2007\tAction\tNintendo\t1.9\t1.83\t0.95\t0.49\t5.17\n188\tDonkey Kong Country 2: Diddy's Kong Quest\tSNES\t1995\tPlatform\tNintendo\t2.1\t0.74\t2.2\t0.11\t5.15\n189\tTomodachi Life\t3DS\t2013\tSimulation\tNintendo\t0.96\t2.02\t1.89\t0.28\t5.15\n190\tMario & Sonic at the Olympic Games\tDS\t2008\tSports\tSega\t1.64\t2.48\t0.44\t0.58\t5.14\n191\tMedal of Honor: Rising Sun\tPS2\t2003\tShooter\tElectronic Arts\t1.98\t2.23\t0.13\t0.8\t5.13\n192\tKirby's Dream Land\tGB\t1992\tPlatform\tNintendo\t2.71\t0.61\t1.7\t0.11\t5.13\n193\tFable III\tX360\t2010\tRole-Playing\tMicrosoft Game Studios\t3.59\t1.11\t0.05\t0.38\t5.13\n194\tCall of Duty: Advanced Warfare\tXOne\t2014\tShooter\tActivision\t3.21\t1.53\t0.01\t0.38\t5.13\n195\tMicrosoft Flight Simulator\tPC\t1996\tSimulation\tMicrosoft Game Studios\t3.22\t1.69\t0\t0.2\t5.12\n196\tGuitar Hero II\tPS2\t2006\tMisc\tRedOctane\t3.81\t0.63\t0\t0.68\t5.12\n197\tResident Evil 5\tPS3\t2009\tAction\tCapcom\t1.96\t1.43\t1.08\t0.65\t5.11\n198\tGrand Theft Auto V\tXOne\t2014\tAction\tTake-Two Interactive\t2.66\t2.01\t0\t0.41\t5.08\n199\tGrand Theft Auto: Vice City Stories\tPSP\t2006\tAction\tTake-Two Interactive\t1.7\t2.02\t0.16\t1.21\t5.08\n200\tFIFA Soccer 11\tPS3\t2010\tSports\tElectronic Arts\t0.6\t3.29\t0.06\t1.13\t5.08\n201\tSuper Mario Bros.\tGB\t1999\tPlatform\tNintendo\t3.4\t1.3\t0.15\t0.22\t5.07\n202\tResident Evil\tPS\t1996\tAction\tVirgin Interactive\t2.05\t1.16\t1.11\t0.73\t5.05\n203\tTony Hawk's Pro Skater\tPS\t1999\tSports\tActivision\t3.42\t1.38\t0.02\t0.2\t5.02\n204\tSuper Smash Bros. for Wii U and 3DS\tWiiU\t2014\tFighting\tNintendo\t2.59\t1.06\t0.8\t0.57\t5.02\n205\tWarzone 2100\tPS\t1999\tStrategy\tEidos Interactive\t2.79\t1.89\t0\t0.33\t5.01\n206\tSpyro the Dragon\tPS\t1998\tPlatform\tSony Computer Entertainment\t3.36\t1.36\t0.07\t0.21\t5\n207\tLink's Crossbow Training\tWii\t2007\tShooter\tNintendo\t3.06\t1.18\t0.29\t0.46\t5\n208\tGuitar Hero III: Legends of Rock\tPS2\t2007\tMisc\tActivision\t3.49\t0.01\t0.01\t1.48\t4.98\n209\tFallout 3\tX360\t2008\tRole-Playing\tBethesda Softworks\t3.39\t1.03\t0.09\t0.44\t4.96\n210\tPokemon Mystery Dungeon: Explorers of Time/Explorers of Darkness\tDS\t2007\tRole-Playing\tNintendo\t1.85\t1.2\t1.54\t0.37\t4.96\n211\tUncharted: Drake's Fortune\tPS3\t2007\tAction\tSony Computer Entertainment\t2.31\t1.73\t0.12\t0.78\t4.94\n212\tMadden NFL 06\tPS2\t2005\tSports\tElectronic Arts\t3.98\t0.26\t0.01\t0.66\t4.91\n213\tLEGO Star Wars: The Complete Saga\tDS\t2007\tAction\tLucasArts\t2.89\t1.54\t0\t0.46\t4.9\n214\tDiddy Kong Racing\tN64\t1997\tRacing\tNintendo\t2.91\t0.99\t0.89\t0.1\t4.88\n215\tMonster Hunter Freedom 3\tPSP\t2010\tRole-Playing\tCapcom\t0\t0\t4.87\t0\t4.87\n216\tDr. Mario\tNES\t1990\tPuzzle\tNintendo\t2.62\t0.6\t1.52\t0.1\t4.85\n217\tGod of War III\tPS3\t2010\tAction\tSony Computer Entertainment\t2.74\t1.36\t0.12\t0.63\t4.84\n218\tStarCraft II: Wings of Liberty\tPC\t2010\tStrategy\tActivision\t2.56\t1.68\t0\t0.59\t4.83\n219\tAssassin's Creed\tPS3\t2007\tAdventure\tUbisoft\t1.91\t2\t0.09\t0.83\t4.83\n220\tFIFA 15\tPS3\t2014\tSports\tElectronic Arts\t0.57\t3.14\t0.04\t1.07\t4.82\n221\tCrash Team Racing\tPS\t1999\tRacing\tSony Computer Entertainment\t2.57\t1.57\t0.44\t0.21\t4.79\n222\tFIFA 17\tPS4\t2016\tSports\tElectronic Arts\t0.28\t3.75\t0.06\t0.69\t4.77\n223\tBatman: Arkham City\tX360\t2011\tAction\tWarner Bros. Interactive Entertainment\t2.99\t1.31\t0.04\t0.41\t4.76\n224\tDriver 2\tPS\t2000\tAction\tAtari\t2.36\t2.1\t0.02\t0.25\t4.73\n225\tThe Simpsons: Hit & Run\tPS2\t2003\tRacing\tVivendi Games\t1.73\t2.19\t0\t0.79\t4.7\n226\tTony Hawk's Pro Skater 2\tPS\t2000\tSports\tActivision\t3.05\t1.41\t0.02\t0.2\t4.68\n227\tAnimal Crossing: City Folk\tWii\t2008\tSimulation\tNintendo\t1.87\t1.12\t1.32\t0.37\t4.68\n228\tThe Lord of the Rings: The Two Towers\tPS2\t2002\tAction\tElectronic Arts\t1.94\t1.95\t0.08\t0.7\t4.67\n229\tForza Motorsport 4\tX360\t2011\tRacing\tMicrosoft Game Studios\t2.08\t2.04\t0.06\t0.47\t4.64\n230\tTomb Raider\tPS\t1996\tAction\tEidos Interactive\t2.29\t1.97\t0.13\t0.24\t4.63\n231\tGuitar Hero III: Legends of Rock\tWii\t2007\tMisc\tActivision\t3.06\t1.12\t0\t0.44\t4.62\n232\tThe Legend of Zelda: A Link to the Past\tSNES\t1991\tAction\tNintendo\t2.42\t0.91\t1.15\t0.13\t4.61\n233\tThe Legend of Zelda: The Wind Waker\tGC\t2002\tAction\tNintendo\t2.6\t0.99\t0.89\t0.13\t4.6\n234\tMario & Sonic at the Olympic Winter Games\tWii\t2009\tSports\tSega\t1.89\t1.99\t0.22\t0.48\t4.58\n235\tLuigi's Mansion: Dark Moon\t3DS\t2013\tAction\tNintendo\t1.78\t1.39\t1.1\t0.3\t4.58\n236\tSplatoon\tWiiU\t2015\tShooter\tNintendo\t1.55\t1.15\t1.44\t0.43\t4.57\n237\tThe Last of Us\tPS4\t2014\tAction\tSony Computer Entertainment\t1.78\t1.87\t0.07\t0.82\t4.55\n238\tGuitar Hero III: Legends of Rock\tX360\t2007\tMisc\tActivision\t3.19\t0.92\t0.01\t0.42\t4.53\n239\tMadden NFL 2005\tPS2\t2004\tSports\tElectronic Arts\t4.18\t0.26\t0.01\t0.08\t4.53\n240\tPitfall!\t2600\t1981\tPlatform\tActivision\t4.21\t0.24\t0\t0.05\t4.5\n241\tMadden NFL 07\tPS2\t2006\tSports\tElectronic Arts\t3.63\t0.24\t0.01\t0.61\t4.49\n242\tSpider-Man: The Movie\tPS2\t2002\tAction\tActivision\t2.71\t1.51\t0.03\t0.23\t4.48\n243\tDragon Quest VII: Warriors of Eden\tPS\t2000\tRole-Playing\tEnix Corporation\t0.2\t0.14\t4.1\t0.02\t4.47\n244\tUncharted: The Nathan Drake Collection\tPS4\t2015\tAction\tSony Computer Entertainment\t1.96\t1.69\t0.08\t0.74\t4.47\n245\tCall of Duty: Advanced Warfare\tPS3\t2014\tShooter\tActivision\t1.54\t1.94\t0.19\t0.77\t4.45\n246\tGod of War\tPS2\t2005\tAction\tSony Computer Entertainment\t2.71\t1.29\t0.02\t0.43\t4.45\n247\tNintendo Land\tWiiU\t2012\tMisc\tNintendo\t2.55\t1.11\t0.46\t0.33\t4.44\n248\tMichael Jackson: The Experience\tWii\t2010\tMisc\tUbisoft\t2.67\t1.35\t0.01\t0.39\t4.42\n249\tTony Hawk's Pro Skater 3\tPS2\t2001\tSports\tActivision\t2.66\t1.29\t0.01\t0.46\t4.41\n250\tWinning Eleven: Pro Evolution Soccer 2007\tPS2\t2006\tSports\tKonami Digital Entertainment\t0.1\t2.39\t1.05\t0.86\t4.39\n251\tThe Elder Scrolls IV: Oblivion\tX360\t2006\tRole-Playing\tTake-Two Interactive\t2.82\t1.05\t0.13\t0.4\t4.39\n252\tZelda II: The Adventure of Link\tNES\t1987\tAdventure\tNintendo\t2.19\t0.5\t1.61\t0.08\t4.38\n253\tNeed for Speed: Most Wanted\tPS2\t2005\tRacing\tElectronic Arts\t2.03\t1.79\t0.08\t0.47\t4.37\n254\tResistance: Fall of Man\tPS3\t2006\tShooter\tSony Computer Entertainment\t1.73\t1.73\t0.14\t0.75\t4.35\n255\tSonic the Hedgehog\tGEN\t1991\tPlatform\tSega\t3.03\t0.91\t0.26\t0.13\t4.34\n256\tKingdom Hearts II\tPS2\t2005\tRole-Playing\tSquare Enix\t2.2\t0.58\t1.38\t0.17\t4.33\n257\tFIFA 14\tX360\t2013\tSports\tElectronic Arts\t0.92\t2.93\t0.01\t0.46\t4.31\n258\tCall of Duty: Advanced Warfare\tX360\t2014\tShooter\tActivision\t2.75\t1.18\t0\t0.37\t4.31\n259\tAsteroids\t2600\t1980\tShooter\tAtari\t4\t0.26\t0\t0.05\t4.31\n260\tFable II\tX360\t2008\tRole-Playing\tMicrosoft Game Studios\t2.51\t1.27\t0.11\t0.41\t4.31\n261\tHalo 5: Guardians\tXOne\t2015\tShooter\tMicrosoft Game Studios\t2.64\t1.2\t0.03\t0.39\t4.26\n262\tSuper Mario 3D World\tWiiU\t2013\tPlatform\tNintendo\t2.11\t1.11\t0.72\t0.3\t4.25\n263\tBatman: Arkham Asylum\tPS3\t2009\tAction\tEidos Interactive\t2.23\t1.34\t0.07\t0.61\t4.25\n264\tAssassin's Creed: Revelations\tPS3\t2011\tAction\tUbisoft\t1.41\t2.02\t0.1\t0.72\t4.24\n265\tNamco Museum\tGBA\t2001\tMisc\tNamco Bandai Games\t3\t1.11\t0.05\t0.07\t4.24\n266\tMetal Gear Solid 3: Snake Eater\tPS2\t2004\tAction\tKonami Digital Entertainment\t1.46\t0\t0.83\t1.93\t4.23\n267\tDaxter\tPSP\t2006\tPlatform\tSony Computer Entertainment\t2.45\t1.02\t0\t0.75\t4.22\n268\tWarcraft II: Tides of Darkness\tPC\t1995\tStrategy\tActivision\t1.7\t2.27\t0\t0.23\t4.21\n269\tThe Legend of Zelda: Ocarina of Time\t3DS\t2011\tAction\tNintendo\t2.03\t1.27\t0.62\t0.3\t4.21\n270\tFIFA Soccer 06\tPS2\t2005\tSports\tElectronic Arts\t0.78\t2.55\t0.04\t0.84\t4.21\n271\tEyeToy Play\tPS2\t2003\tMisc\tSony Computer Entertainment\t0.88\t2.3\t0.2\t0.83\t4.2\n272\tUncharted 4: A Thief's End\tPS4\t2016\tShooter\tSony Computer Entertainment\t1.3\t2.07\t0.18\t0.65\t4.2\n273\tGran Turismo 5 Prologue\tPS3\t2007\tRacing\tSony Computer Entertainment\t1.28\t1.83\t0.57\t0.53\t4.2\n274\tAssassin's Creed: Revelations\tX360\t2011\tAction\tUbisoft\t2.25\t1.47\t0.04\t0.43\t4.19\n275\tStreet Fighter IV\tPS3\t2009\tFighting\tCapcom\t2.02\t1.06\t0.58\t0.53\t4.19\n276\tFIFA 12\tX360\t2011\tSports\tElectronic Arts\t0.84\t2.79\t0.02\t0.53\t4.19\n277\tTeenage Mutant Ninja Turtles\tNES\t1989\tAction\tPalcom\t3.38\t0.44\t0.31\t0.04\t4.17\n278\tExcitebike\tNES\t1984\tRacing\tNintendo\t2.04\t0.48\t1.57\t0.07\t4.16\n279\tFrogger\tPS\t1997\tAction\tHasbro Interactive\t3.79\t0.27\t0\t0.11\t4.16\n280\tMadden NFL 2003\tPS2\t2002\tSports\tElectronic Arts\t3.36\t0.21\t0.01\t0.56\t4.14\n281\tWatch Dogs\tPS4\t2014\tAction\tUbisoft\t1.4\t1.86\t0.11\t0.77\t4.14\n282\tHalf-Life\tPC\t1997\tShooter\tVivendi Games\t4.03\t0\t0.09\t0\t4.12\n283\tSuper Mario World 2: Yoshi's Island\tSNES\t1995\tPlatform\tNintendo\t1.65\t0.61\t1.76\t0.09\t4.12\n284\tFIFA Soccer 07\tPS2\t2006\tSports\tElectronic Arts\t0.71\t2.48\t0.03\t0.89\t4.11\n285\tThe Legend of Zelda: Skyward Sword\tWii\t2011\tAction\tNintendo\t2.14\t1.2\t0.37\t0.4\t4.1\n286\tStreet Fighter II Turbo\tSNES\t1992\tFighting\tCapcom\t1.42\t0.51\t2.1\t0.07\t4.1\n287\tCarnival Games\tWii\t2007\tMisc\tTake-Two Interactive\t2.13\t1.5\t0.05\t0.42\t4.1\n288\tFallout 4\tXOne\t2015\tRole-Playing\tBethesda Softworks\t2.45\t1.26\t0.01\t0.37\t4.09\n289\tWorld of Warcraft: The Burning Crusade\tPC\t2007\tRole-Playing\tActivision\t2.57\t1.52\t0\t0\t4.09\n290\tFallout: New Vegas\tX360\t2010\tRole-Playing\tBethesda Softworks\t2.65\t1.06\t0.04\t0.33\t4.08\n291\tGod of War II\tPS2\t2007\tAction\tSony Computer Entertainment\t2.32\t0.04\t0.04\t1.67\t4.07\n292\tForza Motorsport 2\tX360\t2007\tRacing\tMicrosoft Game Studios\t2.35\t1.28\t0.03\t0.41\t4.06\n293\tWorld Soccer Winning Eleven 9\tPS2\t2005\tSports\tKonami Digital Entertainment\t0.12\t2.26\t0.9\t0.77\t4.06\n294\tNamco Museum Vol.3\tPS\t1996\tMisc\tSony Computer Entertainment\t2.28\t1.55\t0.16\t0.06\t4.05\n295\tTekken Tag Tournament\tPS2\t2000\tFighting\tNamco Bandai Games\t1.68\t1.51\t0.51\t0.35\t4.05\n296\tFar Cry 4\tPS4\t2014\tShooter\tUbisoft\t1.12\t2.12\t0.1\t0.69\t4.03\n297\tStar Fox 64\tN64\t1997\tShooter\tNintendo\t2.78\t0.58\t0.64\t0.04\t4.03\n298\tMinecraft\tPS4\t2014\tMisc\tSony Computer Entertainment Europe\t1.38\t1.87\t0.12\t0.65\t4.02\n299\tGolf\tNES\t1984\tSports\tNintendo\t1.22\t0.28\t2.46\t0.04\t4.01\n300\tFallout 3\tPS3\t2008\tRole-Playing\tBethesda Softworks\t2.15\t1.2\t0.07\t0.59\t4.01\n301\tProfessor Layton and the Diabolical Box\tDS\t2007\tPuzzle\tNintendo\t0.92\t1.78\t0.92\t0.37\t4\n302\tLeft 4 Dead 2\tX360\t2009\tShooter\tElectronic Arts\t2.67\t0.89\t0.05\t0.37\t3.99\n303\tNamco Museum: 50th Anniversary\tPS2\t2005\tMisc\tNamco Bandai Games\t2.08\t1.35\t0\t0.54\t3.98\n304\tEA Sports Active\tWii\t2009\tSports\tElectronic Arts\t2.1\t1.36\t0.06\t0.4\t3.92\n305\tAssassin's Creed: Unity\tPS4\t2014\tAction\tUbisoft\t1.18\t1.96\t0.08\t0.7\t3.92\n306\tDonkey Kong Land\tGB\t1994\tPlatform\tNintendo\t1.97\t0.76\t1.07\t0.11\t3.91\n307\tTony Hawk's Underground\tPS2\t2003\tSports\tActivision\t2.29\t1.17\t0.01\t0.42\t3.9\n308\tAssassin's Creed IV: Black Flag\tPS3\t2013\tAction\tUbisoft\t1.33\t1.71\t0.13\t0.73\t3.89\n309\tMonster Hunter 4 Ultimate\t3DS\t2014\tRole-Playing\tNintendo\t0.67\t0.49\t2.62\t0.11\t3.89\n310\tMotorStorm\tPS3\t2006\tRacing\tSony Computer Entertainment\t1.53\t1.61\t0.06\t0.67\t3.88\n311\tThe Elder Scrolls V: Skyrim\tPC\t2011\tRole-Playing\tBethesda Softworks\t1.15\t2.09\t0\t0.64\t3.88\n312\tTekken 5\tPS2\t2005\tFighting\tNamco Bandai Games\t0.93\t1.94\t0.31\t0.7\t3.87\n313\tDragon Warrior III\tNES\t1988\tRole-Playing\tEnix Corporation\t0.1\t0\t3.77\t0\t3.87\n314\tSports Champions\tPS3\t2010\tSports\tSony Computer Entertainment\t2.12\t1.14\t0.1\t0.51\t3.87\n315\tNBA 2K16\tPS4\t2015\tSports\tTake-Two Interactive\t2.48\t0.65\t0.03\t0.69\t3.85\n316\tWorld Soccer Winning Eleven 8 International\tPS2\t2004\tSports\tKonami Digital Entertainment\t0.16\t1.89\t1.12\t0.68\t3.85\n317\tFlash Focus: Vision Training in Minutes a Day\tDS\t2007\tMisc\tNintendo\t0.87\t1.57\t1.05\t0.35\t3.84\n318\tNamco Museum Vol.1\tPS\t1995\tMisc\tSony Computer Entertainment\t2.12\t1.44\t0.22\t0.06\t3.84\n319\tThe Legend of Zelda: Link's Awakening\tGB\t1992\tAction\tNintendo\t2.21\t0.96\t0.54\t0.13\t3.83\n320\tMario & Luigi: Bowser's Inside Story\tDS\t2009\tRole-Playing\tNintendo\t2.26\t0.48\t0.81\t0.27\t3.83\n321\tBig Brain Academy: Wii Degree\tWii\t2007\tMisc\tNintendo\t1.06\t1.93\t0.41\t0.43\t3.82\n322\tNintendogs + cats\t3DS\t2011\tSimulation\tNintendo\t1.44\t1.37\t0.73\t0.27\t3.81\n323\tBatman: Arkham Knight\tPS4\t2015\tAction\tWarner Bros. Interactive Entertainment\t1.49\t1.58\t0.1\t0.61\t3.79\n324\tMario & Sonic at the London 2012 Olympic Games\tWii\t2011\tSports\tSega\t1.14\t1.91\t0.27\t0.46\t3.78\n325\tLEGO Indiana Jones: The Original Adventures\tX360\t2008\tAction\tActivision\t2.4\t1.03\t0\t0.36\t3.78\n326\tResident Evil Director's Cut\tPS\t1996\tAction\tVirgin Interactive\t1.82\t1.24\t0.47\t0.25\t3.77\n327\tRatchet & Clank: Size Matters\tPSP\t2007\tPlatform\tSony Computer Entertainment\t1.4\t1.4\t0.1\t0.87\t3.77\n328\tJust Dance 2014\tWii\t2013\tMisc\tUbisoft\t1.98\t1.47\t0\t0.32\t3.76\n329\tThe Sims: Unleashed\tPC\t2002\tSimulation\tElectronic Arts\t2.03\t1.56\t0\t0.17\t3.76\n330\tSuper Paper Mario\tWii\t2007\tPlatform\tNintendo\t1.98\t0.88\t0.59\t0.32\t3.76\n331\tHarry Potter and the Sorcerer's Stone\tPS\t2001\tAction\tElectronic Arts\t1.37\t2\t0.14\t0.22\t3.73\n332\tThe Witcher 3: Wild Hunt\tPS4\t2015\tRole-Playing\tNamco Bandai Games\t0.96\t2\t0.21\t0.56\t3.73\n333\tResident Evil 3: Nemesis\tPS\t1999\tAction\tEidos Interactive\t1.3\t0.77\t1.54\t0.11\t3.72\n334\tSpyro: Year of the Dragon\tPS\t2000\tPlatform\tSony Computer Entertainment\t1.93\t1.58\t0\t0.19\t3.71\n335\tFIFA Soccer 2005\tPS2\t2004\tSports\tElectronic Arts\t0.58\t2.48\t0.04\t0.59\t3.7\n336\tPokémon Trading Card Game\tGB\t1998\tStrategy\tNintendo\t1.49\t0.73\t1.38\t0.1\t3.7\n337\tBattlefield 4\tPS3\t2013\tShooter\tElectronic Arts\t1.3\t1.51\t0.27\t0.61\t3.69\n338\tMySims\tDS\t2007\tSimulation\tElectronic Arts\t1.59\t1.61\t0.08\t0.41\t3.69\n339\tFriend Collection\tDS\t2009\tMisc\tNintendo\t0\t0\t3.67\t0\t3.67\n340\tTony Hawk's Pro Skater 4\tPS2\t2002\tSports\tActivision\t2.13\t1.18\t0.01\t0.35\t3.67\n341\tMidnight Club 3: DUB Edition\tPSP\t2005\tRacing\tTake-Two Interactive\t1.65\t1.22\t0\t0.79\t3.66\n342\tBanjo-Kazooie\tN64\t1998\tPlatform\tNintendo\t1.87\t1.13\t0.55\t0.1\t3.65\n343\tSOCOM: U.S. Navy SEALs\tPS2\t2002\tShooter\tSony Computer Entertainment\t2.53\t0.81\t0.06\t0.24\t3.65\n344\tGuitar Hero: World Tour\tWii\t2008\tMisc\tActivision\t2.33\t0.97\t0\t0.35\t3.65\n345\tGran Turismo 6\tPS3\t2013\tRacing\tSony Computer Entertainment\t0.71\t1.8\t0.4\t0.74\t3.64\n346\tJak and Daxter: The Precursor Legacy\tPS2\t2001\tPlatform\tSony Computer Entertainment\t2.08\t1.09\t0.15\t0.33\t3.64\n347\tPokemon Snap\tN64\t1999\tSimulation\tNintendo\t2.23\t0.68\t0.66\t0.06\t3.63\n348\tFIFA Soccer 10\tPS3\t2009\tSports\tElectronic Arts\t0.6\t2.46\t0.05\t0.52\t3.63\n349\tPro Evolution Soccer 2008\tPS2\t2007\tSports\tKonami Digital Entertainment\t0.05\t0\t0.64\t2.93\t3.63\n350\tCall of Duty: Ghosts\tPS4\t2013\tShooter\tActivision\t1.78\t1.42\t0.05\t0.38\t3.63\n351\tResident Evil 4\tPS2\t2005\tAction\tCapcom\t2.08\t0.83\t0.46\t0.25\t3.62\n352\tTom Clancy's The Division\tPS4\t2016\tShooter\tUbisoft\t1.28\t1.61\t0.15\t0.57\t3.61\n353\tStar Wars: Battlefront\tPS2\t2004\tShooter\tLucasArts\t1.93\t1.22\t0.03\t0.44\t3.61\n354\tDoom II: Hell on Earth\tPC\t1994\tShooter\tVirgin Interactive\t2.05\t1.4\t0\t0.16\t3.61\n355\tThe Simpsons: Road Rage\tPS2\t2001\tRacing\tElectronic Arts\t2.02\t1.17\t0\t0.42\t3.61\n356\tCooking Mama 2: Dinner With Friends\tDS\t2007\tSimulation\t505 Games\t1.61\t1.5\t0.1\t0.39\t3.61\n357\tLuigi's Mansion\tGC\t2001\tAction\tNintendo\t2.38\t0.67\t0.46\t0.1\t3.6\n358\tStar Wars: Battlefront II\tPS2\t2005\tShooter\tLucasArts\t2.18\t1.02\t0.03\t0.37\t3.59\n359\tWWF SmackDown!\tPS\t2000\tFighting\tTHQ\t2.01\t1.35\t0.06\t0.16\t3.58\n360\tCroc: Legend of the Gobbos\tPS\t1997\tPlatform\tFox Interactive\t1.57\t1.79\t0\t0.2\t3.56\n361\tGrand Theft Auto: Liberty City Stories\tPS2\t2006\tAction\tTake-Two Interactive\t1.56\t1.4\t0.07\t0.5\t3.54\n362\tThe Getaway\tPS2\t2002\tAction\tSony Computer Entertainment\t1.23\t1.77\t0.05\t0.49\t3.54\n363\tTomb Raider III: Adventures of Lara Croft\tPS\t1997\tAction\tEidos Interactive\t1.66\t1.58\t0.12\t0.18\t3.54\n364\tJames Bond 007: Agent Under Fire\tPS2\t2001\tShooter\tElectronic Arts\t1.9\t1.13\t0.1\t0.41\t3.53\n365\tLEGO Star Wars: The Video Game\tPS2\t2005\tAction\tEidos Interactive\t1.98\t1.14\t0.01\t0.41\t3.53\n366\tBattlefield 4\tX360\t2013\tShooter\tElectronic Arts\t2.14\t1.08\t0.02\t0.29\t3.53\n367\tFIFA Soccer 11\tX360\t2010\tSports\tElectronic Arts\t0.71\t2.4\t0.02\t0.4\t3.53\n368\tRugrats in Paris: The Movie\tPS\t2000\tAction\tTHQ\t1.96\t1.33\t0\t0.23\t3.52\n369\tSpyro 2: Ripto's Rage!\tPS\t1999\tPlatform\tSony Computer Entertainment\t2.14\t1.21\t0.01\t0.17\t3.52\n370\tLeft 4 Dead\tX360\t2008\tShooter\tElectronic Arts\t2.66\t0.5\t0.05\t0.3\t3.52\n371\tMario & Sonic at the Olympic Winter Games\tDS\t2009\tSports\tSega\t1.22\t1.66\t0.27\t0.38\t3.52\n372\tResident Evil 5\tX360\t2009\tAction\tCapcom\t2.11\t0.94\t0.12\t0.34\t3.51\n373\tDonkey Kong Country 3: Dixie Kong's Double Trouble!\tSNES\t1996\tPlatform\tNintendo\t1.17\t0.5\t1.75\t0.08\t3.51\n374\tAssassin's Creed: Brotherhood\tX360\t2010\tAction\tUbisoft\t2.84\t0.39\t0.03\t0.24\t3.5\n375\tKung Fu\tNES\t1985\tAction\tNintendo\t1.64\t0.38\t1.42\t0.06\t3.5\n376\tBatman: Arkham Asylum\tX360\t2009\tAction\tEidos Interactive\t2.2\t0.97\t0.02\t0.31\t3.5\n377\tClubhouse Games\tDS\t2006\tMisc\tNintendo\t0.59\t1.83\t0.73\t0.35\t3.5\n378\tFIFA Soccer 2004\tPS2\tN/A\tSports\tElectronic Arts\t0.59\t2.36\t0.04\t0.51\t3.49\n379\tStar Wars Battlefront (2015)\tXOne\t2015\tShooter\tElectronic Arts\t1.94\t1.22\t0.02\t0.31\t3.49\n380\tBattlefield: Bad Company 2\tX360\t2010\tShooter\tElectronic Arts\t2.09\t1.02\t0.04\t0.32\t3.48\n381\tGuitar Hero: On Tour\tDS\t2008\tMisc\tActivision\t2.11\t1.01\t0.01\t0.35\t3.48\n382\tAssassin's Creed: Unity\tXOne\t2014\tAction\tUbisoft\t2.26\t0.89\t0\t0.3\t3.46\n383\tFar Cry 3\tPS3\t2012\tShooter\tUbisoft\t0.88\t1.75\t0.1\t0.72\t3.45\n384\tMonster Hunter 4\t3DS\t2013\tRole-Playing\tCapcom\t0\t0\t3.44\t0\t3.44\n385\tBorderlands\tX360\t2009\tShooter\tTake-Two Interactive\t2.39\t0.73\t0.03\t0.29\t3.44\n386\tTekken 4\tPS2\t2002\tFighting\tNamco Bandai Games\t1.55\t1.27\t0.33\t0.29\t3.44\n387\tBattlefield 4\tPS4\t2013\tShooter\tElectronic Arts\t1.34\t1.54\t0.17\t0.38\t3.43\n388\tLittleBigPlanet 2\tPS3\t2011\tPlatform\tSony Computer Entertainment\t1.82\t1.07\t0.06\t0.47\t3.42\n389\tGrand Theft Auto 2\tPS\t1998\tAction\tTake-Two Interactive\t1.13\t2.07\t0\t0.22\t3.42\n390\tFinal Fantasy III\tSNES\t1994\tRole-Playing\tSquareSoft\t0.86\t0\t2.55\t0.02\t3.42\n391\tSpider-Man 2\tPS2\t2004\tAction\tActivision\t1.75\t1.2\t0.02\t0.43\t3.41\n392\tF-1 Race\tGB\t1990\tRacing\tNintendo\t1.73\t0.69\t0.59\t0.4\t3.41\n393\tFIFA Soccer 2003\tPS2\t2002\tSports\tElectronic Arts\t0.46\t2.28\t0.05\t0.61\t3.4\n394\tCrash Bash\tPS\t2000\tMisc\tSony Computer Entertainment\t1.56\t1.47\t0.19\t0.17\t3.39\n395\tLEGO Batman: The Videogame\tX360\t2008\tAction\tWarner Bros. Interactive Entertainment\t2.03\t1.03\t0\t0.32\t3.38\n396\tMetal Gear Solid V: The Phantom Pain\tPS4\t2015\tAction\tKonami Digital Entertainment\t1.08\t1.35\t0.48\t0.47\t3.38\n397\tThe Legend of Zelda: Spirit Tracks\tDS\t2009\tAction\tNintendo\t1.43\t0.94\t0.74\t0.27\t3.38\n398\tWWF War Zone\tPS\t1998\tFighting\tAcclaim Entertainment\t2.47\t0.76\t0\t0.13\t3.36\n399\tThe Legend of Zelda: Majora's Mask\tN64\t2000\tAction\tNintendo\t1.9\t0.67\t0.73\t0.06\t3.36\n400\tProfessor Layton and the Unwound Future\tDS\t2008\tPuzzle\tNintendo\t0.65\t1.61\t0.82\t0.28\t3.36\n401\tRugrats: Search For Reptar\tPS\t1998\tAdventure\tTHQ\t1.63\t1.53\t0\t0.18\t3.34\n402\tAssassin's Creed IV: Black Flag\tX360\t2013\tAction\tUbisoft\t1.9\t1.14\t0.01\t0.29\t3.34\n403\tEnglish Training: Have Fun Improving Your Skills!\tDS\t2006\tMisc\tNintendo\t0\t0.99\t2.32\t0.02\t3.33\n404\tJames Bond 007: Nightfire\tPS2\t2002\tShooter\tElectronic Arts\t1.45\t1.29\t0.12\t0.46\t3.33\n405\tRatchet & Clank\tPS2\t2002\tPlatform\tSony Computer Entertainment\t1.44\t1.01\t0.57\t0.3\t3.33\n406\tMario Party 9\tWii\t2012\tMisc\tNintendo\t1.15\t1.17\t0.76\t0.24\t3.32\n407\tStar Wars Episode III: Revenge of the Sith\tPS2\t2005\tAction\tLucasArts\t1.47\t1.39\t0.03\t0.43\t3.32\n408\tMax Payne\tPS2\t2001\tShooter\tTake-Two Interactive\t1.99\t1.05\t0.05\t0.22\t3.31\n409\tThe Lord of the Rings: The Return of the King\tPS2\t2003\tAction\tElectronic Arts\t1.5\t1.28\t0.05\t0.46\t3.28\n410\tAssassin's Creed Syndicate\tPS4\t2015\tAction\tUbisoft\t0.8\t1.92\t0.06\t0.5\t3.28\n411\tDestiny\tXOne\t2014\tShooter\tActivision\t2.13\t0.92\t0\t0.23\t3.28\n412\tTrue Crime: Streets of LA\tPS2\t2003\tAction\tActivision\t1.89\t1.05\t0.02\t0.31\t3.27\n413\tWii Music\tWii\t2008\tMisc\tNintendo\t1.36\t1.13\t0.46\t0.32\t3.27\n414\tGran Turismo (PSP)\tPSP\t2009\tRacing\tSony Computer Entertainment\t0.5\t1.59\t0.31\t0.87\t3.27\n415\tMonster Hunter X\t3DS\t2015\tAction\tCapcom\t0.25\t0.19\t2.78\t0.04\t3.26\n416\tTekken\tPS\t1995\tFighting\tSony Computer Entertainment\t0.95\t1.3\t0.77\t0.22\t3.24\n417\tFIFA 16\tXOne\t2015\tSports\tElectronic Arts\t0.88\t2.11\t0\t0.23\t3.23\n418\tL.A. Noire\tPS3\t2011\tAdventure\tTake-Two Interactive\t1.27\t1.33\t0.12\t0.51\t3.23\n419\tMadden NFL 16\tPS4\t2015\tSports\tElectronic Arts\t2.33\t0.3\t0\t0.59\t3.22\n420\tYokai Watch 2 Ganso/Honke\t3DS\t2014\tRole-Playing\tNintendo\t0.03\t0\t3.18\t0\t3.22\n421\t007: Tomorrow Never Dies\tPS\t1999\tShooter\tElectronic Arts\t1.72\t1.33\t0\t0.16\t3.21\n422\tBaseball\tNES\t1983\tSports\tNintendo\t0.73\t0.1\t2.35\t0.02\t3.2\n423\tKiller Instinct\tSNES\t1995\tFighting\tNintendo\t2.26\t0.72\t0.12\t0.1\t3.2\n424\tWWF SmackDown! 2: Know Your Role\tPS\t2000\tFighting\tTHQ\t1.76\t1.21\t0.07\t0.16\t3.2\n425\tCrisis Core: Final Fantasy VII\tPSP\t2007\tRole-Playing\tSquare Enix\t1.35\t0.6\t0.8\t0.44\t3.19\n426\tGod of War: Chains of Olympus\tPSP\t2008\tAction\tSony Computer Entertainment\t1.48\t1.01\t0.04\t0.66\t3.19\n427\tDragon Quest VI: Maboroshi no Daichi\tSNES\t1995\tRole-Playing\tEnix Corporation\t0\t0\t3.19\t0\t3.19\n428\tDance Central\tX360\t2010\tMisc\tMTV Games\t2.15\t0.77\t0.01\t0.26\t3.19\n429\tEnter the Matrix\tPS2\t2003\tAction\tAtari\t1.78\t1.12\t0.09\t0.19\t3.18\n430\tSuper Mario Maker\tWiiU\t2015\tPlatform\tNintendo\t1.18\t0.87\t0.93\t0.2\t3.18\n431\tFallout: New Vegas\tPS3\t2010\tRole-Playing\tBethesda Softworks\t1.52\t1.08\t0.1\t0.47\t3.17\n432\tLEGO Batman: The Videogame\tWii\tN/A\tAction\tWarner Bros. Interactive Entertainment\t1.86\t1.02\t0\t0.29\t3.17\n433\tRhythm Heaven\tDS\t2008\tMisc\tNintendo\t0.58\t0.51\t1.93\t0.14\t3.17\n434\tAce Combat 04: Shattered Skies\tPS2\t2001\tSimulation\tSony Computer Entertainment Europe\t2.06\t0.56\t0.38\t0.17\t3.17\n435\tClub Penguin: Elite Penguin Force\tDS\t2008\tAdventure\tDisney Interactive Studios\t1.88\t0.98\t0\t0.3\t3.16\n436\tAnimal Crossing\tGC\t2001\tSimulation\tNintendo\t1.92\t0.16\t0.99\t0.09\t3.15\n437\tLEGO Batman: The Videogame\tDS\t2008\tAction\tWarner Bros. Interactive Entertainment\t1.79\t1.06\t0\t0.29\t3.15\n438\tSonic Rush\tDS\t2005\tPlatform\tSega\t1.22\t1.57\t0.06\t0.29\t3.15\n439\tResident Evil 6\tPS3\t2012\tShooter\tCapcom\t0.88\t0.97\t0.88\t0.42\t3.15\n440\tHalo: The Master Chief Collection\tXOne\t2014\tShooter\tMicrosoft Game Studios\t1.89\t0.99\t0.03\t0.24\t3.15\n441\tFIFA Soccer 08\tPS2\t2007\tSports\tElectronic Arts\t0.68\t0\t0\t2.46\t3.14\n442\tSpider-Man\tPS\t2000\tAction\tActivision\t1.7\t1.25\t0.02\t0.16\t3.13\n443\tNeed for Speed III: Hot Pursuit\tPS\t1998\tRacing\tElectronic Arts\t2.14\t0.86\t0\t0.13\t3.12\n444\tStar Wars Episode I Racer\tN64\t1999\tRacing\tNintendo\t2.31\t0.62\t0.14\t0.04\t3.12\n445\tPersonal Trainer: Cooking\tDS\t2006\tMisc\tNintendo\t0.91\t1\t1.03\t0.17\t3.12\n446\tThe Elder Scrolls IV: Oblivion\tPS3\t2007\tRole-Playing\tUbisoft\t1.69\t0.87\t0.14\t0.42\t3.12\n447\tDragon Warrior IV\tNES\t1990\tRole-Playing\tEnix Corporation\t0.08\t0\t3.03\t0.01\t3.12\n448\tHeavy Rain\tPS3\t2010\tAdventure\tSony Computer Entertainment\t1.29\t1.27\t0.06\t0.5\t3.12\n449\tMass Effect 2\tX360\t2010\tRole-Playing\tElectronic Arts\t1.99\t0.82\t0.03\t0.27\t3.11\n450\tFIFA 15\tX360\t2014\tSports\tElectronic Arts\t0.78\t2.02\t0\t0.3\t3.11\n451\tDragon Ball Z: Budokai\tPS2\t2002\tFighting\tAtari\t2.17\t0.28\t0.55\t0.08\t3.09\n452\tMadden NFL 2002\tPS2\t2001\tSports\tElectronic Arts\t2.5\t0.16\t0.01\t0.42\t3.08\n453\tWorld Class Track Meet\tNES\t1986\tSports\tNamco Bandai Games\t1.92\t0.45\t0.64\t0.07\t3.08\n454\tBorderlands 2\tX360\t2012\tShooter\tTake-Two Interactive\t1.89\t0.91\t0.04\t0.24\t3.07\n455\tThe Legend of Zelda: A Link Between Worlds\t3DS\t2013\tAction\tNintendo\t1.4\t0.99\t0.46\t0.22\t3.07\n456\tDonkey Kong\tGB\t1994\tPlatform\tNintendo\t1.57\t0.62\t0.55\t0.34\t3.07\n457\tThe Sims: Vacation\tPC\t2002\tSimulation\tElectronic Arts\t1.72\t1.21\t0\t0.14\t3.07\n458\tMass Effect 3\tX360\t2012\tRole-Playing\tElectronic Arts\t1.94\t0.86\t0.03\t0.24\t3.07\n459\tKung Fu Panda\tX360\t2008\tAction\tActivision\t1.91\t0.84\t0\t0.29\t3.05\n460\tFar Cry 3\tX360\t2012\tShooter\tUbisoft\t1.38\t1.35\t0.02\t0.28\t3.04\n461\tEpic Mickey\tWii\t2010\tPlatform\tDisney Interactive Studios\t2.06\t0.64\t0.12\t0.22\t3.04\n462\tSaints Row 2\tX360\t2008\tAction\tTHQ\t1.94\t0.8\t0.02\t0.27\t3.03\n463\tRayman\tPS\t1995\tPlatform\tUbisoft\t1.54\t1.33\t0\t0.16\t3.03\n464\tKillzone 2\tPS3\t2009\tShooter\tSony Computer Entertainment\t1.4\t1.07\t0.08\t0.47\t3.02\n465\tTom Clancy's Splinter Cell\tXB\t2002\tAction\tUbisoft\t1.85\t1.04\t0\t0.13\t3.02\n466\tMike Tyson's Punch-Out!!\tNES\t1987\tFighting\tNintendo\t2.03\t0.47\t0.45\t0.07\t3.02\n467\tWWE SmackDown! Shut Your Mouth\tPS2\t2002\tSports\tTHQ\t1.45\t1.13\t0.07\t0.38\t3.02\n468\tGears of War: Ultimate Edition\tXOne\t2015\tShooter\tMicrosoft Game Studios\t2.38\t0.32\t0\t0.31\t3\n469\tNBA 2K13\tX360\t2012\tSports\tTake-Two Interactive\t2.6\t0.21\t0.01\t0.19\t3\n470\tDragon Ball Z: Budokai Tenkaichi 3\tPS2\t2007\tFighting\tAtari\t1.15\t0\t0.76\t1.09\t3\n471\twwe Smackdown vs. Raw 2006\tPS2\tN/A\tFighting\tN/A\t1.57\t1.02\t0\t0.41\t3\n472\tMiddle-Earth: Shadow of Mordor\tPS4\t2014\tAction\tWarner Bros. Interactive Entertainment\t1.01\t1.41\t0.05\t0.53\t2.99\n473\tStar Fox\tSNES\t1993\tShooter\tNintendo\t1.61\t0.51\t0.8\t0.07\t2.99\n474\tThe Sims: Livin Large\tPC\t2000\tMisc\tElectronic Arts\t1.67\t1.18\t0\t0.13\t2.99\n475\tWorld Soccer Winning Eleven 6 International\tPS2\t2002\tSports\tKonami Digital Entertainment\t0.12\t1.26\t1.16\t0.45\t2.99\n476\tDevil May Cry\tPS2\t2001\tAction\tCapcom\t1.36\t0.86\t0.64\t0.13\t2.99\n477\tAnimal Crossing: Happy Home Designer\t3DS\t2015\tSimulation\tNintendo\t0.47\t1\t1.39\t0.12\t2.98\n478\tBattlefield: Bad Company 2\tPS3\t2010\tShooter\tElectronic Arts\t1.33\t1.12\t0.08\t0.45\t2.97\n479\tThe Sims 4\tPC\t2014\tSimulation\tElectronic Arts\t0.96\t1.72\t0\t0.29\t2.97\n480\tStar Wars: The Old Republic\tPC\t2011\tRole-Playing\tElectronic Arts\t1.58\t1.01\t0\t0.38\t2.97\n481\tSonic Heroes\tPS2\t2003\tPlatform\tSega\t1.04\t1.37\t0.06\t0.49\t2.96\n482\tKirby Super Star Ultra\tDS\t2008\tPlatform\tNintendo\t1.57\t0.04\t1.19\t0.15\t2.96\n483\tHitman 2: Silent Assassin\tPS2\t2002\tAction\tEidos Interactive\t1.36\t1.15\t0.04\t0.41\t2.96\n484\tStreet Fighter IV\tX360\t2009\tFighting\tCapcom\t1.82\t0.71\t0.15\t0.26\t2.95\n485\tWave Race 64\tN64\t1996\tRacing\tNintendo\t1.98\t0.58\t0.34\t0.04\t2.94\n486\tSOCOM II: U.S. Navy SEALs\tPS2\t2003\tShooter\tSony Computer Entertainment\t2.22\t0.51\t0.06\t0.15\t2.94\n487\tWWE SmackDown! vs. RAW 2006\tPS2\t2005\tFighting\tTHQ\t1.45\t1.11\t0.04\t0.33\t2.94\n488\tinFAMOUS\tPS3\t2009\tAction\tSony Computer Entertainment\t1.76\t0.69\t0.12\t0.37\t2.94\n489\tPac-Man Collection\tGBA\t2001\tPuzzle\tAtari\t2.07\t0.77\t0.05\t0.05\t2.94\n490\tMass Effect\tX360\t2007\tRole-Playing\tMicrosoft Game Studios\t1.83\t0.8\t0.03\t0.27\t2.93\n491\tWarioWare: Smooth Moves\tWii\t2006\tPuzzle\tNintendo\t0.87\t1.06\t0.73\t0.26\t2.92\n492\tCooking Mama: Cook Off\tWii\t2007\tSimulation\t505 Games\t1.43\t1.13\t0.05\t0.3\t2.91\n493\tSuper Mario World 2: Yoshi's Island\tGBA\t2002\tPlatform\tNintendo\t1.75\t0.45\t0.62\t0.09\t2.91\n494\tFIFA 14\tPS4\t2013\tSports\tElectronic Arts\t0.61\t1.85\t0.11\t0.33\t2.9\n495\tTitanfall\tXOne\t2014\tShooter\tElectronic Arts\t1.84\t0.8\t0.04\t0.22\t2.9\n496\tSonic Mega Collection Plus\tPS2\t2004\tMisc\tSega\t1.54\t1.14\t0\t0.22\t2.9\n497\tSega Superstars Tennis\tX360\t2008\tSports\tSega\t1.75\t0.86\t0\t0.28\t2.9\n498\tWorld Soccer Winning Eleven 7 International\tPS2\t2003\tSports\tKonami Digital Entertainment\t0.08\t1.24\t1.13\t0.45\t2.9\n499\tNeed for Speed: Most Wanted\tPS3\t2012\tRacing\tElectronic Arts\t0.71\t1.51\t0.06\t0.61\t2.89\n500\tHot Shots Golf 3\tPS2\t2001\tSports\tSony Computer Entertainment\t0.99\t0.32\t1.38\t0.2\t2.89\n501\tCall of Duty: Finest Hour\tPS2\t2004\tShooter\tActivision\t1.51\t1.12\t0.01\t0.24\t2.89\n502\tZumba Fitness 2\tWii\t2011\tSports\tMajesco Entertainment\t1.54\t1.07\t0\t0.28\t2.88\n503\tSyphon Filter\tPS\t1999\tShooter\tSony Computer Entertainment\t2.03\t0.72\t0.02\t0.11\t2.88\n504\tImagine: Babyz\tDS\t2007\tSimulation\tUbisoft\t1.3\t1.27\t0\t0.31\t2.88\n505\tColin McRae Rally\tPS\t1998\tRacing\tCodemasters\t0.09\t2.43\t0.12\t0.22\t2.87\n506\tCall of Duty: Ghosts\tXOne\t2013\tShooter\tActivision\t1.87\t0.77\t0\t0.22\t2.86\n507\tMadden NFL 13\tX360\t2012\tSports\tElectronic Arts\t2.53\t0.16\t0\t0.17\t2.86\n508\tThe Elder Scrolls III: Morrowind\tXB\t2002\tRole-Playing\tUbisoft\t2.09\t0.63\t0.03\t0.11\t2.86\n509\tMortal Kombat\tPS3\t2011\tFighting\tWarner Bros. Interactive Entertainment\t1.98\t0.55\t0\t0.32\t2.85\n510\tF-Zero\tSNES\t1990\tRacing\tNintendo\t1.37\t0.51\t0.89\t0.07\t2.85\n511\tYoshi's Story\tN64\t1997\tPlatform\tNintendo\t1.29\t0.53\t0.98\t0.05\t2.85\n512\tCommand & Conquer: Red Alert\tPC\t1996\tStrategy\tVirgin Interactive\t1.37\t1.34\t0\t0.14\t2.85\n513\tSkylanders: Spyro's Adventure\tWii\t2011\tAction\tActivision\t1.4\t1.14\t0\t0.31\t2.85\n514\tFIFA 16\tPS3\t2015\tSports\tElectronic Arts\t0.4\t1.98\t0.05\t0.42\t2.85\n515\tAssassin's Creed: Brotherhood\tPS3\t2010\tAction\tUbisoft\t1.87\t0.57\t0.11\t0.3\t2.84\n516\tBioShock\tX360\t2007\tShooter\tTake-Two Interactive\t1.65\t0.86\t0.05\t0.28\t2.83\n517\tMadden NFL 10\tX360\t2009\tSports\tElectronic Arts\t2.52\t0.09\t0\t0.22\t2.83\n518\tMedal of Honor\tPS3\t2010\tShooter\tElectronic Arts\t1.28\t1.05\t0.07\t0.43\t2.83\n519\tWWE SmackDown! vs. Raw\tPS2\t2002\tFighting\tTHQ\t1.32\t1.08\t0.04\t0.39\t2.83\n520\tMetroid Prime\tGC\t2002\tShooter\tNintendo\t1.96\t0.67\t0.1\t0.09\t2.82\n521\tFinding Nemo\tGBA\t2003\tAction\tTHQ\t1.59\t1.05\t0.04\t0.14\t2.82\n522\tMyst\tPC\t1994\tAdventure\tRed Orb\t0.02\t2.79\t0\t0\t2.81\n523\tNeed for Speed: Hot Pursuit\tPS3\t2010\tRacing\tElectronic Arts\t1.05\t1.25\t0.03\t0.48\t2.81\n524\tImagine: Fashion Designer\tDS\t2007\tSimulation\tUbisoft\t1.32\t1.19\t0\t0.3\t2.81\n525\tWWE SmackDown! Here Comes the Pain\tPS2\t2003\tFighting\tTHQ\t1.32\t1.06\t0.04\t0.38\t2.8\n526\tStar Wars: The Force Unleashed\tX360\t2008\tAction\tLucasArts\t1.74\t0.8\t0\t0.26\t2.8\n527\tYoshi's Island DS\tDS\t2006\tPlatform\tNintendo\t1.47\t0.07\t1.1\t0.15\t2.8\n528\tHot Shots Golf\tPS\t1997\tSports\tSony Computer Entertainment\t0.29\t0.2\t2.13\t0.18\t2.79\n529\tKillzone 3\tPS3\t2011\tShooter\tSony Computer Entertainment\t1.45\t0.88\t0.09\t0.38\t2.79\n530\tA Bug's Life\tPS\t1998\tPlatform\tSony Computer Entertainment\t1.96\t0.72\t0\t0.11\t2.79\n531\tWWF SmackDown! Just Bring It\tPS2\t2001\tFighting\tTHQ\t1.19\t1.15\t0.04\t0.41\t2.79\n532\tDragon Quest V: Tenkuu no Hanayome\tSNES\t1992\tRole-Playing\tEnix Corporation\t0\t0\t2.78\t0.01\t2.79\n533\tMortal Kombat Trilogy\tPS\t1996\tFighting\tGT Interactive\t1.98\t0.7\t0\t0.11\t2.79\n534\tBattlefield 3\tPC\t2011\tShooter\tElectronic Arts\t0.89\t1.43\t0\t0.48\t2.79\n535\tNBA Street\tPS2\t2001\tSports\tElectronic Arts\t2.19\t0.22\t0\t0.38\t2.79\n536\tProfessor Layton and the Last Specter\tDS\t2009\tPuzzle\tNintendo\t0.3\t1.47\t0.68\t0.34\t2.79\n537\tMonster Hunter Tri\t3DS\t2011\tRole-Playing\tNintendo\t0.46\t0.29\t1.96\t0.07\t2.79\n538\tJak II\tPS2\t2003\tPlatform\tSony Computer Entertainment\t1.68\t0.74\t0\t0.36\t2.78\n539\tinFAMOUS: Second Son\tPS4\t2014\tAction\tSony Computer Entertainment\t1.27\t0.97\t0.07\t0.47\t2.78\n540\tRatchet & Clank: Going Commando\tPS2\t2003\tPlatform\tSony Computer Entertainment\t1.44\t0.83\t0.26\t0.25\t2.78\n541\tTekken 6\tPS3\t2009\tFighting\tNamco Bandai Games\t1.2\t0.98\t0.17\t0.43\t2.78\n542\tThe Sims\tPS2\t2003\tSimulation\tElectronic Arts\t1.41\t1.12\t0\t0.24\t2.77\n543\tSonic and the Secret Rings\tWii\t2007\tPlatform\tSega\t1.24\t1.2\t0.04\t0.3\t2.77\n544\tSaints Row: The Third\tX360\t2011\tAction\tTHQ\t1.25\t1.15\t0.07\t0.3\t2.77\n545\tMissile Command\t2600\t1980\tShooter\tAtari\t2.56\t0.17\t0\t0.03\t2.76\n546\tMario Paint\tSNES\t1992\tMisc\tNintendo\t1.43\t0.54\t0.71\t0.07\t2.75\n547\tAssassin's Creed IV: Black Flag\tPS4\t2013\tAction\tUbisoft\t1.07\t1.31\t0.06\t0.31\t2.74\n548\tPokémon Stadium 2\tN64\t2000\tStrategy\tNintendo\t1.02\t0.36\t1.13\t0.23\t2.73\n549\tMetroid\tNES\t1986\tAction\tNintendo\t1.33\t0.31\t1.04\t0.05\t2.73\n550\tL.A. Noire\tX360\t2011\tAdventure\tTake-Two Interactive\t1.52\t0.94\t0.02\t0.24\t2.72\n551\tCall of Duty 3\tX360\t2006\tShooter\tActivision\t1.49\t0.93\t0.02\t0.27\t2.71\n552\tThe Legend of Zelda: A Link to the Past\tGBA\t2002\tAction\tNintendo\t1.75\t0.52\t0.33\t0.1\t2.7\n553\tOnimusha: Warlords\tPS2\t2001\tAction\tVirgin Interactive\t0.99\t0.48\t1.09\t0.14\t2.7\n554\tMortal Kombat X\tPS4\t2015\tFighting\tWarner Bros. Interactive Entertainment\t1.47\t0.76\t0\t0.47\t2.7\n555\tMario Party\tN64\t1998\tMisc\tNintendo\t1.25\t0.53\t0.87\t0.05\t2.7\n556\tMadden NFL 12\tX360\t2011\tSports\tElectronic Arts\t2.42\t0.11\t0\t0.16\t2.69\n557\tLEGO Star Wars II: The Original Trilogy\tPS2\t2006\tAction\tLucasArts\t1.85\t0.64\t0.01\t0.19\t2.69\n558\tMadden NFL 11\tX360\t2010\tSports\tElectronic Arts\t2.38\t0.12\t0\t0.18\t2.69\n559\tMario vs. Donkey Kong: Mini-Land Mayhem!\tDS\t2010\tPuzzle\tNintendo\t1.63\t0.52\t0.35\t0.18\t2.69\n560\tSkate 3\tX360\t2010\tSports\tElectronic Arts\t1.46\t0.98\t0\t0.24\t2.68\n561\tBurnout 3: Takedown\tPS2\t2004\tRacing\tElectronic Arts\t1.23\t1.11\t0\t0.34\t2.68\n562\tYokai Watch 2 Shinuchi\t3DS\t2014\tRole-Playing\tLevel 5\t0\t0\t2.68\t0\t2.68\n563\tNeed for Speed: Shift\tPS3\t2009\tRacing\tElectronic Arts\t0.69\t1.41\t0.04\t0.53\t2.68\n564\tFinal Fantasy XIII-2\tPS3\t2011\tRole-Playing\tSquare Enix\t0.78\t0.75\t0.89\t0.26\t2.68\n565\tMortal Kombat\tGEN\t1992\tFighting\tArena Entertainment\t1.95\t0.63\t0\t0.09\t2.67\n566\tCall Of Duty 2: Big Red One\tPS2\t2005\tShooter\tActivision\t1.48\t0.92\t0.01\t0.26\t2.67\n567\tGuitar Hero: World Tour\tX360\t2008\tMisc\tActivision\t1.78\t0.64\t0\t0.25\t2.67\n568\tMedal of Honor\tPS\t1998\tShooter\tElectronic Arts\t1.44\t1.09\t0\t0.14\t2.67\n569\tFable\tXB\t2004\tRole-Playing\tMicrosoft Game Studios\t1.99\t0.58\t0\t0.09\t2.66\n570\tHannah Montana\tDS\t2006\tAction\tDisney Interactive Studios\t1.59\t0.8\t0\t0.26\t2.65\n571\tTom Clancy's Splinter Cell\tPS2\t2003\tAction\tUbisoft\t1.15\t1.11\t0\t0.4\t2.65\n572\tSkylanders Giants\tWii\t2012\tAction\tActivision\t1.56\t0.88\t0\t0.22\t2.65\n573\tMedal of Honor Heroes\tPSP\t2006\tShooter\tElectronic Arts\t0.86\t1.11\t0.01\t0.66\t2.65\n574\tSuper Mario Bros.: The Lost Levels\tNES\t1986\tPlatform\tNintendo\t0\t0\t2.65\t0\t2.65\n575\tStar Wars: Shadows of the Empire\tN64\t1996\tAction\tNintendo\t2\t0.5\t0.12\t0.03\t2.65\n576\tLEGO Star Wars: The Complete Saga\tX360\t2007\tAction\tLucasArts\t1.53\t0.87\t0\t0.24\t2.64\n577\tMidnight Club: Street Racing\tPS2\t2000\tRacing\tTake-Two Interactive\t2\t0.47\t0.02\t0.14\t2.63\n578\tPac-Man: Adventures in Time\tPSP\t2006\tFighting\tSony Computer Entertainment\t0.76\t1.1\t0.12\t0.65\t2.63\n579\tHalo Wars\tX360\t2009\tStrategy\tMicrosoft Game Studios\t1.53\t0.82\t0.04\t0.24\t2.63\n580\tGod of War Collection\tPS3\t2009\tAction\tSony Computer Entertainment\t1.7\t0.46\t0.06\t0.41\t2.63\n581\tESPN NFL 2K5\tPS2\t2004\tSports\tSega\t2.15\t0.12\t0\t0.36\t2.62\n582\tMario Strikers Charged\tWii\t2007\tSports\tNintendo\t1.07\t1.06\t0.24\t0.25\t2.62\n583\tMedal of Honor\tX360\t2010\tShooter\tElectronic Arts\t1.55\t0.81\t0.04\t0.21\t2.62\n584\tFIFA Soccer 10\tX360\t2009\tSports\tElectronic Arts\t0.59\t1.79\t0.01\t0.23\t2.62\n585\tNBA 2K12\tX360\t2011\tSports\tTake-Two Interactive\t2.31\t0.14\t0.01\t0.16\t2.62\n586\tStyle Savvy\tDS\t2008\tSimulation\tNintendo\t0.63\t0.84\t0.96\t0.19\t2.61\n587\tHarry Potter and the Chamber of Secrets\tPS2\t2002\tAction\tElectronic Arts\t0.9\t1.22\t0.04\t0.44\t2.61\n588\tSuper Mario All-Stars: Limited Edition\tWii\t2010\tPlatform\tNintendo\t1.02\t0.52\t0.92\t0.14\t2.6\n589\tStreets of Rage\tGEN\t1990\tAction\tSega\t1.86\t0.55\t0.11\t0.08\t2.6\n590\tFIFA Soccer 09\tPS3\t2008\tSports\tElectronic Arts\t0.48\t1.63\t0.04\t0.43\t2.59\n591\tRatchet & Clank Future: Tools of Destruction\tPS3\t2007\tPlatform\tSony Computer Entertainment\t0.93\t1.12\t0.08\t0.45\t2.59\n592\tNBA Live 2005\tPS2\t2004\tSports\tElectronic Arts\t2.03\t0.21\t0\t0.35\t2.59\n593\tLittleBigPlanet\tPSP\t2009\tPlatform\tSony Computer Entertainment\t0.64\t1.24\t0.01\t0.69\t2.58\n594\tKillzone: Shadow Fall\tPS4\t2013\tShooter\tSony Computer Entertainment\t0.89\t1.33\t0.07\t0.28\t2.58\n595\tGhostbusters: The Video Game (DS Version)\tX360\t2009\tAction\tTake-Two Interactive\t1.04\t1.24\t0.03\t0.27\t2.58\n596\tMonster Hunter Freedom 2\tPSP\t2007\tRole-Playing\tCapcom\t0.37\t0.27\t1.75\t0.18\t2.58\n597\tWWE SmackDown vs. RAW 2007\tPS2\t2006\tFighting\tTHQ\t1.4\t0.88\t0.03\t0.26\t2.58\n598\tRatchet & Clank: Up Your Arsenal\tPS2\t2004\tPlatform\tSony Computer Entertainment\t1.31\t0.74\t0.31\t0.22\t2.57\n599\tArt Academy\tDS\t2010\tMisc\tNintendo\t0.28\t1.68\t0.33\t0.28\t2.57\n600\tDragon Age: Origins\tX360\t2009\tRole-Playing\tElectronic Arts\t1.76\t0.56\t0.03\t0.22\t2.57\n601\tMadden NFL 08\tPS2\t2007\tSports\tElectronic Arts\t2.14\t0.08\t0\t0.35\t2.57\n602\tSonic Adventure 2 Battle\tGC\t2001\tPlatform\tSega\t1.7\t0.59\t0.21\t0.07\t2.56\n603\tDragon Warrior II\tNES\t1987\tRole-Playing\tEnix Corporation\t0.15\t0\t2.41\t0\t2.56\n604\tMadden NFL 13\tPS3\t2012\tSports\tElectronic Arts\t2.11\t0.23\t0\t0.22\t2.56\n605\tPokémon Colosseum\tGC\t2003\tRole-Playing\tNintendo\t1.21\t0.57\t0.7\t0.07\t2.54\n606\tDeca Sports\tWii\t2008\tSports\tKonami Digital Entertainment\t1.13\t0.87\t0.29\t0.25\t2.54\n607\tMadden NFL 09\tX360\t2008\tSports\tElectronic Arts\t2.21\t0.12\t0\t0.2\t2.54\n608\tSpace Invaders\t2600\tN/A\tShooter\tAtari\t2.36\t0.14\t0\t0.03\t2.53\n609\tCrazy Taxi\tPS2\t2001\tRacing\tAcclaim Entertainment\t1.13\t1.12\t0.06\t0.22\t2.52\n610\tPerfect Dark\tN64\t2000\tAction\tNintendo\t1.55\t0.75\t0.16\t0.06\t2.52\n611\tGame Party\tWii\t2007\tMisc\tMidway Games\t1.5\t0.78\t0\t0.24\t2.52\n612\tDragon Warrior\tNES\t1986\tRole-Playing\tCapcom\t0.49\t0\t0.52\t1.51\t2.52\n613\tTomb Raider (2013)\tPS3\t2013\tAction\tSquare Enix\t0.6\t1.31\t0.08\t0.52\t2.51\n614\tMarvel: Ultimate Alliance\tX360\t2006\tRole-Playing\tActivision\t2.29\t0.02\t0\t0.19\t2.5\n615\tPES 2009: Pro Evolution Soccer\tPS2\t2008\tSports\tKonami Digital Entertainment\t0.13\t0.07\t0.26\t2.05\t2.5\n616\tMario Party 2\tN64\t1999\tMisc\tNintendo\t1.28\t0.14\t1.08\t0.01\t2.5\n617\tSaints Row: The Third\tPS3\t2011\tAction\tTHQ\t0.86\t1.06\t0.18\t0.39\t2.49\n618\tRockstar Games Double Pack: Grand Theft Auto III & Grand Theft Auto Vice City\tXB\t2003\tAction\tTake-Two Interactive\t1.84\t0.56\t0\t0.09\t2.49\n619\tLEGO Harry Potter: Years 1-4\tWii\t2010\tAction\tWarner Bros. Interactive Entertainment\t1.29\t0.97\t0\t0.23\t2.49\n620\tMortal Kombat: Deadly Alliance\tPS2\t2002\tFighting\tMidway Games\t1.81\t0.52\t0\t0.15\t2.49\n621\tResistance 2\tPS3\t2008\tShooter\tSony Computer Entertainment\t1.15\t0.85\t0.1\t0.39\t2.48\n622\tPure\tX360\t2008\tRacing\tDisney Interactive Studios\t1.38\t0.85\t0\t0.25\t2.48\n623\tTomb Raider: The Last Revelation\tPS\t1998\tAction\tEidos Interactive\t1.15\t1.14\t0.06\t0.13\t2.48\n624\tNBA 2K13\tPS3\t2012\tSports\tTake-Two Interactive\t1.72\t0.44\t0.05\t0.27\t2.48\n625\tRock Band\tX360\tN/A\tMisc\tElectronic Arts\t1.93\t0.34\t0\t0.21\t2.48\n626\tNBA 2K14\tX360\t2013\tSports\tTake-Two Interactive\t2.1\t0.2\t0\t0.17\t2.47\n627\tMario Party 4\tGC\t2002\tMisc\tNintendo\t1.13\t0.36\t0.92\t0.07\t2.47\n628\tuDraw Studio\tWii\t2010\tMisc\tTHQ\t1.67\t0.58\t0\t0.2\t2.46\n629\tMidnight Club: Los Angeles\tPS3\t2008\tRacing\tTake-Two Interactive\t1.55\t0.54\t0.05\t0.31\t2.45\n630\tFinal Fantasy V\tSNES\t1992\tRole-Playing\tSquareSoft\t0\t0\t2.43\t0.02\t2.45\n631\tFinal Fantasy Tactics\tPS\t1997\tRole-Playing\tSquareSoft\t0.93\t0.12\t1.34\t0.06\t2.45\n632\tTwisted Metal 2\tPS\t1996\tRacing\tSony Computer Entertainment\t2.12\t0.25\t0\t0.07\t2.44\n633\tHalo: Combat Evolved Anniversary\tX360\t2011\tShooter\tMicrosoft Game Studios\t1.44\t0.73\t0.04\t0.22\t2.44\n634\tNeed for Speed Carbon: Own the City\tPSP\t2006\tRacing\tElectronic Arts\t0.87\t0.98\t0\t0.59\t2.44\n635\tThe Sims: Bustin' Out\tPS2\t2003\tSimulation\tElectronic Arts\t1.07\t1.19\t0\t0.18\t2.43\n636\tRiven: The Sequel to Myst\tPC\t1997\tAdventure\tRed Orb\t1.52\t0.82\t0\t0.1\t2.43\n637\tTom Clancy's Rainbow Six: Vegas 2\tX360\t2008\tShooter\tUbisoft\t1.56\t0.61\t0.02\t0.23\t2.42\n638\tSonic Adventure\tDC\t1998\tPlatform\tSega\t1.26\t0.61\t0.46\t0.08\t2.42\n639\tIce Hockey\tNES\t1988\tSports\tNintendo\t1.27\t0.32\t0.78\t0.05\t2.42\n640\tpro evolution soccer 2011\tPS3\t2010\tSports\tKonami Digital Entertainment\t0.29\t1.18\t0.54\t0.41\t2.42\n641\tDragon Ball Z: Budokai 2\tPS2\t2003\tFighting\tAtari\t1.63\t0.22\t0.51\t0.06\t2.41\n642\tATV Offroad Fury\tPS2\t2001\tRacing\tSony Computer Entertainment\t2.07\t0.26\t0\t0.08\t2.41\n643\tDino Crisis\tPS\t1998\tAction\tCapcom\t0.81\t0.76\t0.7\t0.14\t2.41\n644\tMinecraft\tXOne\t2014\tMisc\tMicrosoft Game Studios\t1.43\t0.76\t0\t0.22\t2.41\n645\tNeed for Speed: ProStreet\tPS2\t2007\tRacing\tElectronic Arts\t0.69\t0\t0.04\t1.68\t2.41\n646\tMadden NFL 16\tXOne\t2015\tSports\tElectronic Arts\t2.07\t0.08\t0\t0.26\t2.4\n647\tTetris Plus\tPS\t1996\tPuzzle\tJVC\t2.1\t0.24\t0\t0.07\t2.4\n648\tPro Wrestling\tNES\t1987\tFighting\tNintendo\t0.77\t0.18\t1.42\t0.03\t2.4\n649\tTheme Hospital\tPC\t1997\tStrategy\tElectronic Arts\t2.3\t0.1\t0\t0\t2.4\n650\tFrogger's Adventures: Temple of the Frog\tGBA\tN/A\tAdventure\tKonami Digital Entertainment\t2.15\t0.18\t0\t0.07\t2.39\n651\tNeed for Speed (2015)\tPS4\t2015\tRacing\tElectronic Arts\t0.49\t1.49\t0.05\t0.36\t2.39\n652\tZumba Fitness\tX360\t2010\tSports\t505 Games\t1.74\t0.48\t0\t0.18\t2.39\n653\tLEGO Indiana Jones: The Original Adventures\tWii\tN/A\tAction\tLucasArts\t1.54\t0.63\t0\t0.22\t2.39\n655\tMonopoly\tPC\t1994\tMisc\tHasbro Interactive\t1.49\t0.81\t0\t0.1\t2.39\n656\tBatman: Arkham Origins\tPS3\t2013\tAction\tWarner Bros. Interactive Entertainment\t1.07\t0.87\t0.04\t0.4\t2.39\n657\tDead Island\tX360\t2011\tAction\tDeep Silver\t1.48\t0.71\t0\t0.2\t2.39\n658\tGuitar Hero\tPS2\t2005\tMisc\tRedOctane\t1.67\t0.61\t0.03\t0.07\t2.38\n659\tLEGO Star Wars: The Complete Saga\tPS3\t2007\tAction\tLucasArts\t1.02\t0.97\t0\t0.39\t2.38\n660\tKinect: Disneyland Adventures\tX360\t2011\tMisc\tMicrosoft Game Studios\t1.73\t0.46\t0.02\t0.18\t2.38\n661\tWCW/nWo Revenge\tN64\t1998\tFighting\tTHQ\t1.94\t0.39\t0.03\t0.02\t2.38\n662\tBloodborne\tPS4\t2015\tAction\tSony Computer Entertainment\t1\t0.76\t0.26\t0.36\t2.38\n663\tNBA 2K15\tPS4\t2014\tSports\tTake-Two Interactive\t1.46\t0.54\t0.01\t0.37\t2.38\n664\tMadden NFL 11\tPS3\t2010\tSports\tElectronic Arts\t2.04\t0.15\t0\t0.19\t2.38\n665\tYu-Gi-Oh! The Duelists of the Roses\tPS2\t2001\tMisc\tKonami Digital Entertainment\t1.16\t0.91\t0\t0.3\t2.38\n666\tMadden NFL 08\tX360\t2007\tSports\tElectronic Arts\t2.18\t0.01\t0\t0.18\t2.37\n667\tHalf-Life 2\tPC\t2004\tShooter\tVivendi Games\t2.28\t0.02\t0.08\t0\t2.37\n668\tThe Incredibles\tPS2\t2004\tAction\tTHQ\t0.96\t1.08\t0.04\t0.3\t2.37\n669\tTony Hawk's Underground 2\tPS2\t2004\tSports\tActivision\t1.25\t0.86\t0.01\t0.26\t2.37\n670\tMadden NFL 10\tPS3\t2009\tSports\tElectronic Arts\t2.03\t0.13\t0\t0.21\t2.37\n671\tKinect Sports: Season Two\tX360\t2011\tSports\tMicrosoft Game Studios\t1.38\t0.74\t0.02\t0.22\t2.36\n672\tKirby's Dream Land 2\tGB\t1995\tPlatform\tNintendo\t0.69\t0.14\t1.48\t0.05\t2.36\n673\tLEGO Harry Potter: Years 1-4\tDS\t2010\tAction\tWarner Bros. Interactive Entertainment\t1.07\t1.05\t0\t0.23\t2.35\n674\tDonkey Kong Land II\tGB\t1996\tPlatform\tNintendo\t1.39\t0.48\t0.4\t0.08\t2.35\n675\tDragon Warrior Monsters\tGB\t1998\tRole-Playing\tEidos Interactive\t0\t0\t2.34\t0.01\t2.35\n676\tMidnight Club: Los Angeles\tX360\t2008\tRacing\tTake-Two Interactive\t1.68\t0.46\t0.01\t0.2\t2.35\n677\tSkylanders SWAP Force\tWii\t2013\tPlatform\tActivision\t1.32\t0.83\t0\t0.2\t2.34\n678\tWWE SmackDown vs Raw 2008\tPS2\t2007\tFighting\tTHQ\t0.92\t0\t0.01\t1.41\t2.34\n679\tMy Fitness Coach\tWii\t2008\tSports\tUbisoft\t1.2\t0.9\t0\t0.24\t2.34\n680\tResident Evil - Code: Veronica X\tPS2\t2001\tAction\tCapcom\t1.08\t0.7\t0.34\t0.21\t2.34\n681\tThe Sims 3\tX360\t2010\tSimulation\tElectronic Arts\t1.27\t0.86\t0\t0.2\t2.33\n682\tThe Legend of Zelda: Majora's Mask 3D\t3DS\t2015\tAction\tNintendo\t1.14\t0.54\t0.47\t0.17\t2.32\n683\tNBA 2K16\tXOne\t2015\tSports\tTake-Two Interactive\t1.93\t0.14\t0\t0.24\t2.32\n684\tJust Dance Kids\tWii\t2010\tMisc\tUbisoft\t1.57\t0.56\t0\t0.19\t2.32\n685\tMario Tennis\tN64\t2000\tSports\tNintendo\t0.78\t0.4\t1.06\t0.07\t2.32\n686\tGrand Theft Auto\tPS\t1997\tAction\tTake-Two Interactive\t0.79\t1.35\t0.04\t0.14\t2.32\n687\tJames Bond 007: Everything or Nothing\tPS2\t2004\tShooter\tElectronic Arts\t0.85\t1.06\t0.09\t0.32\t2.31\n688\tWarioWare Touched!\tDS\t2004\tPuzzle\tNintendo\t0.52\t0.45\t1.21\t0.13\t2.31\n689\tNeed For Speed: High Stakes\tPS\t1999\tRacing\tElectronic Arts\t1.58\t0.64\t0\t0.09\t2.31\n690\tChrono Trigger\tSNES\t1995\tRole-Playing\tSquareSoft\t0.28\t0\t2.02\t0.01\t2.31\n691\tCool Boarders 3\tPS\t1998\tSports\t989 Studios\t1.65\t0.46\t0.1\t0.1\t2.31\n692\tLEGO Marvel Super Heroes\tX360\t2013\tAction\tWarner Bros. Interactive Entertainment\t1.24\t0.85\t0\t0.21\t2.3\n693\tGuild Wars 2\tPC\t2012\tAction\tNCSoft\t0.95\t1.06\t0\t0.29\t2.3\n694\tPokemon Ranger: Shadows of Almia\tDS\t2008\tRole-Playing\tNintendo\t0.95\t0.54\t0.62\t0.18\t2.3\n695\tDead Island\tPS3\t2011\tAction\tDeep Silver\t1.08\t0.75\t0.15\t0.31\t2.29\n696\tTomb Raider II\tPC\t1997\tAction\tEidos Interactive\t0.91\t1.25\t0\t0.13\t2.29\n697\tGod of War: Ascension\tPS3\t2013\tAction\tSony Computer Entertainment\t1.23\t0.68\t0.04\t0.34\t2.29\n698\tNeed for Speed Underground 2\tXB\t2004\tRacing\tElectronic Arts\t1.38\t0.8\t0\t0.1\t2.28\n699\tPro Evolution Soccer 2010\tPS3\t2009\tSports\tKonami Digital Entertainment\t0.3\t1.27\t0.46\t0.26\t2.28\n700\tJust Dance 2015\tWii\t2014\tMisc\tUbisoft\t1.11\t0.98\t0\t0.2\t2.28\n701\tYokai Watch Busters\t3DS\t2015\tAction\tLevel 5\t0\t0\t2.28\t0\t2.28\n702\tMario Bros.\tNES\t1983\tPlatform\tNintendo\t0.51\t0.12\t1.63\t0.02\t2.28\n703\tFIFA Soccer 09\tPS2\t2008\tSports\tElectronic Arts\t0.38\t0.07\t0.01\t1.82\t2.28\n704\tStar Wars: The Force Unleashed\tPS3\t2008\tAction\tLucasArts\t1.01\t0.9\t0\t0.37\t2.28\n705\tBorderlands 2\tPS3\t2012\tShooter\tTake-Two Interactive\t1.05\t0.77\t0.1\t0.36\t2.28\n706\tTOCA Touring Car Championship\tPS\t1997\tRacing\tCodemasters\t0.07\t2\t0.02\t0.18\t2.28\n707\tPaper Mario: Sticker Star\t3DS\t2012\tRole-Playing\tNintendo\t1.12\t0.39\t0.64\t0.12\t2.27\n708\tSonic's Ultimate Genesis Collection\tPS3\t2009\tMisc\tSega\t1.34\t0.62\t0\t0.31\t2.27\n709\tSuper Monkey Ball: Banana Blitz\tWii\t2006\tMisc\tSega\t1.07\t0.92\t0.04\t0.24\t2.27\n710\tKirby: Nightmare in Dream Land\tGBA\t2002\tPlatform\tNintendo\t1.22\t0.1\t0.91\t0.04\t2.27\n711\tWario Land 4\tGBA\t2001\tPlatform\tNintendo\t0.9\t0.73\t0.54\t0.09\t2.26\n712\tGuitar Hero III: Legends of Rock\tPS3\t2007\tMisc\tActivision\t1.4\t0.54\t0.02\t0.3\t2.26\n713\tCall of Duty 3\tWii\tN/A\tShooter\tActivision\t1.19\t0.84\t0\t0.23\t2.26\n714\tResident Evil 4\tWii\t2007\tAction\tCapcom\t1.34\t0.57\t0.14\t0.21\t2.26\n715\tMinecraft\tPSV\t2014\tMisc\tSony Computer Entertainment Europe\t0.28\t0.79\t0.87\t0.32\t2.25\n716\tOnimusha 2: Samurai's Destiny\tPS2\t2002\tAdventure\tCapcom\t0.62\t0.44\t1.06\t0.13\t2.25\n717\tCool Boarders 2\tPS\t1997\tSports\tUEP Systems\t1.52\t0.46\t0.2\t0.08\t2.25\n718\tPaper Mario: The Thousand-Year Door\tGC\t2004\tRole-Playing\tNintendo\t1.48\t0.25\t0.46\t0.06\t2.25\n719\tMadden NFL 12\tPS3\t2011\tSports\tElectronic Arts\t1.93\t0.15\t0\t0.17\t2.25\n720\tMonster Hunter Tri\tWii\t2009\tRole-Playing\tNintendo\t0.67\t0.41\t1.05\t0.11\t2.25\n721\tDissidia: Final Fantasy\tPSP\t2008\tFighting\tSquare Enix\t0.51\t0.51\t0.91\t0.32\t2.25\n722\tSonic Advance\tGBA\t2001\tPlatform\tSega\t1.19\t0.71\t0.22\t0.13\t2.24\n723\tSpyro: Season of Ice\tGBA\t2001\tPlatform\tVivendi Games\t1.29\t0.83\t0\t0.11\t2.23\n724\tTeenage Mutant Ninja Turtles II: The Arcade Game\tNES\t1990\tAction\tKonami Digital Entertainment\t1.74\t0.25\t0.21\t0.03\t2.23\n725\tLEGO Indiana Jones: The Original Adventures\tDS\t2008\tAction\tActivision\t1.42\t0.61\t0\t0.21\t2.23\n726\tDance Dance Revolution X2\tPS2\t2009\tSimulation\tKonami Digital Entertainment\t1.09\t0.85\t0\t0.28\t2.23\n727\tNew Super Luigi U\tWiiU\t2013\tPlatform\tNintendo\t1.27\t0.62\t0.18\t0.16\t2.22\n728\tPrince of Persia: The Sands of Time\tPS2\t2003\tAction\tUbisoft\t0.88\t1.03\t0\t0.31\t2.22\n729\tScribblenauts\tDS\t2009\tPuzzle\tWarner Bros. Interactive Entertainment\t1.71\t0.32\t0.02\t0.18\t2.22\n730\tThe Legend of Zelda: Link's Awakening DX\tGB\t1998\tAdventure\tNintendo\t1\t0.63\t0.45\t0.13\t2.22\n731\tNeed for Speed: Hot Pursuit\tX360\t2010\tRacing\tElectronic Arts\t1.03\t0.98\t0\t0.21\t2.22\n732\tBioShock 2\tX360\t2010\tShooter\tTake-Two Interactive\t1.45\t0.55\t0.02\t0.19\t2.21\n733\tAssassin's Creed IV: Black Flag\tXOne\t2013\tAction\tUbisoft\t1.47\t0.55\t0\t0.19\t2.21\n734\tDevil May Cry 3: Dante's Awakening Special Edition\tPS2\t2006\tAction\tCapcom\t1.06\t0.82\t0.05\t0.28\t2.21\n735\tRock Band 2\tX360\t2008\tMisc\tElectronic Arts\t1.78\t0.24\t0\t0.18\t2.2\n736\tFrogger\t2600\t1981\tAction\tParker Bros.\t2.06\t0.12\t0\t0.02\t2.2\n737\tGuitar Hero II\tX360\t2007\tMisc\tActivision\t2.01\t0.02\t0\t0.17\t2.2\n738\tWario Land 3\tGB\t2000\tPlatform\tNintendo\t1.11\t0.51\t0.34\t0.23\t2.2\n739\tPro Yakyuu Family Stadium\tNES\t1986\tSports\tNamco Bandai Games\t0.15\t0\t2.05\t0\t2.2\n740\tSonic Unleashed\tWii\t2008\tPlatform\tSega\t1.28\t0.68\t0.02\t0.21\t2.2\n741\tHigh School Musical: Makin' the Cut!\tDS\t2007\tPuzzle\tDisney Interactive Studios\t1.06\t0.91\t0\t0.23\t2.2\n742\tPro Evolution Soccer 2012\tPS3\t2011\tAction\tKonami Digital Entertainment\t0.34\t0.97\t0.55\t0.33\t2.19\n743\tSaints Row\tX360\t2006\tAction\tTHQ\t1.17\t0.78\t0.02\t0.22\t2.19\n744\tStar Wars: Knights of the Old Republic\tXB\t2003\tRole-Playing\tActivision\t1.68\t0.44\t0\t0.08\t2.19\n745\tKirby's Pinball Land\tGB\t1992\tMisc\tNintendo\t0.87\t0.17\t1.1\t0.05\t2.19\n746\tDonkey Kong Country\tGB\t2000\tPlatform\tNintendo\t1.04\t0.72\t0.3\t0.13\t2.19\n747\tHitman: Absolution\tPS3\t2012\tAction\tSquare Enix\t0.59\t1.07\t0.07\t0.45\t2.19\n748\tYu-Gi-Oh: Duel Monsters 4\tGB\t2000\tRole-Playing\tKonami Digital Entertainment\t0\t0\t2.17\t0.01\t2.18\n749\tATV Offroad Fury 2\tPS2\t2002\tRacing\tTHQ\t1.92\t0.2\t0\t0.06\t2.18\n750\tForza Motorsport 5\tXOne\t2013\tRacing\tMicrosoft Game Studios\t1.21\t0.78\t0.01\t0.17\t2.18\n751\tMadden NFL 25\tX360\t2013\tSports\tElectronic Arts\t1.97\t0.07\t0\t0.13\t2.18\n752\tPokemon Ranger\tDS\t2006\tRole-Playing\tNintendo\t1.29\t0.04\t0.73\t0.12\t2.18\n753\tMario & Luigi: Superstar Saga\tGBA\t2003\tRole-Playing\tNintendo\t1.48\t0.17\t0.47\t0.06\t2.17\n754\tFinal Fantasy XIII\tX360\t2010\tRole-Playing\tSquare Enix\t1.27\t0.68\t0.01\t0.2\t2.17\n755\tStar Wars: Rogue Squadron\tN64\t1998\tSimulation\tNintendo\t1.6\t0.46\t0.08\t0.03\t2.17\n756\tTennis\tNES\t1984\tSports\tNintendo\t0.48\t0.11\t1.56\t0.02\t2.17\n757\tThe Sims: House Party\tPC\t2001\tSimulation\tElectronic Arts\t1.23\t0.83\t0\t0.1\t2.16\n758\tYour Shape featuring Jenny McCarthy\tWii\t2009\tSports\tUbisoft\t1.51\t0.47\t0\t0.18\t2.16\n759\tSyphon Filter 2\tPS\t2000\tShooter\tSony Computer Entertainment\t1.5\t0.55\t0.02\t0.08\t2.15\n760\tTom Clancy's Rainbow Six: Siege\tPS4\t2015\tShooter\tUbisoft\t0.54\t1.16\t0.13\t0.32\t2.15\n761\tVolleyball\tNES\t1987\tSports\tNintendo\t0.14\t0.03\t1.98\t0\t2.15\n762\tFIFA 15\tXOne\t2014\tSports\tElectronic Arts\t0.6\t1.41\t0\t0.14\t2.15\n763\tCall of Duty: Roads to Victory\tPSP\t2007\tShooter\tActivision\t0.52\t1.03\t0\t0.59\t2.14\n764\tSuper Mario RPG: Legend of the Seven Stars\tSNES\t1996\tRole-Playing\tNintendo\t0.66\t0\t1.45\t0.03\t2.14\n765\tMahjong\tNES\t1983\tMisc\tNintendo\t0.01\t0\t2.13\t0\t2.14\n766\tR.C. Pro-Am\tNES\t1988\tRacing\tNintendo\t1.47\t0.38\t0.19\t0.1\t2.14\n767\tSimCity 2000\tPC\t1992\tSimulation\tMaxis\t1.2\t0.84\t0\t0.1\t2.14\n768\tDemon Attack\t2600\t1981\tShooter\tImagic\t1.99\t0.12\t0\t0.02\t2.13\n769\tDance Dance Revolution Extreme\tPS2\t2004\tSimulation\tKonami Digital Entertainment\t1.04\t0.81\t0\t0.27\t2.13\n770\tTetris DS\tDS\t2006\tPuzzle\tNintendo\t0.64\t0.07\t1.35\t0.08\t2.13\n771\tFinal Fantasy Tactics Advance\tGBA\t2003\tRole-Playing\tSquareSoft\t0.82\t0.37\t0.89\t0.05\t2.13\n772\tFar Cry: Primal\tPS4\t2016\tAction\tUbisoft\t0.59\t1.16\t0.06\t0.33\t2.13\n773\tToy Story 3: The Video Game\tDS\t2010\tAction\tDisney Interactive Studios\t0.93\t0.97\t0.02\t0.21\t2.12\n774\tFinal Fantasy III\tDS\t2006\tRole-Playing\tSquare Enix\t0.91\t0.05\t1.07\t0.09\t2.12\n775\tKirby's Epic Yarn\tWii\t2010\tPlatform\tNintendo\t1.47\t0.09\t0.45\t0.11\t2.12\n776\tProject Gotham Racing\tXB\t2001\tRacing\tMicrosoft Game Studios\t1.37\t0.61\t0.05\t0.09\t2.12\n777\tGolf\tGB\t1989\tSports\tNintendo\t0.83\t0.33\t0.92\t0.04\t2.12\n778\tNBA 2K12\tPS3\t2011\tSports\tTake-Two Interactive\t1.61\t0.27\t0.05\t0.18\t2.11\n779\tBorderlands\tPS3\t2009\tShooter\tTake-Two Interactive\t1.2\t0.62\t0\t0.29\t2.11\n780\tTony Hawk's Pro Skater\tN64\t2000\tSports\tActivision\t1.68\t0.4\t0\t0.03\t2.11\n781\tPES 2009: Pro Evolution Soccer\tPS3\t2008\tSports\tKonami Digital Entertainment\t0.11\t1.34\t0.4\t0.26\t2.11\n782\tNeed for Speed: Hot Pursuit 2\tPS2\t2002\tRacing\tElectronic Arts\t1.68\t0.31\t0.02\t0.09\t2.11\n783\tMario Sports Mix\tWii\t2010\tSports\tNintendo\t0.9\t0.45\t0.63\t0.13\t2.11\n784\tRock Band\tWii\tN/A\tMisc\tMTV Games\t1.35\t0.56\t0\t0.2\t2.11\n785\tDynasty Warriors 4\tPS2\t2003\tAction\tTecmo Koei\t0.63\t0.21\t1.13\t0.13\t2.11\n786\tMortal Kombat\tX360\t2011\tFighting\tWarner Bros. Interactive Entertainment\t1.63\t0.33\t0\t0.15\t2.11\n787\tParasite Eve\tPS\t1998\tRole-Playing\tSquareSoft\t0.94\t0.07\t1.05\t0.04\t2.1\n788\tScooby-Doo! Night of 100 Frights\tPS2\t2002\tPlatform\tTHQ\t1.17\t0.72\t0\t0.22\t2.1\n789\tProject Gotham Racing (JP weekly sales)\tXB\t2002\tAction\tMicrosoft Game Studios\t1.54\t0.44\t0.04\t0.07\t2.1\n790\tNeed for Speed: Most Wanted 5-1-0\tPSP\t2005\tRacing\tElectronic Arts\t1.77\t0.13\t0.02\t0.18\t2.1\n791\tPortal 2\tX360\t2011\tShooter\tValve Software\t1.41\t0.51\t0.01\t0.17\t2.1\n792\tDevil May Cry 3: Dante's Awakening\tPS2\t2005\tAction\tCapcom\t0.99\t0.63\t0.29\t0.19\t2.09\n793\tDerby Stallion\tPS\t1997\tSports\tASCII Entertainment\t0\t0\t1.96\t0.14\t2.09\n794\tDead Rising\tX360\t2006\tAction\tCapcom\t1.16\t0.65\t0.08\t0.2\t2.09\n795\tFinding Nemo\tPS2\t2003\tAction\tTHQ\t1.26\t0.6\t0.05\t0.18\t2.09\n796\tNBA 2K11\tX360\t2010\tAction\tTake-Two Interactive\t1.84\t0.12\t0.01\t0.13\t2.09\n797\tWipeout: The Game\tWii\t2009\tMisc\tMindscape\t1.97\t0\t0\t0.12\t2.09\n798\tThe Sims 2: Pets\tDS\t2006\tSimulation\tElectronic Arts\t0.92\t0.94\t0\t0.22\t2.09\n799\tBattlefield: Hardline\tPS4\t2015\tShooter\tElectronic Arts\t0.7\t0.93\t0.14\t0.32\t2.09\n800\tMetal Gear Solid: Peace Walker\tPSP\t2010\tAction\tKonami Digital Entertainment\t0.46\t0.42\t0.96\t0.25\t2.09\n801\tWorld of Warcraft: Cataclysm\tPC\t2010\tRole-Playing\tActivision\t1.77\t0.32\t0\t0\t2.08\n802\tTetris Worlds\tPS2\t2002\tPuzzle\tTHQ\t1.11\t0.71\t0\t0.27\t2.08\n803\tNeed For Speed: Undercover\tPS3\t2008\tRacing\tElectronic Arts\t0.63\t1.02\t0.05\t0.39\t2.08\n804\tDance Dance Revolution: Hottest Party\tWii\t2007\tSimulation\tKonami Digital Entertainment\t1.36\t0.52\t0\t0.2\t2.08\n805\tMario Party 5\tGC\t2003\tMisc\tNintendo\t0.97\t0.33\t0.73\t0.06\t2.08\n806\tGhostbusters: The Video Game (DS Version)\tPS3\t2010\tAction\tTake-Two Interactive\t0.59\t0.99\t0.13\t0.36\t2.08\n807\tSim Theme Park\tPC\t1998\tStrategy\tElectronic Arts\t2.04\t0.04\t0\t0\t2.08\n808\tWarcraft: Orcs & Humans\tPC\t1994\tStrategy\tActivision\t0.89\t1.08\t0\t0.11\t2.08\n809\tSkate 3\tPS3\t2010\tSports\tElectronic Arts\t0.79\t0.94\t0\t0.35\t2.08\n810\tSpec Ops: Airborne Commando\tPS\t2002\tShooter\tTake-Two Interactive\t1.54\t0.46\t0\t0.08\t2.07\n811\tKingdom Hearts: Birth by Sleep\tPSP\t2010\tRole-Playing\tSquare Enix\t0.63\t0.42\t0.75\t0.26\t2.07\n812\tUFC 2009 Undisputed\tX360\t2009\tFighting\tTHQ\t1.48\t0.39\t0\t0.19\t2.07\n813\tDark Souls\tPS3\t2011\tRole-Playing\tNamco Bandai Games\t0.75\t0.54\t0.54\t0.23\t2.07\n814\tYu-Gi-Oh! The Eternal Duelist Soul\tGBA\t2001\tStrategy\tKonami Digital Entertainment\t1.64\t0.36\t0\t0.07\t2.07\n815\tNeed for Speed: ProStreet\tX360\t2007\tRacing\tElectronic Arts\t1.04\t0.8\t0.01\t0.22\t2.06\n816\tThe Sims 3\tPS3\t2010\tSimulation\tElectronic Arts\t0.73\t0.97\t0.02\t0.34\t2.06\n817\tTom Clancy's Splinter Cell: Conviction\tX360\t2010\tAction\tUbisoft\t1.2\t0.63\t0.04\t0.19\t2.06\n818\tPokemon Mystery Dungeon: Red/Blue Rescue Team\tGBA\t2005\tRole-Playing\tNintendo\t0.71\t0.52\t0.74\t0.08\t2.06\n819\tThe Incredibles\tGBA\t2004\tAction\tTHQ\t1.15\t0.77\t0.04\t0.1\t2.06\n820\tR4: Ridge Racer Type 4\tPS\t1998\tRacing\tNamco Bandai Games\t0.68\t0.46\t0.79\t0.13\t2.06\n821\tSoulCalibur II\tPS2\t2003\tFighting\tNamco Bandai Games\t1.06\t0.62\t0.13\t0.25\t2.06\n822\tMario & Luigi: Dream Team\t3DS\t2013\tRole-Playing\tNintendo\t0.89\t0.57\t0.46\t0.13\t2.06\n823\tNeed for Speed: ProStreet\tPS3\t2007\tRacing\tElectronic Arts\t0.73\t0.92\t0.04\t0.37\t2.05\n824\tCarnival Games\tDS\t2008\tMisc\tTake-Two Interactive\t1.23\t0.64\t0\t0.19\t2.05\n825\tNBA 2K14\tPS3\t2013\tSports\tTake-Two Interactive\t1.43\t0.33\t0.04\t0.25\t2.05\n826\tPokémon Mystery Dungeon: Blue Rescue Team\tDS\t2005\tRole-Playing\tNintendo\t1.16\t0.06\t0.83\t0\t2.05\n827\tSonic Mega Collection\tGC\t2002\tMisc\tInfogrames\t1.47\t0.48\t0.05\t0.06\t2.05\n828\tDiablo III\tPS3\t2013\tRole-Playing\tActivision\t0.71\t0.83\t0.15\t0.35\t2.05\n829\tNBA Jam\tGEN\t1992\tSports\tArena Entertainment\t1.75\t0.25\t0\t0.05\t2.05\n830\tPGR4 - Project Gotham Racing 4\tX360\t2007\tRacing\tMicrosoft Game Studios\t0.48\t1.29\t0.02\t0.25\t2.05\n831\tKingdom Hearts 358/2 Days\tDS\t2009\tRole-Playing\tSquare Enix\t1.11\t0.27\t0.53\t0.14\t2.04\n832\tDance Central 2\tX360\t2011\tMisc\tMicrosoft Game Studios\t1.45\t0.42\t0.01\t0.16\t2.04\n833\tRayman Raving Rabbids: TV Party\tWii\t2008\tMisc\tUbisoft\t0.73\t1.09\t0\t0.23\t2.04\n834\tSOCOM: U.S. Navy SEALs: Combined Assault\tPS2\t2006\tShooter\tSony Computer Entertainment\t1.74\t0.02\t0\t0.28\t2.04\n835\tPeter Jackson's King Kong: The Official Game of the Movie\tPS2\t2005\tAction\tUbisoft\t0.71\t1.02\t0\t0.31\t2.04\n836\tDonkey Kong Country\tGBA\t2003\tPlatform\tNintendo\t1.2\t0.48\t0.29\t0.07\t2.04\n837\tNeed for Speed: The Run\tPS3\t2011\tAction\tElectronic Arts\t0.58\t1.06\t0.03\t0.37\t2.04\n838\tMadden NFL 15\tPS4\t2014\tSports\tElectronic Arts\t1.53\t0.25\t0\t0.25\t2.03\n839\t1080°: TenEighty Snowboarding\tN64\t1998\tSports\tNintendo\t1.25\t0.61\t0.13\t0.05\t2.03\n840\tJust Dance 3\tX360\t2011\tMisc\tUbisoft\t1.47\t0.4\t0\t0.16\t2.03\n841\tNBA Live 2004\tPS2\t2003\tSports\tElectronic Arts\t1.57\t0.18\t0\t0.27\t2.03\n842\tDead Space\tPS3\t2008\tAction\tElectronic Arts\t1.05\t0.67\t0\t0.3\t2.02\n843\tCall of Duty 2\tX360\t2005\tShooter\tActivision\t1.81\t0.05\t0.01\t0.15\t2.02\n844\tMadden NFL 15\tX360\t2014\tSports\tElectronic Arts\t1.76\t0.09\t0\t0.17\t2.02\n845\tForza Horizon\tX360\t2012\tRacing\tMicrosoft Game Studios\t0.82\t0.98\t0.04\t0.18\t2.02\n846\tTouchMaster\tDS\t2007\tPuzzle\tMidway Games\t0.49\t1.27\t0\t0.25\t2.01\n847\tTom Clancy's The Division\tXOne\t2016\tShooter\tUbisoft\t1.2\t0.62\t0\t0.18\t2.01\n848\tLEGO Marvel Super Heroes\tPS3\t2013\tAction\tWarner Bros. Interactive Entertainment\t0.77\t0.85\t0.01\t0.37\t2\n849\tFire Emblem: Awakening\t3DS\t2012\tRole-Playing\tNintendo\t0.89\t0.45\t0.53\t0.13\t2\n850\tDriveClub\tPS4\t2014\tRacing\tSony Computer Entertainment\t0.35\t1.31\t0.02\t0.33\t2\n851\tSuper Street Fighter II\tSNES\t1993\tFighting\tNintendo\t0.52\t0.16\t1.29\t0.03\t2\n852\tMortal Kombat vs. DC Universe\tPS3\t2008\tFighting\tMidway Games\t1.48\t0.3\t0\t0.22\t2\n853\tTenchu: Stealth Assassins\tPS\t1997\tAction\tActivision\t0.95\t0.64\t0.27\t0.13\t1.99\n854\tTennis\tGB\t1989\tSports\tNintendo\t0.75\t0.3\t0.9\t0.04\t1.99\n855\tHarry Potter and the Chamber of Secrets\tGBA\t2002\tAction\tElectronic Arts\t1.21\t0.64\t0.05\t0.09\t1.99\n856\tHarry Potter and the Chamber of Secrets\tPS\t2002\tAction\tElectronic Arts\t0.75\t1.09\t0.02\t0.12\t1.98\n857\tSimCity\tSNES\t1991\tSimulation\tNintendo\t0.93\t0.27\t0.75\t0.04\t1.98\n858\tBattlefield 4\tXOne\t2013\tShooter\tElectronic Arts\t1.25\t0.58\t0\t0.16\t1.98\n859\tResident Evil 6\tX360\t2012\tShooter\tCapcom\t1.11\t0.63\t0.07\t0.16\t1.98\n860\tDragon Age: Inquisition\tPS4\t2014\tRole-Playing\tElectronic Arts\t0.72\t0.86\t0.08\t0.32\t1.97\n861\tSonic Classic Collection\tDS\t2010\tPlatform\tSega\t0.99\t0.8\t0\t0.18\t1.97\n862\tSpyro: Enter the Dragonfly\tPS2\t2002\tPlatform\tUniversal Interactive\t0.74\t0.95\t0\t0.28\t1.97\n863\tCall of Duty: World at War\tWii\t2008\tShooter\tActivision\t1.2\t0.59\t0\t0.19\t1.97\n864\tDevil May Cry 2\tPS2\t2003\tAction\tCapcom\t0.71\t0.58\t0.51\t0.17\t1.97\n865\tBurnout Paradise\tPS3\t2008\tRacing\tElectronic Arts\t1.01\t0.64\t0.02\t0.3\t1.97\n866\tE.T.: The Extra Terrestrial\t2600\t1981\tAction\tAtari\t1.84\t0.11\t0\t0.02\t1.97\n867\tBioShock Infinite\tX360\t2013\tShooter\tTake-Two Interactive\t1.22\t0.57\t0.02\t0.15\t1.96\n868\tHot Shots Golf: Open Tee\tPSP\t2004\tSports\tSony Computer Entertainment\t0.5\t0.5\t0.63\t0.33\t1.96\n869\tRad Racer\tNES\t1986\tRacing\tNintendo\t1.13\t0.37\t0.41\t0.05\t1.96\n870\tSoccer\tNES\t1985\tSports\tNintendo\t0.18\t0.23\t1.53\t0.02\t1.96\n871\tKirby Squeak Squad\tDS\t2006\tPlatform\tNintendo\t0.79\t0.03\t1.05\t0.08\t1.96\n872\tTom Clancy's Rainbow Six: Vegas\tX360\t2006\tShooter\tUbisoft\t1.09\t0.65\t0.02\t0.2\t1.96\n873\tDestiny\tX360\t2014\tShooter\tActivision\t1.3\t0.49\t0\t0.16\t1.95\n874\tCrash Nitro Kart\tPS2\t2003\tRacing\tVivendi Games\t0.74\t1.01\t0\t0.2\t1.95\n875\tGrand Theft Auto: San Andreas\tXB\t2005\tAction\tTake-Two Interactive\t1.26\t0.61\t0\t0.09\t1.95\n876\tStar Wars: Dark Forces\tPC\t1994\tShooter\tLucasArts\t1.09\t0.77\t0\t0.09\t1.95\n877\tNBA Street Vol. 2\tPS2\t2003\tSports\tElectronic Arts\t1.69\t0.2\t0\t0.06\t1.95\n878\tDef Jam Vendetta\tPS2\t2003\tFighting\tElectronic Arts\t0.95\t0.74\t0\t0.25\t1.94\n879\tFIFA Soccer 09\tX360\t2008\tSports\tElectronic Arts\t0.49\t1.26\t0.01\t0.18\t1.94\n880\tWho wants to be a millionaire\tPC\t1999\tMisc\tDisney Interactive Studios\t1.94\t0\t0\t0\t1.94\n881\tScooby Doo and the Cyber Chase\tPS\t2001\tAdventure\tTHQ\t0.59\t1.23\t0\t0.13\t1.94\n882\tAlleyway\tGB\t1989\tPuzzle\tNintendo\t0.96\t0.38\t0.55\t0.05\t1.94\n883\tDragon Ball Z: Budokai 3\tPS2\t2004\tFighting\tAtari\t1.09\t0.15\t0.65\t0.04\t1.94\n884\tJet Moto 2\tPS\t1997\tRacing\tSony Computer Entertainment\t1.41\t0.42\t0.03\t0.07\t1.94\n885\tTom Clancy's Ghost Recon\tPS2\t2002\tShooter\tUbisoft\t1.42\t0.4\t0\t0.12\t1.94\n886\tX-Men Legends\tPS2\t2004\tRole-Playing\tActivision\t1\t0.72\t0\t0.21\t1.93\n887\tBatman: Arkham Origins\tX360\t2013\tAction\tWarner Bros. Interactive Entertainment\t1.15\t0.61\t0\t0.17\t1.93\n888\tGuitar Hero: World Tour\tPS3\t2008\tMisc\tActivision\t1.1\t0.56\t0\t0.27\t1.93\n889\tMortal Kombat II\tSNES\t1993\tFighting\tAcclaim Entertainment\t1.48\t0.39\t0\t0.06\t1.93\n890\tVirtua Fighter 2\tSAT\t1995\tFighting\tSega\t0.34\t0.26\t1.3\t0.03\t1.93\n891\tTetris DX\tGB\t1998\tPuzzle\tNintendo\t1.06\t0.6\t0.2\t0.07\t1.93\n892\tMortal Kombat vs. DC Universe\tX360\t2008\tFighting\tMidway Games\t1.53\t0.24\t0\t0.16\t1.93\n893\tWatch Dogs\tPS3\t2014\tAction\tUbisoft\t0.56\t0.89\t0.1\t0.37\t1.93\n894\tMario Super Sluggers\tWii\t2008\tSports\tNintendo\t1.51\t0\t0.29\t0.12\t1.93\n895\tTomb Raider (2013)\tX360\t2013\tAction\tSquare Enix\t0.86\t0.87\t0.01\t0.17\t1.92\n896\tThe Legend of Zelda: Oracle of Ages\tGB\t2001\tAction\tNintendo\t0.92\t0.53\t0.41\t0.06\t1.92\n897\tNeed for Speed: Shift\tX360\t2009\tRacing\tElectronic Arts\t0.73\t0.97\t0.01\t0.22\t1.92\n898\tMonopoly\tWii\t2008\tMisc\tElectronic Arts\t0.87\t0.85\t0\t0.2\t1.92\n899\tRed Faction\tPS2\t2001\tShooter\tTHQ\t0.76\t0.96\t0\t0.2\t1.92\n900\tThe Sims: Makin' Magic\tPC\t2003\tSimulation\tElectronic Arts\t1.03\t0.8\t0\t0.09\t1.92\n901\tMX Unleashed\tPS2\t2004\tRacing\tTHQ\t0.94\t0.73\t0\t0.25\t1.92\n902\tPaRappa The Rapper\tPS\t1996\tMisc\tSony Computer Entertainment\t0.26\t0.16\t1.46\t0.03\t1.92\n903\tToy Story Mania!\tWii\t2009\tMisc\tDisney Interactive Studios\t1.06\t0.67\t0\t0.18\t1.92\n904\tMario Party 3\tN64\t2000\tMisc\tNintendo\t0.72\t0.16\t1.01\t0.02\t1.91\n905\tStar Wars: The Force Unleashed\tWii\t2008\tAction\tLucasArts\t1.14\t0.57\t0\t0.19\t1.91\n906\tGame Party 2\tWii\t2008\tMisc\tMidway Games\t1.3\t0.44\t0\t0.17\t1.91\n907\tDestiny: The Taken King\tPS4\t2015\tShooter\tActivision\t0.77\t0.78\t0.04\t0.31\t1.91\n908\tLEGO Star Wars III: The Clone Wars\tWii\t2011\tAction\tLucasArts\t1.08\t0.66\t0\t0.17\t1.91\n909\tStar Wars Rogue Leader: Rogue Squadron II\tGC\t2001\tSimulation\tLucasArts\t1.03\t0.75\t0.03\t0.09\t1.9\n910\tMax Payne 3\tPS3\t2012\tShooter\tTake-Two Interactive\t0.59\t0.92\t0.06\t0.32\t1.9\n911\tNeed for Speed Rivals\tPS4\t2013\tRacing\tElectronic Arts\t0.73\t0.91\t0.03\t0.22\t1.89\n912\tMadden NFL 09\tPS3\t2008\tSports\tElectronic Arts\t1.56\t0.15\t0\t0.18\t1.89\n913\tYokai Watch\t3DS\t2013\tRole-Playing\tNintendo\t0.21\t0.3\t1.33\t0.04\t1.89\n914\tRatchet & Clank Future: A Crack in Time\tPS3\t2009\tPlatform\tSony Computer Entertainment\t1.05\t0.54\t0.03\t0.26\t1.88\n915\tYu-Gi-Oh! Forbidden Memories\tPS\t1999\tRole-Playing\tKonami Digital Entertainment\t1.37\t0.44\t0\t0.08\t1.88\n916\tMortal Kombat: Deception\tPS2\t2004\tFighting\tMidway Games\t0.92\t0.72\t0\t0.24\t1.88\n917\tHot Shots Golf 2\tPS\t1999\tSports\tSony Computer Entertainment\t0.25\t0.12\t1.48\t0.03\t1.88\n918\tMedal of Honor: European Assault (All Region sales)\tPS2\t2005\tShooter\tElectronic Arts\t0.89\t0.69\t0.09\t0.21\t1.88\n919\tWCW Nitro\tPS\t1998\tFighting\tTHQ\t1.42\t0.36\t0.03\t0.07\t1.88\n920\tHigh School Musical: Sing It!\tPS2\t2007\tMisc\tDisney Interactive Studios\t0.47\t0.08\t0\t1.33\t1.87\n921\tStar Fox Adventures\tGC\t2002\tAdventure\tNintendo\t0.96\t0.53\t0.3\t0.09\t1.87\n922\tFIFA 2000\tPS\t1998\tSports\tElectronic Arts\t0.22\t1.47\t0.04\t0.14\t1.87\n923\tDynasty Warriors 3\tPS2\t2001\tAction\tTHQ\t0.53\t0.16\t1.07\t0.1\t1.87\n924\tDonkey Kong Country Returns\t3DS\t2013\tPlatform\tNintendo\t0.73\t0.62\t0.4\t0.12\t1.87\n925\tThe Legend of Zelda: Oracle of Seasons\tGB\t2001\tAdventure\tNintendo\t0.87\t0.52\t0.41\t0.06\t1.86\n926\tMadden NFL 06\tXB\t2005\tSports\tElectronic Arts\t1.75\t0.03\t0\t0.08\t1.86\n927\tShrek 2\tPS2\t2004\tPlatform\tActivision\t1.12\t0.69\t0.03\t0.02\t1.86\n928\tThe Legend of Dragoon\tPS\t1999\tRole-Playing\tSony Computer Entertainment\t0.94\t0.44\t0.39\t0.1\t1.86\n929\tTurok 2: Seeds of Evil\tN64\t1997\tPlatform\tAcclaim Entertainment\t1.37\t0.41\t0.04\t0.04\t1.86\n930\tSingStar\tPS2\t2004\tMisc\tSony Computer Entertainment\t0\t1.37\t0\t0.49\t1.86\n931\tLittleBigPlanet 3\tPS4\t2014\tPlatform\tSony Computer Entertainment\t0.64\t0.92\t0.01\t0.29\t1.86\n932\tNBA Live 2002\tPS2\t2001\tSports\tElectronic Arts\t0.91\t0.71\t0\t0.24\t1.86\n933\tPhineas and Ferb\tDS\t2009\tAction\tDisney Interactive Studios\t1.34\t0.37\t0\t0.15\t1.86\n934\tChrono Cross\tPS\t1999\tRole-Playing\tSquareSoft\t0.62\t0.42\t0.69\t0.12\t1.86\n935\tGoldenEye 007 (2010)\tWii\t2010\tAction\tActivision\t0.85\t0.71\t0.13\t0.16\t1.86\n936\tMario Party: Island Tour\t3DS\t2013\tMisc\tNintendo\t0.61\t0.59\t0.55\t0.11\t1.85\n937\tJak 3\tPS2\t2004\tPlatform\tSony Computer Entertainment\t1.33\t0.49\t0\t0.03\t1.85\n938\tRayman Raving Rabbids 2\tWii\t2007\tMisc\tUbisoft\t0.83\t0.82\t0\t0.2\t1.85\n939\tKingdom Hearts: Chain of Memories\tGBA\t2004\tRole-Playing\tSquare Enix\t1.26\t0.18\t0.35\t0.06\t1.85\n940\tPinball\tNES\t1984\tAction\tNintendo\t0.8\t0.19\t0.83\t0.03\t1.85\n941\tinFAMOUS 2\tPS3\t2011\tAction\tSony Computer Entertainment\t1.05\t0.49\t0.08\t0.23\t1.85\n942\tGran Turismo Concept 2001 Tokyo\tPS2\t2001\tRacing\tUnknown\t0\t1.1\t0.42\t0.33\t1.84\n943\tDemon's Souls\tPS3\t2009\tRole-Playing\tNamco Bandai Games\t0.97\t0.34\t0.35\t0.18\t1.84\n944\tNCAA Football 06\tPS2\t2005\tSports\tElectronic Arts\t1.53\t0.05\t0\t0.25\t1.84\n945\t\"Hey You\t Pikachu!\"\tN64\t1998\tSimulation\tNintendo\t0.83\t0.06\t0.93\t0\t1.83\n946\t2 Games in 1: Sonic Advance & ChuChu Rocket!\tGBA\t2005\tMisc\tTHQ\t1.31\t0.49\t0\t0.03\t1.83\n947\tWorld of Warcraft: Mists of Pandaria\tPC\t2012\tRole-Playing\tActivision\t0.84\t0.76\t0\t0.23\t1.83\n948\tJet Moto\tPS\t1996\tRacing\tSony Computer Entertainment\t1.33\t0.4\t0.03\t0.07\t1.83\n949\tJust Cause 3\tPS4\t2015\tAction\tSquare Enix\t0.46\t1.02\t0.07\t0.28\t1.83\n950\tSecret of Mana\tSNES\t1993\tRole-Playing\tSquareSoft\t0.25\t0.07\t1.49\t0.02\t1.83\n951\tThe Orange Box\tX360\t2007\tShooter\tElectronic Arts\t1.09\t0.54\t0.02\t0.17\t1.83\n952\tAir Combat\tPS\t1995\tSimulation\tSony Computer Entertainment\t0.92\t0.33\t0.52\t0.05\t1.83\n953\tKirby: Triple Deluxe\t3DS\t2014\tPlatform\tNintendo\t0.61\t0.34\t0.79\t0.09\t1.82\n954\tSonic & Knuckles\tGEN\t1994\tPlatform\tSega\t1.24\t0.43\t0.03\t0.12\t1.82\n955\tNamco Museum\tPS2\t2001\tMisc\tNamco Bandai Games\t1.73\t0.07\t0\t0.02\t1.82\n956\tThe Sims: Hot Date\tPC\t2001\tSimulation\tElectronic Arts\t1.81\t0\t0\t0\t1.82\n957\tMetroid Prime 3: Corruption\tWii\t2007\tShooter\tNintendo\t0.91\t0.74\t0.07\t0.09\t1.82\n958\tDragon Quest VI: Realms of Revelation\tDS\t2010\tRole-Playing\tNintendo\t0.22\t0.21\t1.35\t0.03\t1.81\n959\tThe Evil Within\tPS4\t2014\tAction\tBethesda Softworks\t0.55\t0.84\t0.11\t0.31\t1.81\n960\tDDRMAX2: Dance Dance Revolution\tPS2\t2003\tSimulation\tKonami Digital Entertainment\t1.05\t0.59\t0\t0.18\t1.81\n961\tCrazy Taxi\tDC\t2000\tRacing\tSega\t1.1\t0.51\t0.12\t0.08\t1.81\n962\tVirtua Fighter 4\tPS2\t2002\tFighting\tSega\t0.78\t0.44\t0.56\t0.04\t1.81\n963\tSly 2: Band of Thieves\tPS2\t2004\tPlatform\tSony Computer Entertainment\t0.88\t0.69\t0\t0.23\t1.81\n964\tGuitar Hero: World Tour\tPS2\t2008\tMisc\tActivision\t1\t0.03\t0\t0.77\t1.8\n965\tSonic Advance 2\tGBA\t2002\tPlatform\tSega\t0.93\t0.59\t0.21\t0.07\t1.8\n966\tMadden NFL 07\tX360\t2006\tSports\tElectronic Arts\t1.66\t0\t0.01\t0.13\t1.8\n967\tNBA 2K11\tPS3\t2010\tAction\tTake-Two Interactive\t1.41\t0.21\t0.03\t0.16\t1.8\n968\tNFL GameDay 2000\tPS\t1999\tSports\t989 Studios\t1\t0.68\t0\t0.12\t1.8\n969\tCall of Duty: Black Ops 3\tPS3\t2015\tShooter\tActivision\t0.49\t0.96\t0.07\t0.27\t1.79\n970\tDisney's The Lion King\tSNES\t1994\tPlatform\tVirgin Interactive\t1.26\t0.39\t0.08\t0.06\t1.79\n971\tBeyond: Two Souls\tPS3\t2013\tAdventure\tSony Computer Entertainment\t0.52\t0.88\t0.06\t0.34\t1.79\n972\tKinect Star Wars\tX360\t2012\tAction\tMicrosoft Game Studios\t1.05\t0.57\t0.03\t0.14\t1.78\n973\tMidnight Club II\tPS2\t2003\tRacing\tTake-Two Interactive\t1.25\t0.29\t0\t0.24\t1.78\n974\tDragon Quest Monsters: Joker\tDS\t2006\tRole-Playing\tSquare Enix\t0.23\t0.03\t1.49\t0.03\t1.78\n975\tSpongeBob SquarePants: SuperSponge\tPS\t2001\tAction\tTHQ\t1.12\t0.58\t0\t0.08\t1.78\n976\tThe Getaway: Black Monday\tPS2\t2004\tAction\tSony Computer Entertainment\t0.39\t1.01\t0.02\t0.36\t1.78\n977\tProfessor Layton and the Mask of Miracle\t3DS\t2011\tPuzzle\tNintendo\t0.32\t0.95\t0.36\t0.14\t1.78\n978\tJust Cause 2\tPS3\t2010\tAction\tSquare Enix\t0.45\t0.94\t0.06\t0.33\t1.78\n979\tDragon's Dogma\tPS3\t2012\tRole-Playing\tCapcom\t0.41\t0.46\t0.72\t0.19\t1.78\n980\tThe Legend of Zelda: The Wind Waker\tWiiU\t2013\tAction\tNintendo\t0.93\t0.57\t0.14\t0.13\t1.77\n981\t50 Cent: Bulletproof\tPS2\t2005\tAction\tVivendi Games\t0.85\t0.76\t0\t0.16\t1.77\n982\tHigh School Musical: Sing It!\tWii\t2007\tMisc\tDisney Interactive Studios\t1.16\t0.45\t0\t0.16\t1.77\n983\tWii Party U\tWiiU\t2013\tMisc\tNintendo\t0.31\t0.54\t0.84\t0.08\t1.77\n984\tMadden NFL 25\tPS3\t2013\tSports\tElectronic Arts\t1.59\t0.03\t0\t0.15\t1.77\n985\tFinal Fantasy II\tSNES\t1991\tRole-Playing\tSquare\t0.24\t0.09\t1.33\t0.12\t1.77\n986\tKirby 64: The Crystal Shards\tN64\t2000\tPlatform\tNintendo\t0.63\t0.06\t1.03\t0.04\t1.77\n987\tDead or Alive 3\tXB\t2001\tFighting\tMicrosoft Game Studios\t1.19\t0.29\t0.24\t0.06\t1.77\n988\tUFC 2009 Undisputed\tPS3\t2009\tFighting\tTHQ\t1.07\t0.45\t0.01\t0.24\t1.77\n989\tMetroid II: Return of Samus\tGB\t1991\tAdventure\tNintendo\t0.85\t0.31\t0.56\t0.04\t1.76\n990\tWWF Attitude\tPS\t1998\tFighting\tAcclaim Entertainment\t1.27\t0.42\t0\t0.07\t1.76\n991\tThe SpongeBob SquarePants Movie\tPS2\t2004\tPlatform\tTHQ\t1.06\t0.54\t0\t0.16\t1.76\n992\tGolden Sun\tGBA\t2001\tRole-Playing\tNintendo\t0.93\t0.38\t0.4\t0.06\t1.76\n993\tSonic the Hedgehog 3\tGEN\t1994\tPlatform\tSega\t1.02\t0.47\t0.2\t0.07\t1.76\n994\tKid Icarus\tNES\t1986\tPlatform\tNintendo\t0.53\t0.12\t1.09\t0.02\t1.76\n995\tDef Jam: Fight for NY\tPS2\t2004\tFighting\tElectronic Arts\t0.86\t0.67\t0\t0.22\t1.76\n996\tTom Clancy's Ghost Recon\tXB\t2002\tShooter\tUbisoft\t1.23\t0.46\t0\t0.07\t1.76\n997\tState of Emergency\tPS2\t2002\tAction\tTake-Two Interactive\t0.86\t0.67\t0\t0.22\t1.76\n998\tBioShock Infinite\tPS3\t2013\tShooter\tTake-Two Interactive\t0.72\t0.69\t0.04\t0.31\t1.76\n999\tHitman: Absolution\tX360\t2012\tAction\tSquare Enix\t0.68\t0.9\t0.01\t0.17\t1.76\n1000\t2 Games in 1 Double Pack: The Incredibles / Finding Nemo: The Continuing Adventures\tGBA\t2007\tAction\tTHQ\t1.26\t0.47\t0\t0.03\t1.76\n1001\tCall of Duty: Black Ops 3\tX360\t2015\tShooter\tActivision\t1.11\t0.48\t0\t0.16\t1.76\n1002\tThe Urbz: Sims in the City\tPS2\t2004\tSimulation\tElectronic Arts\t0.52\t0.95\t0\t0.29\t1.76\n1003\tFIFA Soccer 08\tPS3\t2007\tSports\tElectronic Arts\t0.35\t1.07\t0.02\t0.32\t1.76\n1004\tStar Wars: Starfighter\tPS2\t2001\tSimulation\tActivision\t0.61\t0.87\t0.02\t0.26\t1.76\n1005\tMadden NFL 2000\tPS\t1998\tSports\tElectronic Arts\t1.68\t0.04\t0\t0.04\t1.75\n1006\tKingdom Hearts\tPS3\t2013\tRole-Playing\tSquare Enix\t0.9\t0.37\t0.25\t0.24\t1.75\n1007\tStar Wars: Battlefront\tXB\t2004\tShooter\tActivision\t1.24\t0.45\t0\t0.07\t1.75\n1008\tPro Evolution Soccer\tPS2\t2001\tSports\tKonami Digital Entertainment\t0.06\t0.9\t0.53\t0.27\t1.75\n1009\tCrackdown\tX360\t2007\tShooter\tMicrosoft Game Studios\t1\t0.54\t0.03\t0.18\t1.75\n1010\tYoshi\tNES\t1991\tPuzzle\tNintendo\t0.7\t0.13\t0.91\t0.01\t1.75\n1011\tDisney's Aladdin\tSNES\t1993\tPlatform\tCapcom\t0.94\t0.34\t0.21\t0.27\t1.75\n1012\tKirby's Adventure\tNES\t1993\tPlatform\tNintendo\t0.79\t0.14\t0.8\t0.02\t1.75\n1013\tCooking Mama 3: Shop & Chop\tDS\t2009\tSimulation\t505 Games\t0.83\t0.66\t0.08\t0.18\t1.75\n1014\tDance Dance Revolution X\tPS2\t2008\tSimulation\tKonami Digital Entertainment\t0.85\t0.66\t0.01\t0.22\t1.75\n1015\t2 Games in 1: Disney Princess & The Lion King\tGBA\t2004\tMisc\tTHQ\t1.25\t0.46\t0\t0.03\t1.75\n1016\tStar Wars Episode I: The Phantom Menace\tPS\t1999\tAdventure\tLucasArts\t0.72\t0.89\t0.04\t0.1\t1.74\n1017\tXenosaga Episode I: Der Wille zur Macht\tPS2\t2002\tRole-Playing\tNamco Bandai Games\t0.63\t0.49\t0.45\t0.17\t1.74\n1018\tPortal 2\tPS3\t2011\tShooter\tValve\t0.83\t0.63\t0.02\t0.25\t1.74\n1019\tThe Beatles: Rock Band\tWii\t2009\tMisc\tMTV Games\t1.19\t0.4\t0\t0.16\t1.74\n1020\tForza Motorsport 6\tXOne\t2015\tRacing\tMicrosoft Game Studios\t0.69\t0.89\t0.03\t0.14\t1.74\n1021\tSonic Colors\tWii\t2010\tPlatform\tSega\t0.96\t0.61\t0.01\t0.16\t1.74\n1022\tCruis'n USA\tN64\t1996\tRacing\tNintendo\t1.69\t0.04\t0\t0.01\t1.74\n1023\tMadden NFL 99\tPS\t1998\tSports\tElectronic Arts\t1.66\t0.04\t0\t0.04\t1.74\n1024\tDiablo III\tPS4\t2014\tRole-Playing\tActivision\t0.49\t0.88\t0.06\t0.3\t1.74\n1025\tUncharted: Golden Abyss\tPSV\t2011\tShooter\tSony Computer Entertainment\t0.59\t0.75\t0.13\t0.27\t1.74\n1026\tDestiny\tPS3\t2014\tShooter\tActivision\t0.67\t0.66\t0.12\t0.27\t1.73\n1027\tSSX Tricky\tPS2\t2001\tSports\tElectronic Arts\t0.85\t0.66\t0\t0.22\t1.73\n1028\tOverwatch\tPS4\t2016\tShooter\tActivision\t0.64\t0.68\t0.14\t0.26\t1.73\n1029\tTwisted Metal III\tPS\t1998\tAction\t989 Studios\t1.48\t0.2\t0\t0.05\t1.73\n1030\tHarry Potter and the Sorcerer's Stone\tGB\t2001\tAction\tElectronic Arts\t0.94\t0.62\t0.1\t0.07\t1.73\n1031\tDisney Infinity\tWii\t2013\tAction\tDisney Interactive Studios\t1.15\t0.44\t0\t0.14\t1.73\n1032\tCrash Bandicoot: The Huge Adventure\tGBA\t2002\tPlatform\tUniversal Interactive\t0.95\t0.7\t0\t0.08\t1.73\n1033\tDishonored\tX360\t2012\tAction\tBethesda Softworks\t1.06\t0.52\t0.01\t0.14\t1.73\n1034\tRockstar Games Double Pack: Grand Theft Auto III & Grand Theft Auto Vice City\tPS2\t2003\tAction\tTake-Two Interactive\t0.85\t0.66\t0\t0.22\t1.72\n1035\tThe Order: 1886\tPS4\t2015\tShooter\tSony Computer Entertainment\t0.61\t0.78\t0.06\t0.27\t1.72\n1036\tThe Elder Scrolls Online\tPS4\t2015\tRole-Playing\tBethesda Softworks\t0.66\t0.78\t0\t0.28\t1.72\n1037\tCall of Duty: World at War Final Fronts\tPS2\t2008\tShooter\tActivision\t0.61\t0.18\t0\t0.94\t1.72\n1038\tImagine: Teacher\tDS\t2008\tSimulation\tUbisoft\t0.7\t0.83\t0\t0.19\t1.72\n1039\tCall of Duty: Modern Warfare 3\tPC\t2011\tShooter\tActivision\t0.41\t0.98\t0\t0.33\t1.72\n1040\tMadden NFL 2005\tXB\t2004\tSports\tElectronic Arts\t1.61\t0.03\t0\t0.08\t1.72\n1041\tStar Ocean: Till The End of Time\tPS2\t2003\tRole-Playing\tUbisoft\t0.8\t0.21\t0.55\t0.15\t1.72\n1042\tThe Sims 3: Late Night Expansion Pack\tPC\t2010\tSimulation\tElectronic Arts\t0.59\t0.87\t0\t0.25\t1.71\n1043\tGame Party 3\tWii\t2009\tPuzzle\tWarner Bros. Interactive Entertainment\t1.43\t0.16\t0\t0.12\t1.71\n1044\tToy Story 2: Buzz Lightyear to the Rescue!\tPS\t1998\tPlatform\tActivision\t0.99\t0.64\t0\t0.08\t1.71\n1045\tDeal or No Deal\tDS\t2007\tMisc\tMindscape\t1.15\t0.41\t0\t0.15\t1.71\n1046\tAce Combat 5: The Unsung War\tPS2\t2004\tSimulation\tSony Computer Entertainment Europe\t0.88\t0.34\t0.32\t0.18\t1.71\n1047\tNeed for Speed Underground\tXB\t2003\tRacing\tElectronic Arts\t1.09\t0.55\t0\t0.07\t1.71\n1048\tKanshuu Nippon Joushikiryoku Kentei Kyoukai: Imasara Hito ni wa Kikenai Otona no Joushikiryoku Training DS\tDS\t2006\tMisc\tNintendo\t0\t0\t1.71\t0\t1.71\n1049\tTetris Worlds\tGBA\t2001\tPuzzle\tTHQ\t1.25\t0.39\t0\t0.06\t1.71\n1050\tCabela's Big Game Hunter 2010\tWii\t2009\tSports\tActivision Value\t1.58\t0\t0\t0.12\t1.7\n1051\tThe Crew\tPS4\t2014\tRacing\tUbisoft\t0.34\t1.08\t0.03\t0.26\t1.7\n1052\tFIFA Soccer 10\tPS2\t2009\tSports\tElectronic Arts\t0.23\t0.24\t0\t1.23\t1.7\n1053\tWe Ski\tWii\t2008\tSports\tNamco Bandai Games\t0.99\t0.42\t0.14\t0.15\t1.7\n1054\tPersonal Trainer: Math\tDS\t2007\tPuzzle\tNintendo\t0.49\t1.12\t0\t0.09\t1.7\n1055\tKirby's Return to Dreamland\tWii\t2011\tPlatform\tNintendo\t0.62\t0.21\t0.79\t0.08\t1.7\n1056\tSuper Puyo Puyo\tSNES\t1993\tPuzzle\tBanpresto\t0\t0\t1.69\t0.01\t1.7\n1057\tBen 10: Protector of Earth\tDS\t2007\tAction\tD3Publisher\t0.69\t0.83\t0\t0.19\t1.7\n1058\tNCAA Football 07\tPS2\t2006\tSports\tElectronic Arts\t1.41\t0.05\t0\t0.23\t1.7\n1059\tSOCOM 3: U.S. Navy SEALs\tPS2\t2005\tShooter\tSony Computer Entertainment\t1.22\t0.34\t0.04\t0.1\t1.69\n1060\tNBA 2K15\tXOne\t2014\tSports\tTake-Two Interactive\t1.36\t0.18\t0\t0.15\t1.69\n1061\tSaints Row 2\tPS3\t2008\tAction\tTHQ\t0.88\t0.54\t0.02\t0.25\t1.69\n1062\tSaints Row IV\tX360\t2013\tAction\tDeep Silver\t1.01\t0.53\t0.01\t0.14\t1.69\n1063\tJampack Winter '99\tPS\t1999\tMisc\tSony Computer Entertainment\t0.94\t0.64\t0\t0.11\t1.69\n1064\tDragon Age: Origins\tPS3\t2009\tRole-Playing\tElectronic Arts\t0.96\t0.44\t0.08\t0.22\t1.69\n1065\tFIFA 16\tX360\t2015\tSports\tElectronic Arts\t0.55\t1.01\t0\t0.13\t1.69\n1066\tWCW vs. nWo: World Tour\tN64\t1997\tFighting\tTHQ\t1.37\t0.28\t0.03\t0.02\t1.69\n1067\tWCW/NWO Thunder\tPS\t1998\tFighting\tTHQ\t1.1\t0.48\t0.04\t0.07\t1.69\n1068\tHarry Potter and the Sorcerer's Stone\tGBA\t2001\tAction\tElectronic Arts\t0.87\t0.66\t0.08\t0.08\t1.69\n1069\tNeed For Speed: Undercover\tX360\t2008\tRacing\tElectronic Arts\t0.79\t0.71\t0.01\t0.18\t1.69\n1070\tDragon Ball Z: The Legacy of Goku\tGBA\t2002\tRole-Playing\tInfogrames\t1.52\t0.12\t0\t0.05\t1.69\n1071\tSid Meier's Civilization V\tPC\t2010\tStrategy\tTake-Two Interactive\t0.98\t0.52\t0\t0.19\t1.69\n1072\tResident Evil 4\tGC\t2005\tAction\tCapcom\t0.98\t0.42\t0.22\t0.06\t1.69\n1073\tCall of Duty Black Ops: Declassified\tPSV\t2012\tAction\tActivision\t0.8\t0.52\t0.07\t0.3\t1.69\n1074\tStar Wars Battlefront: Renegade Squadron\tPSP\t2007\tShooter\tLucasArts\t0.9\t0.47\t0\t0.32\t1.68\n1075\tWorld Championship Poker: Featuring Howard Lederer - All In\tPS2\t2006\tMisc\tOxygen Interactive\t0.82\t0.64\t0\t0.22\t1.68\n1076\tNFL GameDay 98\tPS\t1997\tSports\tSony Computer Entertainment\t1.58\t0.06\t0\t0.04\t1.68\n1077\tLEGO Batman 2: DC Super Heroes\tX360\t2012\tAction\tWarner Bros. Interactive Entertainment\t0.9\t0.64\t0\t0.15\t1.68\n1078\tYoshi's Cookie\tGB\t1992\tPuzzle\tNintendo\t0.59\t0.24\t0.82\t0.03\t1.68\n1079\tTime Crisis\tPS\t1997\tShooter\tNamco Bandai Games\t0.38\t0.87\t0.33\t0.1\t1.68\n1080\tThe Sims: Superstar\tPC\t2003\tSimulation\tElectronic Arts\t1.67\t0\t0\t0\t1.68\n1081\tStar Wars The Clone Wars: Lightsaber Duels\tWii\t2008\tAction\tLucasArts\t1.23\t0.3\t0\t0.14\t1.68\n1082\tMySims\tWii\t2007\tSimulation\tElectronic Arts\t0.91\t0.55\t0.04\t0.17\t1.68\n1083\tMetroid Fusion\tGBA\t2002\tAction\tNintendo\t1.18\t0.27\t0.17\t0.06\t1.68\n1084\tShaun White Snowboarding: Road Trip\tWii\t2008\tSports\tUbisoft\t0.94\t0.57\t0\t0.17\t1.67\n1085\tSSX 3\tPS2\t2003\tSports\tElectronic Arts\t0.93\t0.52\t0\t0.22\t1.67\n1086\tBig Beach Sports\tWii\t2008\tSports\tTHQ\t0.45\t1.02\t0\t0.2\t1.67\n1087\tMadden NFL 2001\tPS\t2000\tSports\tElectronic Arts\t1.58\t0.05\t0\t0.04\t1.67\n1088\tFight Night Round 3\tPS3\t2006\tFighting\tElectronic Arts\t0.81\t0.59\t0.01\t0.26\t1.67\n1089\tKnack\tPS4\t2013\tPlatform\tSony Computer Entertainment Europe\t0.43\t0.67\t0.42\t0.15\t1.67\n1090\tStar Wars: Battlefront II\tXB\t2005\tShooter\tActivision\t1.22\t0.39\t0\t0.06\t1.67\n1091\tDisney's DuckTales\tNES\t1989\tPlatform\tCapcom\t0.91\t0.3\t0.42\t0.04\t1.67\n1092\tTony Hawk's Pro Skater 3\tPS\t2001\tSports\tActivision\t1.09\t0.49\t0.02\t0.07\t1.67\n1093\t\"Monsters\t Inc.\"\tGBA\t2001\tAdventure\tTHQ\t0.59\t0.95\t0.03\t0.1\t1.67\n1094\tStarCraft II: Heart of the Swarm\tPC\t2013\tStrategy\tActivision\t0.82\t0.65\t0\t0.19\t1.67\n1095\tPGR: Project Gotham Racing 2\tXB\t2003\tRacing\tMicrosoft Game Studios\t0.97\t0.59\t0.04\t0.07\t1.67\n1096\tSpy Hunter\tPS2\t2001\tRacing\tMidway Games\t1.13\t0.32\t0\t0.22\t1.67\n1097\tNCAA Football 2004\tPS2\t2003\tSports\tElectronic Arts\t1.35\t0.09\t0\t0.23\t1.67\n1098\tSpongeBob SquarePants: Battle for Bikini Bottom\tPS2\t2003\tPlatform\tTHQ\t1.08\t0.45\t0\t0.14\t1.67\n1099\tDying Light\tPS4\t2015\tAction\tWarner Bros. Interactive Entertainment\t0.63\t0.66\t0.11\t0.26\t1.66\n1100\tHeavenly Sword\tPS3\t2007\tAction\tSony Computer Entertainment\t0.57\t0.73\t0.06\t0.3\t1.66\n1101\tStreet Fighter II': Special Champion Edition\tGEN\t1992\tFighting\tSega\t1\t0.3\t0.31\t0.04\t1.66\n1102\tSSX\tPS2\t2000\tSports\tElectronic Arts\t0.78\t0.61\t0.06\t0.2\t1.66\n1103\tMax Payne 3\tX360\t2012\tShooter\tTake-Two Interactive\t0.86\t0.64\t0.01\t0.14\t1.66\n1104\tNBA Ballers\tPS2\t2004\tSports\tMidway Games\t0.81\t0.63\t0\t0.21\t1.66\n1105\tNeed for Speed Carbon\tX360\t2006\tRacing\tElectronic Arts\t0.76\t0.7\t0.02\t0.18\t1.66\n1106\tNBA Live 2003\tPS2\t2002\tSports\tElectronic Arts\t1.25\t0.15\t0.03\t0.22\t1.66\n1107\tDragon Ball Z: Budokai Tenkaichi\tPS2\t2005\tFighting\tAtari\t0.96\t0.12\t0.54\t0.04\t1.66\n1108\tMs. Pac-Man\t2600\t1981\tPuzzle\tAtari\t1.54\t0.1\t0\t0.02\t1.65\n1109\tMario Party 6\tGC\t2004\tMisc\tNintendo\t0.9\t0.11\t0.6\t0.05\t1.65\n1110\tSuper Scope 6\tSNES\t1991\tShooter\tNintendo\t1.06\t0.38\t0.15\t0.05\t1.65\n1111\tGo Vacation\tWii\t2011\tMisc\tNamco Bandai Games\t0.48\t0.68\t0.33\t0.16\t1.65\n1112\tDragon Quest V: Tenkuu no Hanayome\tPS2\t2004\tRole-Playing\tEnix Corporation\t0\t0\t1.65\t0\t1.65\n1113\tArmy of Two\tX360\t2008\tShooter\tElectronic Arts\t1.09\t0.38\t0.02\t0.16\t1.65\n1114\tDragon Quest IV: Chapters of the Chosen\tDS\t2007\tRole-Playing\tSquare Enix\t0.32\t0.02\t1.27\t0.03\t1.64\n1115\tKirby & the Amazing Mirror\tGBA\t2004\tPlatform\tNintendo\t0.8\t0.05\t0.76\t0.03\t1.64\n1116\tLEGO Pirates of the Caribbean: The Video Game\tWii\t2011\tAction\tDisney Interactive Studios\t0.76\t0.72\t0\t0.16\t1.64\n1117\tDig Dug\t2600\t1982\tPuzzle\tAtari\t1.52\t0.1\t0\t0.02\t1.64\n1118\tTom Clancy's Rainbow Six\tPS\t1999\tShooter\tRed Storm Entertainment\t0.93\t0.63\t0\t0.08\t1.64\n1119\tGhosts 'n Goblins\tNES\t1986\tAction\tCapcom\t0.74\t0.26\t0.61\t0.03\t1.64\n1120\tTiger Woods PGA Tour 2003\tPS2\t2002\tSports\tElectronic Arts\t0.8\t0.63\t0\t0.21\t1.64\n1121\tNBA Live 06 (All region sales)\tPS2\t2005\tSports\tElectronic Arts\t1.44\t0.15\t0\t0.05\t1.64\n1122\tPrince of Persia: Warrior Within\tPS2\t2004\tAction\tUbisoft\t0.54\t0.88\t0\t0.22\t1.64\n1123\tKinectimals\tX360\t2010\tSimulation\tMicrosoft Game Studios\t1.02\t0.48\t0\t0.14\t1.64\n1124\tUntil Dawn\tPS4\t2015\tAdventure\tSony Computer Entertainment Europe\t0.44\t0.89\t0.05\t0.25\t1.64\n1125\tESPN NFL 2K5\tXB\t2004\tSports\tSega\t1.54\t0.02\t0\t0.07\t1.63\n1126\tViva Pinata\tX360\t2006\tSimulation\tMicrosoft Game Studios\t0.45\t0.96\t0.02\t0.2\t1.63\n1127\tPikmin\tGC\t2001\tStrategy\tNintendo\t0.78\t0.25\t0.56\t0.04\t1.63\n1128\tCall of Duty: Black Ops\tPC\tN/A\tShooter\tActivision\t0.58\t0.81\t0\t0.24\t1.63\n1129\tSonic Generations\tPS3\t2011\tPlatform\tSega\t0.6\t0.73\t0.02\t0.28\t1.63\n1130\tTiger Woods PGA Tour 2004\tPS2\t2003\tSports\tElectronic Arts\t1.18\t0.34\t0\t0.1\t1.63\n1131\tApe Escape\tPS\t1999\tPlatform\tSony Computer Entertainment\t0.71\t0.48\t0.32\t0.11\t1.63\n1132\tNBA 2K15\tX360\t2014\tSports\tTake-Two Interactive\t1.33\t0.14\t0\t0.15\t1.63\n1133\tNCAA Football 2005\tPS2\t2004\tSports\tElectronic Arts\t1.32\t0.09\t0\t0.22\t1.62\n1134\tJust Cause 2\tX360\t2010\tAction\tSquare Enix\t0.59\t0.85\t0.02\t0.17\t1.62\n1135\tRock Band\tPS3\tN/A\tMisc\tElectronic Arts\t0.99\t0.41\t0\t0.22\t1.62\n1136\tTony Hawk's American Wasteland (Old all region sales)\tPS2\t2005\tSports\tActivision\t0.8\t0.63\t0.01\t0.19\t1.62\n1137\tRage\tX360\t2011\tShooter\tBethesda Softworks\t0.82\t0.61\t0.03\t0.15\t1.62\n1138\tMario Hoops 3 on 3\tDS\t2006\tSports\tNintendo\t0.99\t0.04\t0.49\t0.1\t1.62\n1139\tKirby Air Ride\tGC\t2003\tRacing\tNintendo\t1.01\t0.11\t0.45\t0.04\t1.62\n1140\tSled Storm\tPS\t1998\tRacing\tElectronic Arts\t0.9\t0.61\t0\t0.11\t1.62\n1141\tPokemon Battle Revolution\tWii\t2006\tRole-Playing\tNintendo\t0.8\t0.38\t0.3\t0.13\t1.61\n1142\tNFL Street 2\tPS2\t2004\tSports\tElectronic Arts\t0.79\t0.62\t0\t0.21\t1.61\n1143\tGears of War: Judgment\tX360\t2013\tShooter\tMicrosoft Game Studios\t0.92\t0.53\t0.03\t0.13\t1.61\n1144\tBaseball\tGB\t1989\tSports\tNintendo\t0.66\t0.27\t0.65\t0.03\t1.61\n1145\tYu-Gi-Oh! Duel Monsters\tGB\t1998\tStrategy\tKonami Digital Entertainment\t0\t0\t1.61\t0.01\t1.61\n1146\tSuper Mario Strikers\tGC\t2005\tSports\tNintendo\t0.98\t0.38\t0.2\t0.04\t1.61\n1147\tBuzz! The Music Quiz\tPS2\t2005\tMisc\tSony Computer Entertainment\t0\t1.18\t0\t0.43\t1.61\n1148\tSpongeBob's Atlantis SquarePantis\tDS\t2007\tAction\tTHQ\t1.5\t0\t0\t0.11\t1.61\n1149\tFar Cry 4\tXOne\t2014\tShooter\tUbisoft\t0.79\t0.68\t0.01\t0.13\t1.61\n1150\tDance Dance Revolution: Hottest Party 2\tWii\t2008\tSimulation\tKonami Digital Entertainment\t0.95\t0.48\t0.01\t0.15\t1.6\n1151\tMoshi Monsters: Moshling Zoo\tDS\t2011\tMisc\tActivision\t0.4\t0.99\t0\t0.22\t1.6\n1152\tDollar Dash\tPS2\t2005\tAction\tTake-Two Interactive\t1.3\t0.23\t0\t0.07\t1.6\n1153\tFar Cry 2\tX360\t2008\tAction\tUbisoft\t0.71\t0.69\t0.02\t0.18\t1.6\n1154\tF-1 World Grand Prix\tN64\t1998\tRacing\tVideo System\t0.46\t0.96\t0.09\t0.08\t1.6\n1155\tRiver Raid\t2600\t1981\tShooter\tActivision\t1.49\t0.09\t0\t0.02\t1.6\n1156\tSilent Hill\tPS\t1999\tAction\tKonami Digital Entertainment\t0.71\t0.48\t0.3\t0.1\t1.6\n1157\tDragon Quest V: Hand of the Heavenly Bride\tDS\t2008\tRole-Playing\tSquare Enix\t0.19\t0.02\t1.36\t0.02\t1.6\n1158\tNo Man's Sky\tPS4\t2016\tAction\tHello Games\t0.58\t0.74\t0.02\t0.26\t1.6\n1159\tSonic Heroes\tGC\t2003\tPlatform\tSega\t1.05\t0.44\t0.06\t0.04\t1.6\n1160\tESPN NBA 2K5\tPS2\t2004\tSports\tGlobal Star\t1.26\t0.12\t0\t0.21\t1.59\n1161\tDiablo\tPC\t1996\tRole-Playing\tActivision\t0.01\t1.58\t0\t0\t1.59\n1162\tThe Legend of Zelda: Twilight Princess\tGC\t2006\tAction\tNintendo\t1.15\t0.36\t0.04\t0.04\t1.59\n1163\tSoul Edge\tPS\t1996\tFighting\tSony Computer Entertainment\t0.61\t0.41\t0.46\t0.1\t1.59\n1164\tDevil May Cry 4\tPS3\t2008\tAction\tCapcom\t0.58\t0.46\t0.34\t0.21\t1.59\n1165\tMario Bros.\t2600\t1982\tPlatform\tAtari\t1.48\t0.09\t0\t0.02\t1.59\n1166\tPro Evolution Soccer 2008\tPS3\t2007\tSports\tKonami Digital Entertainment\t0.04\t1.1\t0.32\t0.13\t1.59\n1167\tSoulCalibur IV\tX360\t2008\tFighting\tUbisoft\t0.92\t0.44\t0.07\t0.15\t1.59\n1168\tLEGO Harry Potter: Years 1-4\tX360\t2010\tAction\tWarner Bros. Interactive Entertainment\t0.95\t0.5\t0\t0.14\t1.59\n1169\tNASCAR 2000\tPS\t1999\tRacing\tElectronic Arts\t0.88\t0.6\t0\t0.1\t1.59\n1170\tWolfenstein: The New Order\tPS4\t2014\tShooter\tBethesda Softworks\t0.47\t0.8\t0.03\t0.29\t1.58\n1171\tCarnival Games: Mini Golf\tWii\t2008\tSports\tTake-Two Interactive\t0.87\t0.56\t0\t0.15\t1.58\n1172\tGuitar Hero: On Tour Decades\tDS\t2008\tMisc\tActivision\t0.85\t0.58\t0\t0.16\t1.58\n1173\tMySims Kingdom\tDS\t2008\tSimulation\tElectronic Arts\t0.81\t0.6\t0.01\t0.17\t1.58\n1174\tJampack Summer 2K\tPS\t2000\tMisc\tSony Computer Entertainment\t0.88\t0.6\t0\t0.1\t1.58\n1175\tNeed for Speed: Most Wanted\tX360\t2012\tRacing\tElectronic Arts\t0.62\t0.8\t0.01\t0.15\t1.58\n1176\tGuitar Hero 5\tWii\t2009\tMisc\tActivision\t0.94\t0.49\t0\t0.15\t1.58\n1177\tHigh School Musical 3: Senior Year\tDS\t2008\tMisc\tDisney Interactive Studios\t0.64\t0.76\t0\t0.17\t1.58\n1178\tKingdom Hearts 3D: Dream Drop Distance\t3DS\t2012\tAction\tSquare Enix\t0.88\t0.26\t0.34\t0.09\t1.58\n1179\tHannah Montana: Music Jam\tDS\t2007\tAction\tDisney Interactive Studios\t1.06\t0.37\t0\t0.15\t1.58\n1180\tPokemon Mystery Dungeon: Explorers of Sky\tDS\t2009\tRole-Playing\tNintendo\t0.58\t0.44\t0.44\t0.12\t1.58\n1181\tSpyro 2: Season of Flame\tGBA\t2002\tPlatform\tVivendi Games\t0.85\t0.65\t0\t0.08\t1.58\n1182\tPro Evolution Soccer 2010\tPS2\t2009\tSports\tKonami Digital Entertainment\t0.1\t0.18\t0.12\t1.16\t1.57\n1183\tNCAA Football 2002\tPS2\t2001\tSports\tElectronic Arts\t0.77\t0.6\t0\t0.2\t1.57\n1184\tConflict: Desert Storm\tPS2\t2002\tShooter\tGotham Games\t0.98\t0.53\t0\t0.06\t1.57\n1185\tMario Party 7\tGC\t2005\tMisc\tNintendo\t0.95\t0.11\t0.46\t0.04\t1.57\n1186\tPro Evolution Soccer 2013\tPS3\t2012\tSports\tKonami Digital Entertainment\t0.18\t0.64\t0.49\t0.25\t1.56\n1187\tSmuggler's Run\tPS2\t2000\tRacing\tTake-Two Interactive\t0.77\t0.6\t0\t0.2\t1.56\n1188\tFight Night Round 3\tPS2\t2006\tFighting\tElectronic Arts\t1.07\t0.4\t0\t0.1\t1.56\n1189\tDonkey Kong Classics\tNES\t1988\tPlatform\tNintendo\t0.59\t0.14\t0.81\t0.02\t1.56\n1190\tTwisted Metal\tPS\t1995\tAction\tSony Computer Entertainment\t1.32\t0.19\t0\t0.05\t1.56\n1191\tDark Souls III\tPS4\t2016\tRole-Playing\tNamco Bandai Games\t0.58\t0.44\t0.33\t0.21\t1.56\n1192\tFinal Fight\tSNES\t1990\tAction\tCapcom\t0.67\t0.17\t0.69\t0.03\t1.56\n1193\tDragon Quest Monsters 2\tGB\t2001\tRole-Playing\tEnix Corporation\t0\t0\t1.56\t0\t1.56\n1194\tPokemon Pinball: Ruby & Sapphire\tGBA\t2003\tMisc\tNintendo\t0.68\t0.38\t0.44\t0.05\t1.56\n1195\tLEGO Marvel Super Heroes\tPS4\t2013\tAction\tWarner Bros. Interactive Entertainment\t0.59\t0.75\t0.01\t0.21\t1.56\n1196\tMafia II\tX360\t2010\tAction\tTake-Two Interactive\t0.84\t0.56\t0\t0.15\t1.55\n1197\tDishonored\tPS3\t2012\tAction\tBethesda Softworks\t0.72\t0.54\t0.04\t0.25\t1.55\n1198\tStuntman\tPS2\t2002\tRacing\tAtari\t0.76\t0.59\t0\t0.2\t1.55\n1199\tTom Clancy's Rainbow Six 3\tXB\t2003\tShooter\tUbisoft\t0.91\t0.57\t0\t0.07\t1.55\n1200\tActive Life: Outdoor Challenge\tWii\t2008\tSports\tAtari\t0.79\t0.44\t0.19\t0.14\t1.55\n1201\tBioShock 2\tPS3\t2010\tShooter\tTake-Two Interactive\t0.85\t0.47\t0.02\t0.22\t1.55\n1202\t007: The World is not Enough\tN64\t2000\tAction\tElectronic Arts\t1.13\t0.38\t0.02\t0.03\t1.55\n1203\tSpider-Man 2: Enter: Electro\tPS\t2001\tAction\tActivision\t0.57\t0.87\t0.02\t0.09\t1.55\n1204\tWatch Dogs\tXOne\t2014\tAction\tUbisoft\t0.9\t0.53\t0\t0.13\t1.55\n1205\tStar Wars: The Force Unleashed II\tPS3\t2010\tAction\tLucasArts\t0.8\t0.53\t0\t0.22\t1.55\n1206\tNi no Kuni: Wrath of the White Witch\tPS3\t2011\tRole-Playing\tNamco Bandai Games\t0.6\t0.51\t0.21\t0.23\t1.55\n1207\tCommand & Conquer: Tiberian Sun\tPC\t1999\tStrategy\tWestwood Studios\t1.55\t0\t0\t0\t1.55\n1208\tLEGO Battles: Ninjago\tDS\t2011\tStrategy\tWarner Bros. Interactive Entertainment\t1.07\t0.36\t0\t0.12\t1.55\n1209\tMario Party 10\tWiiU\t2015\tMisc\tNintendo\t0.69\t0.5\t0.24\t0.11\t1.55\n1210\tDead Rising 3\tXOne\t2013\tAction\tMicrosoft Game Studios\t1.06\t0.35\t0.01\t0.12\t1.54\n1211\tResident Evil: The Umbrella Chronicles\tWii\t2007\tAction\tCapcom\t0.68\t0.43\t0.29\t0.14\t1.54\n1212\tFire Emblem Fates\t3DS\t2015\tRole-Playing\tNintendo\t0.71\t0.22\t0.52\t0.1\t1.54\n1213\tDark Cloud\tPS2\t2000\tRole-Playing\tSony Computer Entertainment\t0.83\t0.44\t0.08\t0.19\t1.54\n1214\tWarcraft III: The Frozen Throne\tPC\t2003\tStrategy\tActivision\t0.58\t0.87\t0\t0.09\t1.54\n1215\tTom Clancy's Ghost Recon Advanced Warfighter\tX360\t2006\tShooter\tUbisoft\t1.4\t0.02\t0.02\t0.1\t1.54\n1216\tDisney Fairies: Tinker Bell\tDS\t2008\tAdventure\tDisney Interactive Studios\t0.86\t0.52\t0.01\t0.15\t1.54\n1217\tMVP Baseball 2005\tPS2\t2005\tSports\tElectronic Arts\t1.26\t0.07\t0\t0.21\t1.54\n1218\tDie Hard Trilogy\tPS\t1996\tShooter\tFox Interactive\t0.85\t0.58\t0\t0.1\t1.54\n1219\tCall of Duty: Black Ops II\tPC\t2012\tShooter\tActivision\t0.63\t0.69\t0\t0.21\t1.53\n1220\tFight Night Round 4\tPS3\t2009\tFighting\tElectronic Arts\t0.92\t0.41\t0\t0.21\t1.53\n1221\tMySims Kingdom\tWii\t2008\tSimulation\tElectronic Arts\t0.71\t0.65\t0.01\t0.17\t1.53\n1222\tThe Simpsons Game\tDS\t2007\tAction\tElectronic Arts\t0.57\t0.79\t0\t0.17\t1.53\n1223\tMortal Kombat 3\tSNES\t1994\tFighting\tAcclaim Entertainment\t1.19\t0.29\t0\t0.05\t1.53\n1224\tNFL GameDay 99\tPS\t1998\tSports\t989 Studios\t1.44\t0.05\t0\t0.04\t1.53\n1225\tCall of Duty: Modern Warfare: Reflex Edition\tWii\t2009\tShooter\tActivision\t0.95\t0.43\t0\t0.14\t1.53\n1226\tFIFA 17\tXOne\t2016\tSports\tElectronic Arts\t0.17\t1.26\t0\t0.1\t1.53\n1227\tMario Golf: Toadstool Tour\tGC\t2003\tSports\tNintendo\t1.09\t0.15\t0.25\t0.04\t1.53\n1228\tTiger Woods 99 PGA Tour Golf\tPS\t1997\tSports\tElectronic Arts\t0.85\t0.58\t0\t0.1\t1.53\n1229\tDonkey Kong Country: Tropical Freeze\tWiiU\t2014\tPlatform\tNintendo\t0.73\t0.52\t0.15\t0.12\t1.52\n1230\tDead Space 2\tX360\t2011\tShooter\tElectronic Arts\t0.94\t0.45\t0\t0.13\t1.52\n1231\tSonic Rivals 2\tPSP\t2007\tRacing\tSega\t0.44\t0.69\t0\t0.39\t1.52\n1232\tKnockout Kings\tPS\t1997\tFighting\tElectronic Arts\t1.07\t0.39\t0\t0.06\t1.52\n1233\tThe Simpsons Skateboarding\tPS2\t2002\tSports\tElectronic Arts\t0.36\t0.9\t0\t0.27\t1.52\n1234\tNASCAR 98\tPS\t1996\tRacing\tElectronic Arts\t1.43\t0.05\t0\t0.04\t1.52\n1235\tF1 Race\tNES\t1984\tRacing\tNintendo\t0\t0\t1.52\t0\t1.52\n1236\tXevious\tNES\t1984\tShooter\tNamco Bandai Games\t0.18\t0.06\t1.27\t0.01\t1.52\n1237\tNASCAR 99\tPS\t1998\tRacing\tElectronic Arts\t1.45\t0.04\t0\t0.04\t1.52\n1238\tNBA Live 2000\tPS\t1998\tSports\tElectronic Arts\t1.43\t0.05\t0\t0.03\t1.52\n1239\tMafia II\tPS3\t2010\tAction\tTake-Two Interactive\t0.5\t0.72\t0.04\t0.26\t1.52\n1240\tCall of Duty 3\tPS3\t2006\tShooter\tActivision\t0.6\t0.63\t0.03\t0.26\t1.52\n1241\tSuper Monkey Ball 2\tGC\t2002\tPuzzle\tAtari\t1.11\t0.31\t0.06\t0.04\t1.52\n1242\tPac-Man World 2\tPS2\t2002\tAction\tNamco Bandai Games\t1.26\t0.05\t0\t0.21\t1.51\n1243\tMadden NFL 15\tXOne\t2014\tSports\tElectronic Arts\t1.3\t0.09\t0\t0.12\t1.51\n1244\tSonic & Sega All-Stars Racing\tWii\t2010\tRacing\tSega\t0.65\t0.71\t0\t0.15\t1.51\n1245\tLEGO Star Wars III: The Clone Wars\tX360\t2011\tAction\tLucasArts\t0.84\t0.54\t0\t0.13\t1.51\n1246\tFootball Manager 2012\tPC\t2011\tSports\tSega\t0.02\t1.16\t0\t0.34\t1.51\n1247\tPuzzle & Dragons\t3DS\t2013\tRole-Playing\tGungHo\t0\t0\t1.51\t0\t1.51\n1248\tMega Man 2\tNES\t1988\tAction\tCapcom\t0.93\t0.15\t0.42\t0.01\t1.51\n1249\tSimpsons Wrestling\tPS\t2001\tFighting\tElectronic Arts\t0.23\t1.16\t0\t0.11\t1.51\n1250\tNBA Live 98\tPS\t1997\tSports\tElectronic Arts\t1.41\t0.06\t0\t0.04\t1.51\n1251\tThe Simpsons Game\tPS2\t2007\tAction\tElectronic Arts\t0.35\t0.03\t0\t1.13\t1.51\n1252\tMonopoly\tPS\t1997\tMisc\tHasbro Interactive\t1.18\t0.27\t0\t0.05\t1.51\n1253\tSoulCalibur II\tGC\t2003\tFighting\tNamco Bandai Games\t0.99\t0.32\t0.11\t0.08\t1.5\n1254\tResistance 3\tPS3\t2011\tShooter\tSony Computer Entertainment\t0.64\t0.58\t0.05\t0.23\t1.5\n1255\tTokyo Xtreme Racer Zero\tPS2\t2000\tRacing\tCrave Entertainment\t0.66\t0.52\t0.15\t0.17\t1.5\n1256\tFinal Fantasy XIV: A Realm Reborn\tPC\t2010\tRole-Playing\tSquare Enix\t0.86\t0.48\t0\t0.17\t1.5\n1257\tNFL Blitz\tPS\t1998\tSports\tMidway Games\t1.41\t0.05\t0\t0.04\t1.5\n1258\tRed Faction II\tPS2\t2002\tShooter\tTHQ\t0.49\t0.78\t0\t0.23\t1.5\n1259\tSuper Scribblenauts\tDS\t2010\tPuzzle\tWarner Bros. Interactive Entertainment\t1.08\t0.31\t0\t0.11\t1.5\n1260\tMadden NFL 2001\tPS2\t2000\tSports\tElectronic Arts\t1.19\t0.07\t0.05\t0.2\t1.5\n1261\tWWF No Mercy\tN64\t2000\tFighting\tTHQ\t1.2\t0.27\t0.02\t0.02\t1.5\n1262\tIce Climber\tNES\t1985\tPlatform\tNintendo\t0.46\t0.1\t0.92\t0.02\t1.5\n1263\tSonic CD\tSCD\t1993\tPlatform\tSega\t1\t0.36\t0.09\t0.05\t1.5\n1264\tNinja Hattori Kun: Ninja wa Shuugyou Degogiru no Maki\tNES\t1986\tPlatform\tHudson Soft\t0\t0\t1.5\t0\t1.5"
+          },
+          {
+            "type": "HTML",
+            "data": "<div class=\"result-alert alert-warning\" role=\"alert\"><button type=\"button\" class=\"close\" data-dismiss=\"alert\" aria-label=\"Close\"><span aria-hidden=\"true\">&times;</span></button><strong>Output is truncated</strong> to 102400 bytes. Learn more about <strong>ZEPPELIN_INTERPRETER_OUTPUT_LIMIT</strong></div>"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1634552702132_761701366",
+      "id": "paragraph_1634552702132_761701366",
+      "dateCreated": "2021-10-18T10:25:02+0000",
+      "dateStarted": "2021-10-18T17:44:52+0000",
+      "dateFinished": "2021-10-18T17:44:55+0000",
+      "status": "FINISHED",
+      "$$hashKey": "object:584"
+    },
+    {
+      "text": "%hive\nSELECT count(*) FROM vgsales;",
+      "user": "anonymous",
+      "dateUpdated": "2021-10-18T17:39:35+0000",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "sql",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/sql",
+        "fontSize": 9,
+        "results": {
+          "0": {
+            "graph": {
+              "mode": "table",
+              "height": 300,
+              "optionOpen": false,
+              "setting": {
+                "table": {
+                  "tableGridState": {
+                    "columns": [
+                      {
+                        "name": "rank0",
+                        "visible": true,
+                        "width": "*",
+                        "sort": {},
+                        "filters": [
+                          {}
+                        ],
+                        "pinned": ""
+                      },
+                      {
+                        "name": "name1",
+                        "visible": true,
+                        "width": "*",
+                        "sort": {},
+                        "filters": [
+                          {}
+                        ],
+                        "pinned": ""
+                      },
+                      {
+                        "name": "platform2",
+                        "visible": true,
+                        "width": "*",
+                        "sort": {},
+                        "filters": [
+                          {}
+                        ],
+                        "pinned": ""
+                      },
+                      {
+                        "name": "year3",
+                        "visible": true,
+                        "width": "*",
+                        "sort": {},
+                        "filters": [
+                          {}
+                        ],
+                        "pinned": ""
+                      },
+                      {
+                        "name": "genre4",
+                        "visible": true,
+                        "width": "*",
+                        "sort": {},
+                        "filters": [
+                          {}
+                        ],
+                        "pinned": ""
+                      },
+                      {
+                        "name": "publisher5",
+                        "visible": true,
+                        "width": "*",
+                        "sort": {},
+                        "filters": [
+                          {}
+                        ],
+                        "pinned": ""
+                      },
+                      {
+                        "name": "na_sales6",
+                        "visible": true,
+                        "width": "*",
+                        "sort": {},
+                        "filters": [
+                          {}
+                        ],
+                        "pinned": ""
+                      },
+                      {
+                        "name": "eu_sales7",
+                        "visible": true,
+                        "width": "*",
+                        "sort": {},
+                        "filters": [
+                          {}
+                        ],
+                        "pinned": ""
+                      },
+                      {
+                        "name": "jp_sales8",
+                        "visible": true,
+                        "width": "*",
+                        "sort": {},
+                        "filters": [
+                          {}
+                        ],
+                        "pinned": ""
+                      },
+                      {
+                        "name": "other_sales9",
+                        "visible": true,
+                        "width": "*",
+                        "sort": {},
+                        "filters": [
+                          {}
+                        ],
+                        "pinned": ""
+                      },
+                      {
+                        "name": "global_sales10",
+                        "visible": true,
+                        "width": "*",
+                        "sort": {},
+                        "filters": [
+                          {}
+                        ],
+                        "pinned": ""
+                      }
+                    ],
+                    "scrollFocus": {},
+                    "selection": [],
+                    "grouping": {
+                      "grouping": [],
+                      "aggregations": [],
+                      "rowExpandedStates": {}
+                    },
+                    "treeView": {},
+                    "pagination": {
+                      "paginationCurrentPage": 1,
+                      "paginationPageSize": 250
+                    }
+                  },
+                  "tableColumnTypeState": {
+                    "names": {
+                      "rank": "string",
+                      "name": "string",
+                      "platform": "string",
+                      "year": "string",
+                      "genre": "string",
+                      "publisher": "string",
+                      "na_sales": "string",
+                      "eu_sales": "string",
+                      "jp_sales": "string",
+                      "other_sales": "string",
+                      "global_sales": "string"
+                    },
+                    "updated": false
+                  },
+                  "tableOptionSpecHash": "[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]",
+                  "tableOptionValue": {
+                    "useFilter": false,
+                    "showPagination": false,
+                    "showAggregationFooter": false
+                  },
+                  "updated": false,
+                  "initialized": false
+                }
+              },
+              "commonSetting": {}
+            }
+          },
+          "1": {
+            "graph": {
+              "mode": "table",
+              "height": 300,
+              "optionOpen": false,
+              "setting": {
+                "table": {
+                  "tableGridState": {},
+                  "tableColumnTypeState": {
+                    "names": {
+                      "_c0": "string"
+                    },
+                    "updated": false
+                  },
+                  "tableOptionSpecHash": "[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]",
+                  "tableOptionValue": {
+                    "useFilter": false,
+                    "showPagination": false,
+                    "showAggregationFooter": false
+                  },
+                  "updated": false,
+                  "initialized": false
+                }
+              },
+              "commonSetting": {}
+            }
+          }
+        },
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "WARNING: Hive-on-MR is deprecated in Hive 2 and may not be available in the future versions. Consider using a different execution engine (i.e. spark, tez) or using Hive 1.X releases.\n"
+          },
+          {
+            "type": "TABLE",
+            "data": "_c0\n16598\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1634576522596_909738424",
+      "id": "paragraph_1634576522596_909738424",
+      "dateCreated": "2021-10-18T17:02:02+0000",
+      "dateStarted": "2021-10-18T17:39:33+0000",
+      "dateFinished": "2021-10-18T17:39:34+0000",
+      "status": "FINISHED",
+      "$$hashKey": "object:585"
+    },
+    {
+      "text": "%hive\n// самая продаваемая игра за все время\nSELECT rank, name, global_sales FROM vgsales ORDER BY global_sales DESC LIMIT 1;",
+      "user": "anonymous",
+      "dateUpdated": "2021-10-18T19:31:43+0000",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "sql",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/sql",
+        "fontSize": 9,
+        "results": {
+          "1": {
+            "graph": {
+              "mode": "table",
+              "height": 300,
+              "optionOpen": false,
+              "setting": {
+                "table": {
+                  "tableGridState": {},
+                  "tableColumnTypeState": {
+                    "names": {
+                      "rank": "string",
+                      "name": "string",
+                      "global_sales": "string"
+                    },
+                    "updated": false
+                  },
+                  "tableOptionSpecHash": "[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]",
+                  "tableOptionValue": {
+                    "useFilter": false,
+                    "showPagination": false,
+                    "showAggregationFooter": false
+                  },
+                  "updated": false,
+                  "initialized": false
+                }
+              },
+              "commonSetting": {}
+            }
+          }
+        },
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "WARNING: Hive-on-MR is deprecated in Hive 2 and may not be available in the future versions. Consider using a different execution engine (i.e. spark, tez) or using Hive 1.X releases.\n"
+          },
+          {
+            "type": "TABLE",
+            "data": "rank\tname\tglobal_sales\n1\tWii Sports\t82.74\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1634576576519_500094897",
+      "id": "paragraph_1634576576519_500094897",
+      "dateCreated": "2021-10-18T17:02:56+0000",
+      "dateStarted": "2021-10-18T17:15:35+0000",
+      "dateFinished": "2021-10-18T17:15:37+0000",
+      "status": "FINISHED",
+      "$$hashKey": "object:586"
+    },
+    {
+      "text": "%sh\nhdfs dfs -ls /user/hduser/vgsales",
+      "user": "anonymous",
+      "dateUpdated": "2021-10-18T18:07:08+0000",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "sh",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": false
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/sh",
+        "fontSize": 9,
+        "results": {
+          "1": {
+            "graph": {
+              "mode": "table",
+              "height": 300,
+              "optionOpen": false,
+              "setting": {
+                "table": {
+                  "tableGridState": {},
+                  "tableColumnTypeState": {
+                    "names": {
+                      "na_sales": "string"
+                    },
+                    "updated": false
+                  },
+                  "tableOptionSpecHash": "[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]",
+                  "tableOptionValue": {
+                    "useFilter": false,
+                    "showPagination": false,
+                    "showAggregationFooter": false
+                  },
+                  "updated": false,
+                  "initialized": false
+                },
+                "multiBarChart": {
+                  "rotate": {
+                    "degree": "-45"
+                  },
+                  "xLabelStatus": "default"
+                },
+                "stackedAreaChart": {
+                  "rotate": {
+                    "degree": "-45"
+                  },
+                  "xLabelStatus": "default"
+                },
+                "lineChart": {
+                  "rotate": {
+                    "degree": "-45"
+                  },
+                  "xLabelStatus": "default"
+                }
+              },
+              "commonSetting": {},
+              "keys": [
+                {
+                  "name": "na_sales",
+                  "index": 0,
+                  "aggr": "sum"
+                }
+              ],
+              "groups": [],
+              "values": []
+            },
+            "helium": {}
+          }
+        },
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": []
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1634576919528_189379012",
+      "id": "paragraph_1634576919528_189379012",
+      "dateCreated": "2021-10-18T17:08:39+0000",
+      "dateStarted": "2021-10-18T18:07:08+0000",
+      "dateFinished": "2021-10-18T18:07:11+0000",
+      "status": "FINISHED",
+      "$$hashKey": "object:587"
+    },
+    {
+      "text": "%sh\nhdfs dfs -put /home/hduser/vgsales/vgsales.csv /user/hduser/vgsales\nhdfs dfs -ls /user/hduser/vgsales",
+      "user": "anonymous",
+      "dateUpdated": "2021-10-18T18:08:48+0000",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "sh",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": false
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/sh",
+        "fontSize": 9,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "Found 1 items\n-rw-r--r--   1 hduser supergroup    1355781 2021-10-18 18:08 /user/hduser/vgsales/vgsales.csv\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1634577544033_1673202137",
+      "id": "paragraph_1634577544033_1673202137",
+      "dateCreated": "2021-10-18T17:19:04+0000",
+      "dateStarted": "2021-10-18T18:08:48+0000",
+      "dateFinished": "2021-10-18T18:08:54+0000",
+      "status": "FINISHED",
+      "$$hashKey": "object:588"
+    },
+    {
+      "text": "%spark\nval df=sqlContext\n    .read\n    .format(\"csv\")\n    .option(\"header\", \"true\")\n    .option(\"inferSchema\", \"true\")\n    .load(\"/user/hduser/vgsales/vgsales.csv\")\n    \ndf.printSchema()\ndf.show(5)",
+      "user": "anonymous",
+      "dateUpdated": "2021-10-18T19:36:29+0000",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/scala",
+        "fontSize": 9,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "root\n |-- Rank: integer (nullable = true)\n |-- Name: string (nullable = true)\n |-- Platform: string (nullable = true)\n |-- Year: string (nullable = true)\n |-- Genre: string (nullable = true)\n |-- Publisher: string (nullable = true)\n |-- NA_Sales: double (nullable = true)\n |-- EU_Sales: double (nullable = true)\n |-- JP_Sales: double (nullable = true)\n |-- Other_Sales: double (nullable = true)\n |-- Global_Sales: double (nullable = true)\n\n+----+--------------------+--------+----+------------+---------+--------+--------+--------+-----------+------------+\n|Rank|                Name|Platform|Year|       Genre|Publisher|NA_Sales|EU_Sales|JP_Sales|Other_Sales|Global_Sales|\n+----+--------------------+--------+----+------------+---------+--------+--------+--------+-----------+------------+\n|   1|          Wii Sports|     Wii|2006|      Sports| Nintendo|   41.49|   29.02|    3.77|       8.46|       82.74|\n|   2|   Super Mario Bros.|     NES|1985|    Platform| Nintendo|   29.08|    3.58|    6.81|       0.77|       40.24|\n|   3|      Mario Kart Wii|     Wii|2008|      Racing| Nintendo|   15.85|   12.88|    3.79|       3.31|       35.82|\n|   4|   Wii Sports Resort|     Wii|2009|      Sports| Nintendo|   15.75|   11.01|    3.28|       2.96|        33.0|\n|   5|Pokemon Red/Pokem...|      GB|1996|Role-Playing| Nintendo|   11.27|    8.89|   10.22|        1.0|       31.37|\n+----+--------------------+--------+----+------------+---------+--------+--------+--------+-----------+------------+\nonly showing top 5 rows\n\n\u001b[1m\u001b[34mdf\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.sql.DataFrame\u001b[0m = [Rank: int, Name: string ... 9 more fields]\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://localhost:40615/jobs",
+              "$$hashKey": "object:5902"
+            },
+            {
+              "jobUrl": "http://localhost:40615/jobs",
+              "$$hashKey": "object:5903"
+            },
+            {
+              "jobUrl": "http://localhost:40615/jobs",
+              "$$hashKey": "object:5904"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1634580697955_364586130",
+      "id": "paragraph_1634580697955_364586130",
+      "dateCreated": "2021-10-18T18:11:37+0000",
+      "dateStarted": "2021-10-18T19:36:29+0000",
+      "dateFinished": "2021-10-18T19:36:34+0000",
+      "status": "FINISHED",
+      "$$hashKey": "object:589"
+    },
+    {
+      "text": "%spark\ndf.createOrReplaceTempView(\"vgsales_tmp\")",
+      "user": "anonymous",
+      "dateUpdated": "2021-10-18T19:05:10+0000",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/scala",
+        "fontSize": 9,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1634583842498_1244981676",
+      "id": "paragraph_1634583842498_1244981676",
+      "dateCreated": "2021-10-18T19:04:02+0000",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:4603",
+      "dateFinished": "2021-10-18T19:05:14+0000",
+      "dateStarted": "2021-10-18T19:05:10+0000",
+      "results": {
+        "code": "SUCCESS",
+        "msg": []
+      }
+    },
+    {
+      "text": "%spark\n// самая популярная платформе в регионе NA\n\nval sqlDF1 = spark.sql(\"SELECT Platform, sum(NA_Sales) as NA_Sales FROM vgsales_tmp GROUP BY Platform ORDER BY NA_Sales DESC LIMIT 1\")\n\nsqlDF1.show()",
+      "user": "anonymous",
+      "dateUpdated": "2021-10-18T19:29:26+0000",
+      "progress": 0,
+      "config": {
+        "colWidth": 12,
+        "editorMode": "ace/mode/scala",
+        "fontSize": 9,
+        "results": {},
+        "enabled": true,
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        }
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://localhost:40615/jobs",
+              "$$hashKey": "object:5555"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1634583169773_1731450178",
+      "id": "paragraph_1634583169773_1731450178",
+      "dateCreated": "2021-10-18T18:52:49+0000",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:4279",
+      "dateFinished": "2021-10-18T19:29:42+0000",
+      "dateStarted": "2021-10-18T19:29:26+0000",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "+--------+-----------------+\n|Platform|         NA_Sales|\n+--------+-----------------+\n|    X360|601.0499999999992|\n+--------+-----------------+\n\n\u001b[1m\u001b[34msqlDF1\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.sql.DataFrame\u001b[0m = [Platform: string, NA_Sales: double]\n"
+          }
+        ]
+      }
+    },
+    {
+      "text": "%spark\n// самая популярная платформе в регионе EU\n\nval sqlDF2 = spark.sql(\"SELECT Platform, sum(EU_Sales) as EU_Sales FROM vgsales_tmp GROUP BY Platform ORDER BY EU_Sales DESC LIMIT 1\")\n\nsqlDF2.show()",
+      "user": "anonymous",
+      "dateUpdated": "2021-10-18T19:32:56+0000",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/scala",
+        "fontSize": 9,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://localhost:40615/jobs",
+              "$$hashKey": "object:5703"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1634584175440_1764686194",
+      "id": "paragraph_1634584175440_1764686194",
+      "dateCreated": "2021-10-18T19:09:35+0000",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:4709",
+      "dateFinished": "2021-10-18T19:33:00+0000",
+      "dateStarted": "2021-10-18T19:32:56+0000",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "+--------+------------------+\n|Platform|          EU_Sales|\n+--------+------------------+\n|     PS3|343.70999999999805|\n+--------+------------------+\n\n\u001b[1m\u001b[34msqlDF2\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.sql.DataFrame\u001b[0m = [Platform: string, EU_Sales: double]\n"
+          }
+        ]
+      }
+    },
+    {
+      "text": "%spark\n// самая популярная платформе в регионе JP\n\nval sqlDF3 = spark.sql(\"SELECT Platform, sum(JP_Sales) as JP_Sales FROM vgsales_tmp GROUP BY Platform ORDER BY JP_Sales DESC LIMIT 1\")\n\nsqlDF3.show()",
+      "user": "anonymous",
+      "dateUpdated": "2021-10-18T19:33:53+0000",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/scala",
+        "fontSize": 9,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://localhost:40615/jobs",
+              "$$hashKey": "object:5822"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1634585576045_1475980297",
+      "id": "paragraph_1634585576045_1475980297",
+      "dateCreated": "2021-10-18T19:32:56+0000",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:5601",
+      "dateFinished": "2021-10-18T19:34:04+0000",
+      "dateStarted": "2021-10-18T19:33:53+0000",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "+--------+------------------+\n|Platform|          JP_Sales|\n+--------+------------------+\n|      DS|175.57000000000048|\n+--------+------------------+\n\n\u001b[1m\u001b[34msqlDF3\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.sql.DataFrame\u001b[0m = [Platform: string, JP_Sales: double]\n"
+          }
+        ]
+      }
+    },
+    {
+      "text": "%spark\n// самый популярный жанр в регионе NA\n\nval sqlDF4 = spark.sql(\"SELECT Genre, sum(NA_Sales) as NA_Sales FROM vgsales_tmp GROUP BY Genre ORDER BY NA_Sales DESC LIMIT 1\")\n\nsqlDF4.show()",
+      "user": "anonymous",
+      "dateUpdated": "2021-10-18T19:37:17+0000",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/scala",
+        "fontSize": 9,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://localhost:40615/jobs",
+              "$$hashKey": "object:6037"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1634585633102_1502811978",
+      "id": "paragraph_1634585633102_1502811978",
+      "dateCreated": "2021-10-18T19:33:53+0000",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:5717",
+      "dateFinished": "2021-10-18T19:37:21+0000",
+      "dateStarted": "2021-10-18T19:37:17+0000",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "+------+-----------------+\n| Genre|         NA_Sales|\n+------+-----------------+\n|Action|877.8299999999916|\n+------+-----------------+\n\n\u001b[1m\u001b[34msqlDF4\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.sql.DataFrame\u001b[0m = [Genre: string, NA_Sales: double]\n"
+          }
+        ]
+      }
+    },
+    {
+      "text": "%spark\n// самый популярный жанр в регионе EU\n\nval sqlDF5 = spark.sql(\"SELECT Genre, sum(EU_Sales) as EU_Sales FROM vgsales_tmp GROUP BY Genre ORDER BY EU_Sales DESC LIMIT 1\")\n\nsqlDF5.show()",
+      "user": "anonymous",
+      "dateUpdated": "2021-10-18T19:38:37+0000",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/scala",
+        "fontSize": 9,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://localhost:40615/jobs",
+              "$$hashKey": "object:6159"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1634585837617_2041985837",
+      "id": "paragraph_1634585837617_2041985837",
+      "dateCreated": "2021-10-18T19:37:17+0000",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:5929",
+      "dateFinished": "2021-10-18T19:38:46+0000",
+      "dateStarted": "2021-10-18T19:38:37+0000",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "+------+-----------------+\n| Genre|         EU_Sales|\n+------+-----------------+\n|Action|524.9999999999854|\n+------+-----------------+\n\n\u001b[1m\u001b[34msqlDF5\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.sql.DataFrame\u001b[0m = [Genre: string, EU_Sales: double]\n"
+          }
+        ]
+      }
+    },
+    {
+      "text": "%spark\n// самый популярный жанр в регионе JP\n\nval sqlDF6 = spark.sql(\"SELECT Genre, sum(JP_Sales) as JP_Sales FROM vgsales_tmp GROUP BY Genre ORDER BY JP_Sales DESC LIMIT 1\")\n\nsqlDF6.show()",
+      "user": "anonymous",
+      "dateUpdated": "2021-10-18T19:39:36+0000",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/scala",
+        "fontSize": 9,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://localhost:40615/jobs",
+              "$$hashKey": "object:6275"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1634585917507_456586260",
+      "id": "paragraph_1634585917507_456586260",
+      "dateCreated": "2021-10-18T19:38:37+0000",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:6054",
+      "dateFinished": "2021-10-18T19:39:38+0000",
+      "dateStarted": "2021-10-18T19:39:36+0000",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "+------------+-----------------+\n|       Genre|         JP_Sales|\n+------------+-----------------+\n|Role-Playing|352.3099999999979|\n+------------+-----------------+\n\n\u001b[1m\u001b[34msqlDF6\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.sql.DataFrame\u001b[0m = [Genre: string, JP_Sales: double]\n"
+          }
+        ]
+      }
+    },
+    {
+      "text": "%spark\n// жанры по годам\n\nval sqlDF7 = spark.sql(\"SELECT Year, Genre, sum(Global_Sales) FROM vgsales_tmp GROUP BY Year, Genre ORDER BY Year, Genre\")\n\nsqlDF7.show(125)",
+      "user": "anonymous",
+      "dateUpdated": "2021-10-18T19:56:20+0000",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/scala",
+        "fontSize": 9,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://localhost:40615/jobs",
+              "$$hashKey": "object:7122"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1634585976009_387515437",
+      "id": "paragraph_1634585976009_387515437",
+      "dateCreated": "2021-10-18T19:39:36+0000",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:6173",
+      "dateFinished": "2021-10-18T19:52:10+0000",
+      "dateStarted": "2021-10-18T19:52:07+0000",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "+----+------------+-------------------+\n|Year|       Genre|  sum(Global_Sales)|\n+----+------------+-------------------+\n|1980|      Action|               0.34|\n|1980|    Fighting|               0.77|\n|1980|        Misc|               2.71|\n|1980|     Shooter|  7.069999999999999|\n|1980|      Sports|               0.49|\n|1981|      Action|              14.84|\n|1981|    Platform|               6.93|\n|1981|      Puzzle| 2.2399999999999998|\n|1981|      Racing|               0.48|\n|1981|     Shooter| 10.040000000000001|\n|1981|  Simulation|               0.45|\n|1981|      Sports| 0.7899999999999999|\n|1982|      Action|               6.52|\n|1982|        Misc|               0.87|\n|1982|    Platform|               5.03|\n|1982|      Puzzle|              10.03|\n|1982|      Racing| 1.5699999999999998|\n|1982|     Shooter|               3.79|\n|1982|      Sports|               1.05|\n|1983|      Action|               2.86|\n|1983|   Adventure|                0.4|\n|1983|        Misc|               2.14|\n|1983|    Platform|               6.93|\n|1983|      Puzzle|               0.78|\n|1983|     Shooter|               0.48|\n|1983|      Sports|                3.2|\n|1984|      Action|               1.85|\n|1984|        Misc|               1.45|\n|1984|    Platform|               0.69|\n|1984|      Puzzle|               3.14|\n|1984|      Racing|  5.949999999999999|\n|1984|     Shooter| 31.099999999999998|\n|1984|      Sports|               6.18|\n|1985|      Action|               3.52|\n|1985|    Fighting|               1.05|\n|1985|    Platform|              43.17|\n|1985|      Puzzle| 3.2100000000000004|\n|1985|     Shooter|                1.0|\n|1985|  Simulation|               0.03|\n|1985|      Sports|               1.96|\n|1986|      Action| 13.740000000000002|\n|1986|    Platform|               9.39|\n|1986|      Racing|               1.96|\n|1986|Role-Playing|               2.52|\n|1986|     Shooter|               3.89|\n|1986|      Sports|               5.57|\n|1987|      Action|               1.12|\n|1987|   Adventure|               4.38|\n|1987|    Fighting|               5.42|\n|1987|    Platform| 1.7400000000000002|\n|1987|Role-Playing|               4.65|\n|1987|     Shooter|               0.71|\n|1987|      Sports| 3.7199999999999998|\n|1988|      Action|               1.75|\n|1988|    Platform|              27.73|\n|1988|      Puzzle|               5.58|\n|1988|      Racing|               2.14|\n|1988|Role-Playing|               5.88|\n|1988|     Shooter|               0.51|\n|1988|  Simulation|               0.03|\n|1988|      Sports| 3.5999999999999996|\n|1989|      Action|               4.64|\n|1989|        Misc|               1.28|\n|1989|    Platform| 20.660000000000004|\n|1989|      Puzzle|              37.75|\n|1989|Role-Playing|                2.2|\n|1989|     Shooter|                1.2|\n|1989|      Sports|  5.720000000000001|\n|1990|      Action|  6.390000000000001|\n|1990|    Platform|              22.97|\n|1990|      Puzzle|                6.0|\n|1990|      Racing|               6.26|\n|1990|Role-Playing|               4.52|\n|1990|  Simulation|               1.14|\n|1990|      Sports|               2.11|\n|1991|      Action|               6.76|\n|1991|   Adventure|               2.24|\n|1991|    Fighting|               0.39|\n|1991|        Misc|               0.08|\n|1991|    Platform|               7.64|\n|1991|      Puzzle| 3.2399999999999998|\n|1991|      Racing|               1.14|\n|1991|Role-Playing|               3.25|\n|1991|     Shooter|                2.0|\n|1991|  Simulation|               2.14|\n|1991|      Sports| 2.4099999999999997|\n|1991|    Strategy|               0.94|\n|1992|      Action|               3.83|\n|1992|   Adventure| 12.239999999999998|\n|1992|    Fighting|              15.25|\n|1992|        Misc| 4.9399999999999995|\n|1992|    Platform|              13.42|\n|1992|      Puzzle|  4.840000000000001|\n|1992|      Racing|               9.04|\n|1992|Role-Playing|               6.86|\n|1992|     Shooter|0.29000000000000004|\n|1992|  Simulation|               2.14|\n|1992|      Sports|               2.95|\n|1992|    Strategy|               0.36|\n|1993|      Action|               1.81|\n|1993|   Adventure|               0.07|\n|1993|    Fighting|  8.750000000000002|\n|1993|        Misc|                0.3|\n|1993|    Platform| 18.669999999999998|\n|1993|      Puzzle|               3.17|\n|1993|      Racing|               0.36|\n|1993|Role-Playing|  5.590000000000001|\n|1993|     Shooter|               3.08|\n|1993|  Simulation|               0.19|\n|1993|      Sports| 3.1799999999999997|\n|1993|    Strategy|               0.81|\n|1994|      Action|               1.55|\n|1994|   Adventure|               3.74|\n|1994|    Fighting|               8.47|\n|1994|        Misc| 2.8599999999999994|\n|1994|    Platform| 28.740000000000002|\n|1994|      Puzzle|               1.53|\n|1994|      Racing| 2.1899999999999995|\n|1994|Role-Playing|  7.110000000000001|\n|1994|     Shooter|                8.3|\n|1994|  Simulation|               2.73|\n|1994|      Sports|  8.389999999999999|\n|1994|    Strategy| 3.5600000000000005|\n|1995|      Action| 3.5700000000000007|\n|1995|   Adventure| 0.7200000000000002|\n+----+------------+-------------------+\nonly showing top 125 rows\n\n\u001b[1m\u001b[34msqlDF7\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.sql.DataFrame\u001b[0m = [Year: string, Genre: string ... 1 more field]\n"
+          }
+        ]
+      }
+    }
+  ],
+  "name": "vgsales",
+  "id": "2GM8UEE25",
+  "defaultInterpreterGroup": "spark",
+  "version": "0.10.0",
+  "noteParams": {},
+  "noteForms": {},
+  "angularObjects": {},
+  "config": {
+    "isZeppelinNotebookCronEnable": false,
+    "looknfeel": "default",
+    "personalizedMode": "false"
+  },
+  "info": {},
+  "path": "/vgsales"
+}
